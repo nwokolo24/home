@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
-
+html {
+    height: 100%;
+}
 body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
@@ -54,14 +55,3 @@ footer {
     background-color: rgb(146, 207, 245);
     text-align: center;
 }
-
-
-@media screen and (max-width: 550px) {
-
-    /* beginning of media query */
-    .home-grid {
-        display: block;
-    }
-}
-
-/* end of media query */
