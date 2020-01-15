@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 html {
     height: 100%;
 }
@@ -20,7 +21,7 @@ img {
 
 #name {
     border: 0px solid white;
-    background-color: rgb(6, 34, 133);
+    background-color: rgb(8, 77, 160);
     color: white;
     grid-column: 1 / 6;
     border: 0px solid white;
@@ -57,9 +58,11 @@ nav {
 
 footer {
     color: white;
-    position: fixed;
     grid-column: 1 / 6;
     border: 0px solid white;
-    background-color: rgb(6, 34, 133);
+    background-color: rgb(8, 77, 160);
     text-align: center;
+}
+footer a:link, footer a:visited{
+    color:#D7B377;
 }
