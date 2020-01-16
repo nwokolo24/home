@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
-html {
-    height: 100%;
+html * {
+    box-sizing: border-box;
 }
 body {
     grid-template-columns: repeat(5, 1fr);
@@ -40,7 +40,7 @@ img {
 }
 
 nav {
-    grid-column: 1 /;
+    grid-column: 1 / 6;
     border: 0px solid white;
     background-color: white;
 }

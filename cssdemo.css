@@ -1,0 +1,32 @@
+/* imports always are first */
+@import url("/css/normalize.css");
+
+/* General rules that apply to all devices */
+html * {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px; /* this is equal to 1em or 1rem */
+}
+
+/* Mobile rules next */
+#wrapper{
+    width: 100%;
+    background-color: yellow;
+}
+
+/* Larger Screen Rules */
+@media screen and (min-width: 680px){
+    #wrapper{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1300px;
+        background-color: rgb(6, 152, 28);
+        font-size: 4vw;
+    }
+}
