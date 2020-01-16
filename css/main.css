@@ -2,21 +2,21 @@
 html * {
     box-sizing: border-box;
 }
+*::before, *::after {
+    box-sizing: border-box;
+}
 body {
+    font-size: 18px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     max-width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 h1 {
     font-family: 'Acme', sans-serif;
 }
 p {
     font-family: 'Neuton', serif;
-}
-
-img {
-    max-width: 100%;
 }
 
 #name {
@@ -26,7 +26,7 @@ img {
     grid-column: 1 / 6;
     border: 0px solid white;
     padding-left: 10px;
-    padding-top: 50px;
+    padding-top: 30px;
     height: 100px;
 }
 
@@ -64,5 +64,5 @@ footer {
     text-align: center;
 }
 footer a:link, footer a:visited{
-    color:#D7B377;
+    color:rgb(239, 243, 10);
 }
