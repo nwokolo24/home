@@ -10,7 +10,8 @@ html * {
     box-sizing: border-box;
 }
 
-this codes applies to body {
+/* this codes applies to  */
+#root {
     font-size: 18px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
@@ -79,8 +80,7 @@ footer {
     text-align: center;
 }
 
-footer a:visited,
-footer a:hover {
+footer a {
     color: rgb(239, 243, 10);
 }
 
@@ -89,3 +89,33 @@ footer a:hover {
 }
 
 /* css codes for the design principles website */
+
+/* Mobile Phone or Baseline View */
+@media screen and (min-width: 21em) {
+    #cover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: gray;
+    }
+}
+
+/* Tablet or Medium View */
+@media screen and (min-width: 37.5em) {
+    #cover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: rgb(164, 108, 108);
+    }
+}
+
+/* Desktop or Large View */
+@media screen and (min-width: 60em) {
+    #cover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: rgba(8, 189, 250, 0.864);
+    }
+}
