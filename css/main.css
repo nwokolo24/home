@@ -1,20 +1,27 @@
+/* imports fonts from google and aplies it to my page */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
 html * {
     box-sizing: border-box;
 }
-*::before, *::after {
+
+*::before,
+*::after {
     box-sizing: border-box;
 }
-body {
+
+this codes applies to body {
     font-size: 18px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     max-width: 100%;
     margin: 0 auto;
 }
+
 h1 {
     font-family: 'Acme', sans-serif;
 }
+
 p {
     font-family: 'Neuton', serif;
 }
@@ -46,6 +53,10 @@ nav {
     background-color: white;
 }
 
+.courselink a:hover {
+    color: rgb(240, 42, 28);
+}
+
 .image1 {
     max-width: 960px;
     width: 180px;
@@ -57,16 +68,24 @@ nav {
 
 }
 
+/* This applies to the footer section */
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     color: white;
-    grid-column: 1 / 6;
     border: 0px solid white;
     background-color: rgb(8, 77, 160);
     text-align: center;
 }
-footer a:link, footer a:visited{
-    color:rgb(239, 243, 10);
+
+footer a:visited,
+footer a:hover {
+    color: rgb(239, 243, 10);
 }
+
+footer a:hover {
+    color: rgb(240, 42, 28);
+}
+
+/* css codes for the design principles website */
