@@ -97,6 +97,10 @@ footer a:hover {
         display: block;
         z-index: 1;
         background-color: gray;
+        color: white;
+    }
+    #course{
+        color: black;
     }
 }
 
@@ -106,7 +110,13 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        background-color: rgb(164, 108, 108);
+        background-color: rgb(16, 152, 82);
+    }
+    header {
+        grid-column: span 2;
+    }
+    #course{
+        color: black;
     }
 }
 /* Desktop or Large View */
@@ -115,7 +125,12 @@ footer a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        background-color: rgba(8, 189, 250, 0.864);
+        background-color: rgba(19, 88, 111, 0.864);
     }
-    
+    header {
+        grid-column: span 2;
+    }
+    #course{
+        color: black;
+    }
 }
