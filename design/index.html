@@ -16,66 +16,78 @@
 
 <body>
     <div id="cover">
-    <header>
-        <!-- Bellow are the three principle of design that I
-        will like to examplify -->
-<div id="visual">
-        <h1>Visual Hierarchy</h1>
-        <h2>LOOKING FOR SOMETHING?</h2>
-    </div>
-    <div id="proxy">
-        <h1>PARC: Proximity</h1>
-        <h2>KEEP THOSE INFORMATION CLOSER TOGETHER</h2>
-    </div>
-    <div id="space">
-        <h1>White Space and Clean Designs</h1>
-        <h2>YOU CAN CALL ME VISUAL SILENCE</h2>
-    </div>
-    </header>
+        <header>
+            <div id="root">
+                <header>
+                    <h1 id="name">Nwokolo Onyeogalibueze</h1>
+                    <h2 id="course">CIT 230: Assignment Portal</h2>
+                </header>
+                <nav>
+        </header>
 
-    <main>
-        <!-- Each paragraph talks about a principle as highlighted above
-        in the header section. -->
-        <section>
-            <img class="morgan" src="" alt="photo for visual hierarchy section">
-            <p>Visual hierarchy helps me direct you to what I feel is
-                most important in my webpage. Your time and attention as a user
-                of my website is very important to me, and I don't want to
-                lose them, so I use visual hierarchy to direct you to where
-                I want you looking at.
-            </p>
-            <nav><p><a href="https://www.morganstanley.com/" target="_blank">Morgan Stanly's website used Hierarchy concept</a></p></nav>
-        </section>
+        <main>
+            <!-- Each section talks about a specific design principle -->
+            <section id="section1" class="section">
+                <div id="visual">
+                    <h1>Visual Hierarchy</h1>
+                    <h2>LOOKING FOR SOMETHING?</h2>
+                </div>
+                <img class="morgan" src="/images/MorganS.jpg" alt="photo for visual hierarchy section" width="250px" height="500px">
+                <p>Visual hierarchy helps me direct you to what I feel is
+                    most important in my webpage. Your time and attention as a user
+                    of my website is very important to me, and I don't want to
+                    lose them, so I use visual hierarchy to direct you to where
+                    I want you looking at.
+                </p>
+                <nav>
+                    <p><a href="https://www.morganstanley.com/" target="_blank">Morgan Stanly's website used Hierarchy
+                            concept</a></p>
+                </nav>
+            </section>
 
-        <section>
-            <img class="advising" src="" alt="photo for proximity section">
-            <p>
-                Proximity in web design is the grouping and shaping of
-                objects in a composition. Proximity creates connection
-                between visual elements in a composition. It can also be
-                 used to show contrast between elements in a web page.
-            </p>
-            <nav><p><a href="https://www.byui.edu/advising" target="_blank">BYUI Academic Advising used Proximity Concept</a></p></nav>
-        </section>
+            <section id="section2" class="section">
+                <div id="proxy">
+                    <h1>PARC: Proximity</h1>
+                    <h2>KEEP THOSE INFORMATION CLOSER TOGETHER</h2>
+                </div>
+                <img class="advising" src="/images/Advising.jpg" alt="photo for proximity section" width="250" height="500">
+                <p>
+                    Proximity in web design is the grouping and shaping of
+                    objects in a composition. Proximity creates connection
+                    between visual elements in a composition. It can also be
+                    used to show contrast between elements in a web page.
+                </p>
+                <nav>
+                    <p><a href="https://www.byui.edu/advising" target="_blank">BYUI Academic Advising used Proximity
+                            Concept</a></p>
+                </nav>
+            </section>
 
-        <section>
-            <img class="iphone" src="" alt="photo for white sapce section">
-            <p>
-                In web design, white space or empty space is where
-                nothing is happening. White space if executed with
-                skills can create a feeling of satisfaction to a user
-                of a website. White space are not necessarily white.
-            </p>
-            <nav><p><a href="https://www.apple.com/" target="_blank">Appple Mobile Site used White Space Concept</a></p></nav>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2020 | Nwokolo Onyeogalibueze | <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN
-                Documentation Site</a> | BYU-Idaho</p>
-        <p>Last Updated: <span id="currentdate"></span></p>
-    </footer>
-    <script src="/js/currentDate.js"></script>
-</div>
+            <section id="section3" class="section">
+                <div id="space">
+                    <h1>White Space and Clean Designs</h1>
+                    <h2>YOU CAN CALL ME VISUAL SILENCE</h2>
+                </div>
+                <img class="iphone" src="/images/iphone.jpg" alt="photo for white sapce section" width="250" height="500">
+                <p>
+                    In web design, white space or empty space is where
+                    nothing is happening. White space if executed with
+                    skills can create a feeling of satisfaction to a user
+                    of a website. White space are not necessarily white.
+                </p>
+                <nav>
+                    <p><a href="https://www.apple.com/" target="_blank">Appple Mobile Site used White Space Concept</a>
+                    </p>
+                </nav>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2020 | Nwokolo Onyeogalibueze | <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN
+                    Documentation Site</a> | BYU-Idaho</p>
+            <p>Last Updated: <span id="currentdate"></span></p>
+        </footer>
+        <script src="/js/currentDate.js"></script>
+    </div>
 </body>
 
 </html>
