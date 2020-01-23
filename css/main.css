@@ -4,83 +4,49 @@
 html * {
     box-sizing: border-box;
 }
-
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-/* this codes applies to  */
-#root {
-    font-size: 18px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
+body{
+    font-size: 16px;
+    font-family: "Sansita", Ubuntu, sans-serif;
+}
+header, footer{
+    background-color: #54595f;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+header, nav, main, footer {
     max-width: 100%;
     margin: 0 auto;
 }
-
-h1 {
-    font-family: 'Acme', sans-serif;
+h1{
+    font-size: 2rem;
 }
-
-p {
-    font-family: 'Neuton', serif;
-}
-
-#name {
-    border: 0px solid white;
-    background-color: rgb(8, 77, 160);
+#course{
+    border: 0px solid;
+    /* border-bottom: 2px solid gray; */
+    background-color: #EE3123;
     color: white;
-    grid-column: 1 / 6;
-    border: 0px solid white;
-    padding-left: 10px;
-    padding-top: 30px;
-    height: 100px;
-    margin-top: 0px;
+    height: 70px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
-
-#course {
-    grid-column: 1 / 6;
-    border: 0px solid white;
-    background-color: white;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    box-shadow: 5px 5px 5px rgb(236, 203, 203);
-}
-
-nav {
-    grid-column: 1 / 6;
-    border: 0px solid white;
-    background-color: white;
-}
-
-.courselink a:hover {
-    color: rgb(240, 42, 28);
-}
-
 .image1 {
     max-width: 960px;
     width: 180px;
     height: 250px;
     position: absolute;
     right: 0px;
-    top: 80px;
+    top: 130px;
     box-shadow: 5px 5px 5px rgb(144, 130, 130);
 }
-
-/* This applies to the footer section */
-footer {
-    display: grid;
-    grid-column: span 2;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    border: 0px solid white;
-    background-color: rgb(8, 77, 160);
-    text-align: center;
-}
-
 footer a {
     color: rgb(239, 243, 10);
 }
@@ -88,6 +54,10 @@ footer a {
 footer a:hover {
     color: rgb(240, 42, 28);
 }
+.courselink a:hover {
+    color: rgb(240, 42, 28);
+}
+
 
 /* css codes for the design principles website */
 
@@ -99,38 +69,35 @@ footer a:hover {
         background-color: gray;
         color: white;
     }
-    #course{
-        color: black;
-    }
+   
 }
 
 /* Tablet or Medium View */
 @media screen and (min-width: 37.5em) {
-    #cover {
+    main{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+    }
+    #cover {
         background-color: rgb(16, 152, 82);
     }
     header {
         grid-column: span 2;
     }
-    #course{
-        color: black;
-    }
+   
 }
 /* Desktop or Large View */
 @media screen and (min-width: 60em) {
     #cover {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
         background-color: rgba(19, 88, 111, 0.864);
-    }
+    } 
     header {
         grid-column: span 2;
     }
-    #course{
-        color: black;
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
 }
