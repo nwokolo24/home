@@ -57,7 +57,17 @@ footer a:hover {
     color: rgb(240, 42, 28);
 }
 nav a{
-    color: darkblue;
+    color: wheat;
+}
+nav ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    border: 0px solid white;
+    background-color: gray;
+}
+li{
+    list-style-type: none;
 }
 nav ul a:hover {
     color: rgb(240, 42, 28);
