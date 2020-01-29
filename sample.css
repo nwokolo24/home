@@ -1,0 +1,20 @@
+/* Change box model  */
+html {
+ box-sizing: border-box;
+}
+
+*, *::before, *::after{
+ box-sizing: inherit;
+}
+
+/* General Styles */
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 18px; 
+}
+
+/* Mobile First Styles */
+
+
+
+/* Larger Screen Styles  */
