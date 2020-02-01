@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+html {
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Vollkorn', serif;
+}
+#wrapper{
+    display: block;
+
+}
+nav{
+    display: none;
+}
+section{
+    border: 1px solid brown;
+    height: 100px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    text-align: center;
+    
+    
+
+}
+#sectionfix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#feelslike, #temperature, #precipitation, #conditions{
+
+}
+
+/* Desktop or Large View */
+@media only screen and (min-width: 40em) {
+   body{
+       max-width: 960px;
+       margin: 0 auto;
+   }
+    nav{
+      display: flex;
+   }
+   ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+
+   }
+}

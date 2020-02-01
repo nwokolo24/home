@@ -1,7 +1,7 @@
 /* imports fonts from google and aplies it to my page */
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
-html * {
+
+html {
     box-sizing: border-box;
 }
 *::before,
