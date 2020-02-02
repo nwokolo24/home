@@ -2,9 +2,9 @@
 html {
     box-sizing: border-box;
 }
-*::before,
+*, *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 body{
     font-size: 16px;
@@ -18,24 +18,71 @@ nav{
     display: none;
 }
 section{
-    border: 1px solid brown;
+    border: 1px solid black;
     height: 100px;
     width: 200px;
     margin-bottom: 10px;
     border-radius: 6px;
     text-align: center;
-    
-    
-
+}
+#titlehigh{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: navy;
+    color: white;
+}
+picture{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.uptodate{
+    grid-row: 3;
+    grid-column: 2 / 3;
+    margin-top: -30px;
+}
+.guru{
+    margin-bottom: -10px;
+}
+.image1{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.gps{
+    margin-top: -5px;
+}
+.town{
+    margin-bottom: -5px;
+}
+#titlelow{
+    padding-left: 10px;
 }
 #sectionfix{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: lightgray;
+    padding: 10px 0px;
+}
+footer{
+    display: block;
+    text-align: center;
+    background-color: navy;
+    color: white;
+    font-size: 13px;
+    padding: 1px;
+}
+footer a {
+    color: rgb(239, 243, 10);
+    text-decoration: none;
+}
+
+footer a:visited {
+    color:greenyellow;
 }
 #feelslike, #temperature, #precipitation, #conditions{
-
+color: red;
 }
 
 /* Desktop or Large View */
@@ -44,15 +91,9 @@ section{
        max-width: 960px;
        margin: 0 auto;
    }
-    nav{
-      display: flex;
-   }
-   ul{
+
+   header{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    list-style-type: none;
-
-
-   }
+}
+  
 }

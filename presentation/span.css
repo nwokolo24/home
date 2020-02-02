@@ -1,0 +1,7 @@
+html{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+*::after, *::before{
+    box-sizing: border-box;
+}
