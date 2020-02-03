@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"); */
 
 html {
     box-sizing: border-box;
@@ -24,43 +24,36 @@ nav {
     display: none;
 }
 
-section {
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
 
-#titlehigh {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+
+header{
+    display: flex;
     background-color: navy;
+    padding: 5px 0;
     color: white;
-}
+    align-items: center;
+    justify-content: flex-start;
 
-picture {
-    grid-column: 1 / 2;
-    grid-row: 1;
 }
-
-.uptodate {
-    grid-row: 3;
-    grid-column: 2 / 3;
-    margin-top: -30px;
+.heading{
+    display: flex;
+	flex-direction: column;
 }
-
-.guru {
-    margin-bottom: -10px;
+#uptodate{
+    font-style: italic;
+    letter-spacing: 1pt;
+    margin-left: 20px;
+    font-size: .9rem;
+    color: yellow;
 }
-
-.image1 {
-    padding-top: 20px;
-    padding-left: 10px;
+header img {
+	width: 80px;
+    height: auto;
+    padding-right: 10px;
 }
-
+.guru{
+    margin: 0;
+}
 .gps {
     margin-top: -5px;
 }
@@ -81,7 +74,28 @@ picture {
     background-color: lightgray;
     padding: 10px 0px;
 }
-
+#navbar{
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+#navbar #mylinks li{
+    display: none;
+}
+#navbar #mylinks li a.icon{
+    display: block;
+    position: relative;
+}
+#navbar #myLinks li a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+#navbar #myLinks li a:hover{
+    background-color: green;
+    color: white;
+}
 footer {
     display: block;
     text-align: center;
@@ -105,12 +119,24 @@ footer a:visited {
 #precipitation,
 #conditions {
     color: black;
+    border: 1px solid black;
+        height: 200px;
+        width: 300px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        text-align: center;
+}
+
+/* Tablet or Medium View */
+@media only screen and (min-width: 40em) {
+    body {
+        margin: 0 auto;
+    }
 }
 
 /* Desktop or Large View */
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 60em) {
     body {
-        max-width: 960px;
         margin: 0 auto;
     }
 
@@ -125,37 +151,32 @@ footer a:visited {
         grid-column: 2;
         grid-row: 1;
     }
+    main footer{
+        max-width: 960px;
+    }
 
     #temperature,
     #precipitation,
     #conditions {
         grid-row: 2;
     }
-
-    section {
-        border: 1px solid black;
-        height: 200px;
-        width: 300px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    #titlehigh {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        background-color: navy;
-        color: white;
-    }
-
-    nav {
+    #navbar{
         display: flex;
-        flex-direction: column;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row-reverse;
+       
+    }
+    a{
+        text-decoration: none;
     }
 
     ul {
-
         list-style: none;
         text-decoration: none;
     }

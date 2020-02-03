@@ -17,20 +17,22 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="titlehigh">
-                <h1 class="guru">WeatherGuru</h1>
-                <h4 class="uptodate">Up-To-Date</h4>
                 <picture>
                     <img class="image1" src="/images/weather_logo.png" alt="My Weather Logo">
                 </picture>
-            </div>
-            <hr>
+                <section class="heading">
+                     <h1 class="guru">WeatherGuru</h1>
+                     <div id="uptodate">Up-To-Date</div>
+                    </section>
+               
         </header>
-        <nav>
-            <ul>
+        <hr>
+        <nav id="navbar" class="hide">
+            <ul id="myLinks">
                 <li><a href="">Home</a></li>
                 <li><a href="">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
+                <li><a id="icon" class="nav-link" href="javascript:void(0);" onclick="burgerMenu()">&#9776; Menu</a></li>
             </ul>
         </nav>
         <hr>
@@ -56,13 +58,13 @@
             </div>
         </main>
         <hr>
-        <footer>
+        <footer id="footer" class="minorfooter">
             <p>&copy; 2020 | Nwokolo Onyeogalibueze | <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN
                     Documentation Site</a> | BYU-Idaho</p>
-            <p>Last Updated: <span id="currentdate"></span></p>
+                    <p>Current Date: <span id="currentdate"></span></p>
+            <p>Last Updated: <span id="lastmodify"></span></p>
         </footer>
         <script src="/js/currentDate.js"></script>
     </div>
 </body>
-
 </html>
