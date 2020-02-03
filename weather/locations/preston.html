@@ -3,65 +3,67 @@
 
 <head>
     <title>Preston Town</title>
-    <meta name="author" content="Nwokolo Onyeogalibueze"/>
+    <meta name="author" content="Nwokolo Onyeogalibueze" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="THe preston town weather page is 
     built to help provide weather information for users or visitors of the page" />
     <link href="https://fonts.googleapis.com/css?family=Acme%7CNeuton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css"/>
+    <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/weather/css/preston.css" />
 </head>
+
 <body>
     <div id="wrapper">
-<header>
-    <div id="titlehigh">
-        <h1 class="guru">WeatherGuru</h1>
-        <h4 class="uptodate">Up-To-Date</h4>
-    <picture>
-        <img class="image1" src="/images/weather_logo.png" alt="My Weather Logo">
-    </picture>
+        <header>
+            <div id="titlehigh">
+                <h1 class="guru">WeatherGuru</h1>
+                <h4 class="uptodate">Up-To-Date</h4>
+                <picture>
+                    <img class="image1" src="/images/weather_logo.png" alt="My Weather Logo">
+                </picture>
+            </div>
+            <hr>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <div id="titlelow">
+                <h1 class="town">Preston Town</h1>
+                <h3 class="gps">Gps: 42.543, 111,5231</h3>
+            </div>
+            <hr>
+            <div id="sectionfix">
+                <section id="feelslike">
+                    <p>Feels Like</p>
+                </section>
+                <section id="temperature">
+                    <p>Temperature</p>
+                </section>
+                <section id="precipitation">
+                    <p>Precipitation</p>
+                </section>
+                <section id="conditions">
+                    <p>Conditions</p>
+                </section>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy; 2020 | Nwokolo Onyeogalibueze | <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN
+                    Documentation Site</a> | BYU-Idaho</p>
+            <p>Last Updated: <span id="currentdate"></span></p>
+        </footer>
+        <script src="/js/currentDate.js"></script>
     </div>
-    <hr>
-</header>
-<nav>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Preston</a></li>
-        <li><a href=""><a href="">Soda Springs</a></a></li>
-    </ul>
-</nav>
-<hr>
-<main>
-    <div id="titlelow">
-    <h1 class="town">Preston Town</h1>
-    <h3 class="gps">Gps: 42.543, 111,5231</h3>
-</div>
-<hr>
-<div id="sectionfix">
-    <section id="feelslike">
-        <p>Feels Like</p>
-    </section>
-    <section id="temperature">
-        <p>Temperature</p>
-    </section>
-    <section id="precipitation">
-        <p>Precipitation</p>
-    </section>
-    <section id="conditions">
-        <p>Conditions</p>
-    </section>
-</div>
-</main>
-<hr>
-<footer>
-    <p>&copy; 2020 | Nwokolo Onyeogalibueze | <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Documentation Site</a> | BYU-Idaho</p>
-    <p>Last Updated: <span id="currentdate"></span></p>
-</footer>
-<script src="/js/currentDate.js"></script>
-</div>
-</div>
+    </div>
 </body>
 
 </html>

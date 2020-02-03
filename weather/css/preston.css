@@ -1,63 +1,79 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
 html {
     box-sizing: border-box;
 }
-*, *::before,
+
+*,
+*::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 16px;
     font-family: 'Vollkorn', serif;
 }
-#wrapper{
+
+#wrapper {
     display: block;
 
 }
-nav{
+
+nav {
     display: none;
 }
-section{
+
+section {
     border: 1px solid black;
-    height: 100px;
+    height: 200px;
     width: 200px;
     margin-bottom: 10px;
-    border-radius: 6px;
+    border-radius: 10px;
     text-align: center;
 }
-#titlehigh{
+
+#titlehigh {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     background-color: navy;
     color: white;
 }
-picture{
+
+picture {
     grid-column: 1 / 2;
     grid-row: 1;
 }
-.uptodate{
+
+.uptodate {
     grid-row: 3;
     grid-column: 2 / 3;
     margin-top: -30px;
 }
-.guru{
+
+.guru {
     margin-bottom: -10px;
 }
-.image1{
+
+.image1 {
     padding-top: 20px;
     padding-left: 10px;
 }
-.gps{
+
+.gps {
     margin-top: -5px;
 }
-.town{
+
+.town {
     margin-bottom: -5px;
 }
-#titlelow{
+
+#titlelow {
     padding-left: 10px;
 }
-#sectionfix{
+
+#sectionfix {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +81,8 @@ picture{
     background-color: lightgray;
     padding: 10px 0px;
 }
-footer{
+
+footer {
     display: block;
     text-align: center;
     background-color: navy;
@@ -73,27 +90,73 @@ footer{
     font-size: 13px;
     padding: 1px;
 }
+
 footer a {
     color: rgb(239, 243, 10);
     text-decoration: none;
 }
 
 footer a:visited {
-    color:greenyellow;
+    color: greenyellow;
 }
-#feelslike, #temperature, #precipitation, #conditions{
-color: red;
+
+#feelslike,
+#temperature,
+#precipitation,
+#conditions {
+    color: black;
 }
 
 /* Desktop or Large View */
 @media only screen and (min-width: 40em) {
-   body{
-       max-width: 960px;
-       margin: 0 auto;
-   }
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 
-   header{
-    display: flex;
-}
-  
+    #sectionfix {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: stretch;
+    }
+
+    #feelslike {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #temperature,
+    #precipitation,
+    #conditions {
+        grid-row: 2;
+    }
+
+    section {
+        border: 1px solid black;
+        height: 200px;
+        width: 300px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #titlehigh {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: navy;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+
+        list-style: none;
+        text-decoration: none;
+    }
 }

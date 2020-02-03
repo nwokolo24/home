@@ -1,7 +1,26 @@
 html{
     box-sizing: border-box;
-    margin: 0 auto;
 }
 *::after, *::before{
     box-sizing: border-box;
+}
+body{
+    max-width: 960px;
+    margin: 0 auto;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 100px 100px;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color:blue;
+    grid-column: 3;
+}
+.box3{
+    background-color: yellow;
+    grid-column: 5;
 }
