@@ -185,7 +185,7 @@ nav ul li a:hover {
 @media only screen and (min-width: 60rem) {
     nav {
         display: flex;
-        background-color: #ccc;
+        background-color: #cccccc;
         background: #fc3f32;
         color: black;
         background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%) background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
@@ -193,7 +193,7 @@ nav ul li a:hover {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 
     }
-    nav ul {
+    ul {
         display: flex;
     }
 
@@ -218,44 +218,15 @@ nav ul li a:hover {
         padding: .6rem 1rem;
         color: black
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Desktop or Large View */
-@media only screen and (min-width: 60em) {
     body {
         margin: 0 auto;
     }
 
     #sectionfix {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        justify-content: stretch;
+
     }
 
     #feelslike {
@@ -263,35 +234,9 @@ nav ul li a:hover {
         grid-row: 1;
     }
 
-    main footer {
-        max-width: 960px;
-    }
-
     #temperature,
     #precipitation,
     #conditions {
         grid-row: 2;
-    }
-
-    #navbar {
-        display: flex;
-        overflow: hidden;
-        background-color: white;
-        position: relative;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row-reverse;
-
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    ul {
-        list-style: none;
-        text-decoration: none;
-    }
+    }  
 }
