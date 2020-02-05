@@ -1,5 +1,8 @@
 /* @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"); */
 
+
+
+/* 1.0 General CSS Rules */
 html {
     box-sizing: border-box;
 }
@@ -15,87 +18,27 @@ body {
     font-family: 'Vollkorn', serif;
 }
 
-#wrapper {
-    display: block;
-
-}
-
-nav {
-    display: none;
-}
-
-
-
-header{
+header {
     display: flex;
     background-color: navy;
     padding: 5px 0;
     color: white;
     align-items: center;
     justify-content: flex-start;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#307af2+1,00059b+100 */
+    background: #307af2;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+    /* IE6-9 */
 
 }
-.heading{
-    display: flex;
-	flex-direction: column;
-}
-#uptodate{
-    font-style: italic;
-    letter-spacing: 1pt;
-    margin-left: 20px;
-    font-size: .9rem;
-    color: yellow;
-}
-header img {
-	width: 80px;
-    height: auto;
-    padding-right: 10px;
-}
-.guru{
-    margin: 0;
-}
-.gps {
-    margin-top: -5px;
-}
 
-.town {
-    margin-bottom: -5px;
-}
-
-#titlelow {
-    padding-left: 10px;
-}
-
-#sectionfix {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-    padding: 10px 0px;
-}
-#navbar{
-    overflow: hidden;
-    background-color: white;
-    position: relative;
-}
-#navbar #mylinks li{
-    display: none;
-}
-#navbar #mylinks li a.icon{
-    display: block;
-    position: relative;
-}
-#navbar #myLinks li a.icon{
-    background: black;
-    display: block;
-    position: absolute;
-    bottom: 0;
-}
-#navbar #myLinks li a:hover{
-    background-color: green;
-    color: white;
-}
 footer {
     display: block;
     text-align: center;
@@ -103,6 +46,19 @@ footer {
     color: white;
     font-size: 13px;
     padding: 1px;
+    margin-bottom: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#307af2+1,00059b+100 */
+    background: #307af2;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+    /* IE6-9 */
+
 }
 
 footer a {
@@ -114,25 +70,180 @@ footer a:visited {
     color: greenyellow;
 }
 
+#uptodate {
+    font-style: italic;
+    letter-spacing: 1pt;
+    ;
+    font-size: .9rem;
+    color: yellow;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    padding-right: 10px;
+}
+
+#titlelow {
+    padding-left: 10px;
+}
+
+.town {
+    margin-bottom: -5px;
+}
+
+.gps {
+    margin-top: -5px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
 #feelslike,
 #temperature,
 #precipitation,
 #conditions {
     color: black;
     border: 1px solid black;
-        height: 200px;
-        width: 300px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        text-align: center;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-/* Tablet or Medium View */
-@media only screen and (min-width: 40em) {
-    body {
-        margin: 0 auto;
+
+/* 2.0 Small screen css rules */
+nav ul.hide {
+    display: none;
+}
+
+nav {
+    background-color: #aa0000;
+    font-family: Verdana, sans-serif;
+    border: none;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #fc3f32;
+    background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%) background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+    background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
+
+}
+
+nav button {
+    margin: .2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    position: relative;
+    left: 35%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+nav ul li:active a {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgb(77, 77, 245);
+    color: white;
+}
+
+#sectionfix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px 0px;
+}
+
+
+/* 3.0 Large screen css rules */
+@media only screen and (min-width: 60rem) {
+    nav {
+        display: flex;
+        background-color: #ccc;
+        background: #fc3f32;
+        color: black;
+        background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%) background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+        background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
+
+    }
+    nav ul {
+        display: flex;
+    }
+
+    nav button {
+        display: none;
+    }
+
+
+    nav ul li {
+        display: flex;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+        color: black
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Desktop or Large View */
 @media only screen and (min-width: 60em) {
@@ -151,7 +262,8 @@ footer a:visited {
         grid-column: 2;
         grid-row: 1;
     }
-    main footer{
+
+    main footer {
         max-width: 960px;
     }
 
@@ -160,7 +272,8 @@ footer a:visited {
     #conditions {
         grid-row: 2;
     }
-    #navbar{
+
+    #navbar {
         display: flex;
         overflow: hidden;
         background-color: white;
@@ -170,9 +283,10 @@ footer a:visited {
     nav ul {
         display: flex;
         flex-direction: row-reverse;
-       
+
     }
-    a{
+
+    a {
         text-decoration: none;
     }
 

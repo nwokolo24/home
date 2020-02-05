@@ -27,12 +27,12 @@
                
         </header>
         <hr>
-        <nav id="navbar" class="hide">
-            <ul id="myLinks">
-                <li><a href="">Home</a></li>
+        <nav id="navbar" class="hide" class="clearfix">
+            <button onclick="burgerMenu()">Menu &#9776</button>
+            <ul id="myLinks" class="hide">
+                <li class="homepage"><a href="">Home</a></li>
                 <li><a href="">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
-                <li><a id="icon" class="nav-link" href="javascript:void(0);" onclick="burgerMenu()">&#9776; Menu</a></li>
             </ul>
         </nav>
         <hr>
@@ -64,7 +64,7 @@
                     <p>Current Date: <span id="currentdate"></span></p>
             <p>Last Updated: <span id="lastmodify"></span></p>
         </footer>
-        <script src="/js/currentDate.js"></script>
+        <script src="/weather/js/preston.js"></script>
     </div>
 </body>
 </html>
