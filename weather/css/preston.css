@@ -73,11 +73,11 @@ footer a:visited {
 #uptodate {
     font-style: italic;
     letter-spacing: 1pt;
-    ;
     font-size: .9rem;
     color: yellow;
     margin-top: -20px;
     margin-bottom: 20px;
+    background-color: none;
 }
 
 header img {
@@ -98,24 +98,6 @@ header img {
     margin-top: -5px;
 }
 
-.heading {
-    display: flex;
-    flex-direction: column;
-}
-
-#feelslike,
-#temperature,
-#precipitation,
-#conditions {
-    color: black;
-    border: 1px solid black;
-    height: 200px;
-    width: 300px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
 
 /* 2.0 Small screen css rules */
 nav ul.hide {
@@ -133,15 +115,14 @@ nav {
     background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%) background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
     background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
-
 }
 
 nav button {
     margin: .2rem;
     background-color: transparent;
-    border: none;
     font-size: 1.6rem;
     color: white;
+    border: none;
     position: relative;
     left: 35%;
 }
@@ -179,7 +160,18 @@ nav ul li a:hover {
     background-color: lightgray;
     padding: 10px 0px;
 }
-
+#feelslike,
+#temperature,
+#precipitation,
+#conditions {
+    color: black;
+    border: 1px solid black;
+    margin: 5px 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
 
 /* 3.0 Large screen css rules */
 @media only screen and (min-width: 60rem) {

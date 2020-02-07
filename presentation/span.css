@@ -19,10 +19,10 @@ body{
 .box2{
     background-color:blue;
     grid-column: 3;
-    grid-column: 3 / span 6;
+    grid-row: 1;
 }
 .box3{
     background-color: yellow;
     grid-column: 5;
-    grid-row: 2 / span 3;
+    grid-row: 1;
 }
