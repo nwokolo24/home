@@ -60,6 +60,9 @@ footer {
     /* IE6-9 */
 
 }
+footer p{
+    margin: 5px 0;
+}
 
 footer a {
     color: rgb(239, 243, 10);
@@ -77,7 +80,7 @@ footer a:visited {
     color: yellow;
     margin-top: -20px;
     margin-bottom: 20px;
-    background-color: none;
+    background-color: transparent;
 }
 
 header img {
@@ -112,7 +115,7 @@ nav {
     width: 100%;
     bottom: 0;
     background: #fc3f32;
-    background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%) background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+    background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%); background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
     background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 }
@@ -124,7 +127,7 @@ nav button {
     color: white;
     border: none;
     position: relative;
-    left: 35%;
+    left: 42%;
 }
 
 nav ul {
@@ -179,8 +182,9 @@ nav ul li a:hover {
         display: flex;
         background-color: #cccccc;
         background: #fc3f32;
-        color: black;
-        background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%) background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+        color: white;
+        position: static;
+        background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%); background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
         background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 
@@ -188,47 +192,64 @@ nav ul li a:hover {
     ul {
         display: flex;
     }
-
-    nav button {
+    nav button{
         display: none;
     }
 
-
-    nav ul li {
+    nav ul.hidden {
         display: flex;
-    }
+        position: static;
 
+    }
     .clearfix:after {
         content: "";
         display: table;
         clear: both;
     }
 
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    nav ul li a{
         padding: .6rem 1rem;
-        color: black
+        color: white;
     }
-    body {
-        margin: 0 auto;
+
+    nav li {
+        width: 100%;
+    }
+
+    ul a:hover{
+        color: blue;
+    }
+    #myLinks{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
     #sectionfix {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
+        
+
 
     }
 
     #feelslike {
-        grid-column: 2;
+        grid-column: 1 / span 3;
         grid-row: 1;
+        justify-self: center;
+        width: 90%;
+
     }
 
     #temperature,
     #precipitation,
     #conditions {
         grid-row: 2;
+        justify-self: center;
+        width: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+
     }  
 }

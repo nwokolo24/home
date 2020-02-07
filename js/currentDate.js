@@ -1,9 +1,6 @@
-//Js to get the actual Year
-var today = new Date();
-var month = today.getMonth();
-var day = today.getDay();
-var year = today.getFullYear();
-document.getElementById("currentdate").innerHTML = day + "/" + month + "/"  + year;
+//Js to get the Current Date
+const options = {weekday: "long", day: "numeric", month:"short", year: "numeric"};
+document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
 
 //Js to get the last modified date
 document.getElementById("lastmodify").innerHTML = document.lastModified;

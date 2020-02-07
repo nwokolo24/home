@@ -20,11 +20,25 @@ header, footer{
     justify-content: center;
     padding: 10px;
     color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#307af2+1,00059b+100 */
+    background: #307af2;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+    /* IE6-9 */
 }
 footer{
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
+footer p{
+    margin: 5px 0;
 }
 header, nav, main, footer {
     max-width: 100%;
@@ -38,10 +52,14 @@ h1{
     /* border-bottom: 2px solid gray; */
     background-color: #EE3123;
     color: white;
-    height: 70px;
+    height: 30px;
     padding: 20px;
     max-width: 100%;
     margin: 0 auto;
+    background: #fc3f32;
+    background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%); background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+    background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 }
 .image1 {
     max-width: 960px;
