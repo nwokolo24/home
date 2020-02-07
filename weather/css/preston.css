@@ -84,7 +84,6 @@ footer a:visited {
     color: yellow;
     margin-top: -20px;
     margin-bottom: 20px;
-    background-color: transparent;
 }
 
 header img {
@@ -167,21 +166,44 @@ nav ul li a:hover {
     background-color: lightgray;
     padding: 10px 0px;
 }
-#feelslike,
-#temperature,
-#precipitation,
-#conditions {
+
+#feelslike {
     color: black;
     border: 1px solid black;
-    margin: 5px 10px;
     height: 150px;
-    width: 150px;
+    width: 250px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 5px 5px 5px rgb(144, 130, 130);
+        margin: auto;
+        margin-top: 20px;
+        width: 80%;
 }
+#others{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+ #temperature, #precipitation, #conditions{
+    color: black;
+    border: 1px solid black;
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(144, 130, 130);
+        margin: auto;
+        margin-top: 20px;
+        width: 80%;
+}
+
 
 /* 3.0 Large screen css rules */
 @media only screen and (min-width: 60rem) {
+    #wrapper{
+        width: 80%;
+        margin: auto;
+    }
     nav {
         display: flex;
         background-color: #cccccc;
@@ -226,31 +248,45 @@ nav ul li a:hover {
         width: 100%;
     }
 
-    #sectionfix {
+    #others{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
         
-
-
     }
 
-    #feelslike {
-        grid-column: 1 / span 3;
-        grid-row: 1;
-        justify-self: center;
-        width: 90%;
-
-    }
-
-    #temperature,
-    #precipitation,
-    #conditions {
-        grid-row: 2;
-        justify-self: center;
+    #feelslike, #others {
+        margin: auto;
         width: 80%;
-        margin-left: 20%;
-        margin-right: 20%;
 
-    }  
+    }
+    #feelslike{
+
+    }
+    #temperature{
+        justify-self: left;
+        margin-left: 0;
+        border-radius: 0px;
+        height: 250px;
+        width: 200px;
+    }
+    #precipitation {
+        justify-self: center;
+        margin: 0 10px;
+        border-radius: 0px;
+        height: 250px;
+        width: 200px;
+    } 
+    
+    #conditions{
+        justify-self: right;
+        margin-right: 0;
+        border-radius: 0px;
+        height: 250px;
+        width: 200px;
+    }
+
+    #conditions, #temperature, #precipitation, #feelslike{
+        box-shadow: 5px 5px 5px rgb(144, 130, 130);
+        margin-top: 20px;
+    }
 }
