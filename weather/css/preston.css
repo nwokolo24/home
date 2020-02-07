@@ -64,6 +64,10 @@ footer p{
     margin: 5px 0;
 }
 
+footer p a:hover {
+    color: red;
+    text-decoration: none;
+}
 footer a {
     color: rgb(239, 243, 10);
     text-decoration: none;
@@ -127,7 +131,7 @@ nav button {
     color: white;
     border: none;
     position: relative;
-    left: 42%;
+    left: 35%;
 }
 
 nav ul {
@@ -188,9 +192,6 @@ nav ul li a:hover {
         background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 
-    }
-    ul {
-        display: flex;
     }
     nav button{
         display: none;
