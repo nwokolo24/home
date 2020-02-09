@@ -114,6 +114,7 @@ nav {
     background-color: #aa0000;
     font-family: Verdana, sans-serif;
     border: none;
+    z-index: 8;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -131,6 +132,7 @@ nav button {
     border: none;
     position: relative;
     left: 35%;
+   
 }
 
 nav ul {
@@ -163,7 +165,6 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
     padding: 10px 0px;
 }
 
@@ -187,14 +188,13 @@ nav ul li a:hover {
  #temperature, #precipitation, #conditions{
     color: black;
     border: 1px solid black;
-    height: 200px;
-    width: 250px;
+    height: 290px;
+        width: 250px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 5px rgb(144, 130, 130);
         margin: auto;
         margin-top: 20px;
-        width: 80%;
 }
 
 .imagine{
@@ -202,11 +202,10 @@ nav ul li a:hover {
     height: 120px;
 }
 
-
-/* 3.0 Large screen css rules */
+/* css properties for large screen  */
 @media only screen and (min-width: 60rem) {
     #wrapper{
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
     nav {
@@ -261,30 +260,30 @@ nav ul li a:hover {
 
     #feelslike, #others {
         margin: auto;
-        width: 80%;
+        width: 90%;
 
     }
     #temperature{
         justify-self: left;
         margin-left: 0;
         border-radius: 0px;
-        height: 250px;
-        width: 200px;
+        height: 280px;
+        width: 250px;
     }
     #precipitation {
         justify-self: center;
         margin: 0 10px;
         border-radius: 0px;
-        height: 250px;
-        width: 200px;
+        height: 280px;
+        width: 250px;
     } 
     
     #conditions{
         justify-self: right;
         margin-right: 0;
         border-radius: 0px;
-        height: 250px;
-        width: 200px;
+        height: 280px;
+        width: 250px;
     }
 
     #conditions, #temperature, #precipitation, #feelslike{

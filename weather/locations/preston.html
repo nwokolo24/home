@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Acme%7CNeuton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/weather/css/preston.css" />
+    <link rel="stylesheet" href="/weather/css/preston.css">
     <link rel="shortcut icon" href="/weather/locations/favicon2.ico"/>
+    <link rel="stylesheet" href="/weather/css/weathercondition.css">
 </head>
 
 <body>
@@ -48,21 +49,140 @@
                 </section>
 
                 <div id="others">
+
+                    <!-- html declaration for the weather temperature information -->
                     <section id="temperature">
-                    <h4>Temperature</h4>
-                    <img class="imagine" src="https://blainerobertson.github.io/230br/images/preston/temp-light.png"
-     alt="Temperature Component image" style="max-width: 150px;">
+                    <div class="weatherTemp">
+                        <h1 class="headerchange">Temperature</h1>
+                         <div>
+                        <p class="p1">1</p>
+                        <p class="p2">2</p>
+                        <p class="p3">3</p>
+                        <p class="p4">4</p>
+                        <p class="p5">5</p>
+                        <p class="p6">6</p>
+                        <p class="p7">7</p>
+                        <p class="p8">8</p>
+                        <p class="p9">9</p>
+                        <p class="p10">10</p>
+                        </div>
+                          
+                        <div class="tempPara2">
+                          <p class="icon1"><span style="color: red; font-size: 25px;">51</span></p>
+                        <p class="icon2"><span style="color: red; font-size: 25px;">53</span></p>
+                        <p class="icon3"><span style="color: red; font-size: 25px;">55</span></p>
+                        <p class="icon4"><span style="color: red; font-size: 25px;">57</span></p>
+                        <p class="icon5"><span style="color: red; font-size: 25px;">58</span></p>
+                        <p class="icon6"><span style="color: red; font-size: 25px;">57</span></p>
+                        <p class="icon7"><span style="color: red; font-size: 25px;">58</span></p>
+                        <p class="icon8"><span style="color: red; font-size: 25px;">58</span></p>
+                        <p class="icon9"><span style="color: red; font-size: 25px;">55</span></p>
+                        <p class="icon10"><span style="color: red; font-size: 25px;">53</span></p>
+                          <p class="icon11"><span style="color: red; font-size: 25px;">52</span></p>
+                           
+                          
+                        <!--   html declaration for smallCircle -->
+                          <div class="innerSmall"></div>
+                          
+                        <!--   html declaration for circles -->
+                        </div>
+                           <div class="component">
+                               <div class="inner">
+                                  <span class="faren">&#8457;</span>
+                             </div>
+                        </div>
+                        </div>
                  </section>
+
+                    <!-- html declaration for the weather precipitation information -->
                  <section id="precipitation">
-                    <h4>Precipitation</h4>
-                    <img class="imagine" src="https://blainerobertson.github.io/230br/images/preston/precip-light.png"
-     alt="Precipitation Component image"  style="max-width: 150px;">
+                    <div class="weatherPreci">
+                        <h1 class="headerchange"> Precipitation</h1>
+                        
+                           <div class="condiPara">
+                        <p class="p1">1</p>
+                        <p class="p2">2</p>
+                        <p class="p3">3</p>
+                        <p class="p4">4</p>
+                        <p class="p5">5</p>
+                        <p class="p6">6</p>
+                        <p class="p7">7</p>
+                        <p class="p8">8</p>
+                        <p class="p9">9</p>
+                        <p class="p10">10</p>
+                        </div>
+                          
+                        <div class="preciPara1">
+                          <p class="icon1"><span style="color: red; font-size: 25px;">10</span></p>
+                        <p class="icon2"><span style="color: red; font-size: 25px;">20</span></p>
+                        <p class="icon3"><span style="color: red; font-size: 25px;">30</span></p>
+                        <p class="icon4"><span style="color: red; font-size: 25px;">20</span></p>
+                        <p class="icon5"><span style="color: red; font-size: 25px;">20</span></p>
+                        <p class="icon6"><span style="color: red; font-size: 25px;">10</span></p>
+                        <p class="icon7"><span style="color: red; font-size: 25px;">20</span></p>
+                        <p class="icon8"><span style="color: red; font-size: 25px;">20</span></p>
+                        <p class="icon9"><span style="color: red; font-size: 25px;">20</span></p>
+                        <p class="icon10"><span style="color: red; font-size: 25px;">20</span></p>
+                          <p class="icon11"><span style="color: red; font-size: 25px;">40</span></p>
+                          
+                         
+                          
+                          <div class="innerSmall"></div>
+                          
+                        </div>
+                           <div class="component">
+                               <div class="inner">
+                                  <span class="umbrela">&#9730;</span>
+                        <span class="percent">&#37;</span>
+                             </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="bigCircle"></div>
+                        <div class="smallCircle"></div>
+                        
+                        </div>
                  </section>
+
+                    <!--   html declaration for the weather condition information  -->
                  <section id="conditions">
-                    <h4>Conditions</h4>
-                    <img class="imagine" src="https://blainerobertson.github.io/230br/images/preston/cond-light.png"
-     alt="Condition Component image" style="max-width: 150px;">
+                    <div class="weatherCondi">
+                        <h1 class="headerchange">Conditions</h1>
+                           <img class="icon1" src="/images/icon88.png" alt="weather icon">
+                          <img class="icon2" src="/images/icon99.png" alt="weather icon">
+                          <img class="icon3" src="/images/icon99.png" alt="weather icon">
+                          <img class="icon4" src="/images/icon66.png" alt="weather icon">
+                          <img class="icon5" src="/images/icon55.png" alt="weather icon">
+                          <img class="icon6" src="/images/icon88.png" alt="weather icon">
+                          <img class="icon7" src="/images/icon66.png" alt="weather icon">
+                          <img class="icon8" src="/images/icon55.png" alt="weather icon">
+                          <img class="icon9" src="/images/icon88.png" alt="weather icon">
+                          <img class="icon10" src="/images/icon77.png" alt="weather icon">
+                          <img class="icon11" src="/images/icon99.png" alt="weather icon">
+                          
+                          <div class="innerSmall"></div>
+                          
+                          <div class="condiPara">
+                        <p class="p1">1</p>
+                        <p class="p2">2</p>
+                        <p class="p3">3</p>
+                        <p class="p4">4</p>
+                        <p class="p5">5</p>
+                        <p class="p6">6</p>
+                        <p class="p7">7</p>
+                        <p class="p8">8</p>
+                        <p class="p9">9</p>
+                        <p class="p10">10</p>
+                        </div>
+                          
+                        <div class="component">
+                               <div class="inner"></div>
+                        </div>
+                        </div>
                     </section>
+
+                
                 </div>
             </div>
         </main>
