@@ -27,3 +27,21 @@ body{
     grid-column: 5;
     grid-row: 2 / span 3;
 }
+
+.component{
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+    position: relative;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+}
+    
+.inner{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 90%;
+    align-self: center;
+}

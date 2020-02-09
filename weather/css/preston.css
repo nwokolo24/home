@@ -187,7 +187,7 @@ nav ul li a:hover {
  #temperature, #precipitation, #conditions{
     color: black;
     border: 1px solid black;
-    height: 150px;
+    height: 200px;
     width: 250px;
     border-radius: 10px;
     text-align: center;
@@ -286,4 +286,5 @@ nav ul li a:hover {
         box-shadow: 5px 5px 5px rgb(144, 130, 130);
         margin-top: 20px;
     }
+
 }
