@@ -13,43 +13,31 @@ body{
     font-family: "Sansita", Ubuntu, sans-serif;
 }
 header, footer{
-    background-color: #54595f;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: px;
     color: white;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#307af2+1,00059b+100 */
     background: #307af2;
-    /* Old browsers */
     background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
-    /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
-    /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
-    /* IE6-9 */
-}
-footer{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
 }
 footer p{
-    margin: 5px 0;
-}
-header, nav, main, footer {
-    max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
 h1{
     font-size: 2rem;
+    margin-bottom: 0;
+}
+h2{
+    margin: 0;
 }
 #course{
+    text-align: center;
     border: 0px solid;
-    /* border-bottom: 2px solid gray; */
     background-color: #EE3123;
     color: white;
     height: 30px;
@@ -62,16 +50,17 @@ h1{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 }
 .image1 {
-    max-width: 960px;
-    width: 180px;
-    height: 250px;
     position: absolute;
-    right: 0px;
-    top: 130px;
-    box-shadow: 5px 5px 5px rgb(144, 130, 130);
+    top: 0px;
+    width: 150px;
+    height: 168px;
 }
 footer a {
     color: rgb(239, 243, 10);
+}
+footer{
+    text-align: center;
+    margin: 0;
 }
 
 footer a:hover {
@@ -82,24 +71,45 @@ footer a:hover {
 }
 
 
-/* css codes for the design principles website */
-
 /* Mobile Phone or Baseline View */
 @media only screen and (min-width: 21em) {
-    picture {
-        display: none;
+    #root{
+        width: 100%;
+        margin: auto;
     }
+    h1{
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    footer{
+        text-align: center;
+    }
+  .image1{
+      display: none;
+  }
 }
 
 /* Tablet or Medium View */
 @media only screen and (min-width: 37.5em) {
-    picture{
-        display: grid;
-    }
+    
 }
 /* Desktop or Large View */
 @media only screen and (min-width: 40em) {
-    picture{
-        display: grid;
+    #root{
+        width: 90%;
+        margin: auto;
     }
+    h1{
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    footer{
+        text-align: center;
+    }
+  .image1{
+      display: block;
+  }
+  
 }
