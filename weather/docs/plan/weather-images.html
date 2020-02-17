@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Homepage</title>
+    <meta name="author" content="Nwokolo Onyeogalibueze"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Course Portal homepage for Web front End Development CIT 230" />
+    <link href="https://fonts.googleapis.com/css?family=Acme%7CNeuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/weather/css/images.css">
+</head>
+
+<body>
+    <header>
+        <h1>Basic Lazy-Loading Image Practice</h1>
+    </header>
+
+<main>
+    <picture class="photo">
+        <source srcset="/Weather-images/fog.jpg" media="(min-width: 500px) and (max-width: 799px)">
+        <source srcset="/Weather-images/snow.jpg" media="(min-width: 800px)">
+        <img src="/Weather-images/clear.jpg" alt="weather differently" data-src="https://via.placeholder.com/400x200">
+        <figcaption>Demo Images</figcaption>
+    </picture>
+</main>
+
+
+<script src="/weather/js/images.js"></script>
+</body>
+
+</html>
