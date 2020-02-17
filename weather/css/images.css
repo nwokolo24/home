@@ -1,8 +1,25 @@
+header{
+    max-width: 50%;
+    margin: auto;
+}
+h1{
+    width: 100%;
+    font-size: inherit;
+    text-align: center;
+}
 main{
-    max-width: 90%;
+    max-width: 50%;
     margin: auto;
 }
 
 img{
-    max-width: 100%;
-}
+    width: 100%;
+} 
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
