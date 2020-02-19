@@ -12,7 +12,7 @@ main{
 img{
     width: 100%;
     border: 2px solid gray;
-    margin-top: 10px;
+    margin-top: 5px;
     box-shadow: rgba(red, green, blue, alpha);
 } 
 picture img[data-src] {
