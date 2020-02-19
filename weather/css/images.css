@@ -7,13 +7,15 @@ h1{
 main{
     max-width: 50%;
     margin: auto;
+    background-color: lightslategray;
 }
+
+
 
 img{
     width: 100%;
-    border: 2px solid gray;
-    margin-top: 5px;
-    box-shadow: rgba(red, green, blue, alpha);
+    border: 1px solid gray;
+    margin-top: 10px;
 } 
 picture img[data-src] {
     filter: blur(0.2em);
