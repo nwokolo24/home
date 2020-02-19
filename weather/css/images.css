@@ -1,7 +1,4 @@
-header{
-    max-width: 50%;
-    margin: auto;
-}
+
 h1{
     width: 100%;
     font-size: inherit;
@@ -14,6 +11,9 @@ main{
 
 img{
     width: 100%;
+    border: 2px solid gray;
+    margin-top: 10px;
+    box-shadow: rgba(red, green, blue, alpha);
 } 
 picture img[data-src] {
     filter: blur(0.2em);
@@ -23,3 +23,29 @@ picture img[data-src] {
     filter: blur(0em);
     transition: filter 0.5s;
   }
+
+  header, footer{
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #307af2;
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+}
+
+p{
+    margin: 0;
+}
+footer a {
+    color: rgb(239, 243, 10);
+}
+footer a:hover {
+    color: rgb(240, 42, 28);
+}
