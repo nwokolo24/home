@@ -1,0 +1,132 @@
+/* 2.0 Small screen css rules */
+nav ul.hide {
+    display: none;
+}
+
+nav {
+    background-color: #aa0000;
+    font-family: Verdana, sans-serif;
+    border: none;
+    z-index: 8;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #fc3f32;
+    background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%); background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+    background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
+}
+
+nav button {
+    margin: .2rem;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+    position: relative;
+    left: 40zvw;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+nav ul li:active a {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgb(77, 77, 245);
+    color: white;
+}
+
+#sectionfix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 3px dashed gray;
+}
+
+#feelslike, #others {
+    margin: auto;
+    width: 90%;
+
+}
+
+#others{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+ #temperature, #precipitation, #conditions, #feelslike{
+    color: black;
+    border: 1px solid black;
+    height: 290px;
+        width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(144, 130, 130);
+        margin: auto;
+        margin-top: 20px;
+}
+
+.imagine{
+    width: 150px; 
+    height: 120px;
+}
+
+    /* ##################################################
+    css properties for feels like weather conditions
+    ################################################### */
+
+    #feelslike{
+         position: relative;
+    }
+    
+    #feelhigh{
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        font-size: 2.5rem;
+        color: red;
+    }
+    #feelmode{
+        position: absolute;
+        left: 20%;
+        top: 10%;
+        font-size: 5rem;
+    }
+    #feelow{
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        font-size: 2.5rem;
+        color: blue;
+    }
+    #feelreal{
+        display: none;
+    }
+    #feelwind{
+        position: absolute;
+        left: 25%;
+        bottom: 10%;
+        font-size: 2rem;
+    }
+    #feelgusts{
+        display: none;
+    }

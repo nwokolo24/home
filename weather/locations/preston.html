@@ -11,9 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Acme%7CNeuton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/weather/css/preston.css">
-    <link rel="shortcut icon" href="/weather/locations/favicon2.ico"/>
+    <link rel="stylesheet" href="/weather/css/prestonDefault.css">
+    <link rel="stylesheet" href="/weather/css/prestonSmall.css">
+    <link rel="stylesheet" href="/weather/css/prestonLarge.css">
     <link rel="stylesheet" href="/weather/css/weathercondition.css">
+    <link rel="shortcut icon" href="/weather/locations/favicon2.ico"/>
 </head>
 
 <body>
@@ -42,14 +44,23 @@
                 <h3 class="gps">Gps: 42.543, 111,5231</h3>
             </div>
 
+            <!-- ************************************************************
+                html declaration for the weather feels like information
+            ******************************************************************* -->
             <div id="sectionfix">
                 <section id="feelslike">
-                    <h4>Feels Like</h4>
+                <div id="feelhigh"><span>58</span>&#8457;</div>
+                <div id="feelmode"><span>51</span>&#8457;</div>
+                <div id="feelow"><span>34</span>&#8457;</div>
+                <div id="feelreal">Feels Like: <span>49</span>&#8457;</div>
+                <div id="feelwind"><img id="windicon" src="/images/wind.png" alt="wind icon"><span> 4.8</span>mph</div>
+                <div id="feelgusts">Gusts: <span>8</span>mph</div>
                 </section>
 
+                <!-- ****************************************************
+                        html declaration for the weather temperature information
+                    *************************************************************** -->
                 <div id="others">
-
-                    <!-- html declaration for the weather temperature information -->
                     <section id="temperature">
                     <div class="weatherTemp">
                         <h1 class="headerchange">Temperature</h1>
@@ -93,7 +104,9 @@
                         </div>
                  </section>
 
-                    <!-- html declaration for the weather precipitation information -->
+                    <!-- ************************************************************
+                        html declaration for the weather precipitation information
+                    ********************************************************************* -->
                  <section id="precipitation">
                     <div class="weatherPreci">
                         <h1 class="headerchange"> Precipitation</h1>
@@ -144,21 +157,23 @@
                         </div>
                  </section>
 
-                    <!--   html declaration for the weather condition information  -->
+                    <!--  *****************************************************************
+                         html declaration for the weather condition information 
+                        ******************************************************************** -->
                  <section id="conditions">
                     <div class="weatherCondi">
                         <h1 class="headerchange">Conditions</h1>
-                           <img class="icon1" src="/images/icon88.png" alt="weather icon">
-                          <img class="icon2" src="/images/icon99.png" alt="weather icon">
-                          <img class="icon3" src="/images/icon99.png" alt="weather icon">
-                          <img class="icon4" src="/images/icon66.png" alt="weather icon">
-                          <img class="icon5" src="/images/icon55.png" alt="weather icon">
-                          <img class="icon6" src="/images/icon88.png" alt="weather icon">
-                          <img class="icon7" src="/images/icon66.png" alt="weather icon">
-                          <img class="icon8" src="/images/icon55.png" alt="weather icon">
-                          <img class="icon9" src="/images/icon88.png" alt="weather icon">
-                          <img class="icon10" src="/images/icon77.png" alt="weather icon">
-                          <img class="icon11" src="/images/icon99.png" alt="weather icon">
+                           <img class="img1" src="/images/icon88.png" alt="weather icon">
+                          <img class="img2" src="/images/icon99.png" alt="weather icon">
+                          <img class="img3" src="/images/icon99.png" alt="weather icon">
+                          <img class="img4" src="/images/icon66.png" alt="weather icon">
+                          <img class="img5" src="/images/icon55.png" alt="weather icon">
+                          <img class="img6" src="/images/icon88.png" alt="weather icon">
+                          <img class="img7" src="/images/icon66.png" alt="weather icon">
+                          <img class="img8" src="/images/icon55.png" alt="weather icon">
+                          <img class="img9" src="/images/icon88.png" alt="weather icon">
+                          <img class="img10" src="/images/icon77.png" alt="weather icon">
+                          <img class="img11" src="/images/icon99.png" alt="weather icon">
                           
                           <div class="innerSmall"></div>
                           

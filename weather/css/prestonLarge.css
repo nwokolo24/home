@@ -1,0 +1,153 @@
+/* css properties for large screen  */
+@media only screen and (min-width: 60rem) {
+    #wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    nav {
+        display: flex;
+        background-color: #cccccc;
+        background: #fc3f32;
+        color: white;
+        position: static;
+        background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%); background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+        background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
+
+    }
+    nav button{
+        display: none;
+    }
+
+    nav ul.hidden {
+        display: flex;
+        position: static;
+
+    }
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    nav ul li a{
+        padding: .6rem 1rem;
+        color: white;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    ul a:hover{
+        color: blue;
+    }
+    #myLinks{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #others{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+
+    /* ##################################################
+    css properties for feels like weather conditions
+    ################################################### */
+}
+#feelslike{
+    position: relative;
+
+}
+    
+    #feelhigh{
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        font-size: 5vw;
+        color: red;
+    }
+    #feelmode{
+        position: absolute;
+        left: 45%;
+        top: 5px;
+        font-size: 8vw;
+    }
+    #feelow{
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        font-size: 5vw;
+        color: blue;
+    }
+    #feelreal{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        font-size: 2vw;
+    }
+    #feelwind{
+        position: absolute;
+        left: 15%;
+        bottom: 10%;
+        font-size: 3vw;
+    }
+    #feelgusts{
+        display: block;
+        position: absolute;
+        bottom: 10%;
+        right: 15%;
+        font-size: 3vw;
+    }
+
+/* ########################################
+Parent to weather condition boxes 
+######################################### */
+    #sectionfix {
+        border: 3px dashed gray;
+    }
+    #feelslike, #others {
+        margin: auto;
+        width: 90%;
+    }
+
+    /* #######################################
+    individual Boxes and their properties 
+########################################### */
+    #temperature{
+        justify-self: left;
+        margin-left: 0;
+        border-radius: 0px;
+        height: 280px;
+        width: 250px;
+    }
+    #precipitation {
+        justify-self: center;
+        margin: 0 10px;
+        border-radius: 0px;
+        height: 280px;
+        width: 250px;
+    } 
+    
+    #conditions{
+        justify-self: right;
+        margin-right: 0;
+        border-radius: 0px;
+        height: 280px;
+        width: 250px;
+    }
+
+    #conditions, #temperature, #precipitation, #feelslike{
+        box-shadow: 5px 5px 5px rgb(144, 130, 130);
+        margin-top: 20px;
+    }
+
+    .imagine{
+        width: 150px; 
+        height: 147px;
+    }
+    
+}

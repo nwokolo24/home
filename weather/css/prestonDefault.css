@@ -1,0 +1,111 @@
+/* @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"); */
+
+
+
+/* 1.0 General CSS Rules */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Acma', serif;
+}
+
+header {
+    display: flex;
+    background-color: navy;
+    padding: 5px 0;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#307af2+1,00059b+100 */
+    background: #307af2;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+    /* IE6-9 */
+
+}
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: navy;
+    color: white;
+    font-size: 13px;
+    padding: 1px;
+    margin-bottom: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#307af2+1,00059b+100 */
+    background: #307af2;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+    /* IE6-9 */
+
+}
+footer p{
+    margin: 5px 0;
+}
+
+footer p a:hover {
+    color: red;
+    text-decoration: none;
+}
+footer a {
+    color: rgb(239, 243, 10);
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: greenyellow;
+}
+
+#uptodate {
+    background-color: transparent;
+    font-style: italic;
+    letter-spacing: 1pt;
+    font-size: .9rem;
+    color: yellow;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    padding-right: 10px;
+}
+
+#titlelow {
+    padding-left: 10px;
+}
+
+.town {
+    margin-bottom: 0;
+}
+
+.gps {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#windicon{
+    width: 30px;
+}
+
