@@ -29,10 +29,10 @@
                      <div id="uptodate">Up-To-Date</div>
                     </section>
         </header>
-        <nav class="hide">
+        <nav id="hidden" class="clearfix">
             <button onclick="burgerMenu()">&#9776; Menu</button>
-            <ul id="myLinks" class="hidden">
-                <li><a href="">Home</a></li>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="">Home</a></li>
                 <li><a href="">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
                 <li><a href="">Favorites</a></li>
@@ -206,7 +206,8 @@
                     <p>Current Date: <span id="currentdate"></span></p>
             <p>Last Updated: <span id="lastmodify"></span></p>
         </footer>
-        <script src="/weather/js/preston.js"></script>
+        <!-- <script src="/weather/js/preston.js"></script> -->
+        <script src="/weather/js/function.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ['Roboto', 'Acme']}});</script>
     </div>

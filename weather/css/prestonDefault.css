@@ -77,6 +77,12 @@ footer a:visited {
     color: greenyellow;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #uptodate {
     background-color: transparent;
     font-style: italic;

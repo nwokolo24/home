@@ -24,7 +24,7 @@ nav button {
     color: white;
     border: none;
     position: relative;
-    left: 40vw;
+    left: 0;
    
 }
 
@@ -36,20 +36,20 @@ nav ul {
 
 nav ul li a {
     display: block;
-    padding: .8rem 2%;
+    padding: .4rem 2%;
     text-decoration: none;
     color: white;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
-    text-align: center;
+    text-align: left;
 }
 
-nav ul li:active a {
-    background: rgba(0, 0, 0, 0.2);
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 
 nav ul li a:hover {
-    background-color: rgb(77, 77, 245);
+    background-color: rgba(77, 77, 245);
     color: white;
 }
 

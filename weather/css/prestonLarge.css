@@ -19,15 +19,9 @@
         display: none;
     }
 
-    nav ul.hidden {
+    nav ul.hide {
         display: flex;
-        position: static;
-
-    }
-    .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
+        width: 100%;
     }
 
     nav ul li a{
