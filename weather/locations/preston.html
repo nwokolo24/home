@@ -29,8 +29,12 @@
                      <div id="uptodate">Up-To-Date</div>
                     </section>
         </header>
+
+        <!-- ********************************************************
+            Burger Menu gets displayed using this menu options
+        ************************************************************ -->
         <nav id="hidden" class="clearfix">
-            <button onclick="burgerMenu()">&#9776; Menu</button>
+            <button>&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="">Preston</a></li>
@@ -52,8 +56,8 @@
                 <div id="feelhigh"><span>58</span>&#8457;</div>
                 <div id="feelmode"><span>51</span>&#8457;</div>
                 <div id="feelow"><span>34</span>&#8457;</div>
-                <div id="feelreal">Feels Like: <span>49</span>&#8457;</div>
-                <div id="feelwind"><img id="windicon" src="/images/wind.png" alt="wind icon"><span> 4.8</span>mph</div>
+                <div id="feelreal">Feels Like: <strong><span id="feelTemp"></span>&#8457;</strong></div>
+                <div id="feelwind"><img id="windicon" src="/images/wind.png" alt="wind icon"><span id="windspeed"> 4.8</span>mph</div>
                 <div id="feelgusts">Gusts: <span>8</span>mph</div>
                 </section>
 
@@ -91,9 +95,6 @@
                           <p class="icon11"><span style="color: red; font-size: 25px;">52</span></p>
                            
                           
-                        <!--   html declaration for smallCircle -->
-                          <div class="innerSmall"></div>
-                          
                         <!--   html declaration for circles -->
                         </div>
                            <div class="component">
@@ -112,16 +113,16 @@
                         <h1 class="headerchange"> Precipitation</h1>
                         
                            <div class="condiPara">
-                        <p class="p1">1</p>
-                        <p class="p2">2</p>
-                        <p class="p3">3</p>
-                        <p class="p4">4</p>
-                        <p class="p5">5</p>
-                        <p class="p6">6</p>
-                        <p class="p7">7</p>
-                        <p class="p8">8</p>
-                        <p class="p9">9</p>
-                        <p class="p10">10</p>
+                        <p class="p1" class="ball">1</p>
+                        <p class="p2" class="ball">2</p>
+                        <p class="p3" class="ball">3</p>
+                        <p class="p4" class="ball">4</p>
+                        <p class="p5" class="ball">5</p>
+                        <p class="p6" class="ball">6</p>
+                        <p class="p7" class="ball">7</p>
+                        <p class="p8" class="ball">8</p>
+                        <p class="p9" class="ball">9</p>
+                        <p class="p10" class="ball">10</p>
                         </div>
                           
                         <div class="preciPara1">
@@ -136,11 +137,8 @@
                         <p class="icon9"><span style="color: red; font-size: 25px;">20</span></p>
                         <p class="icon10"><span style="color: red; font-size: 25px;">20</span></p>
                           <p class="icon11"><span style="color: red; font-size: 25px;">40</span></p>
-                          
-                         
-                          
-                          <div class="innerSmall"></div>
-                          
+
+                          <!--   html declaration for circles -->
                         </div>
                            <div class="component">
                                <div class="inner">
@@ -174,22 +172,22 @@
                           <img class="img9" src="/images/icon88.png" alt="weather icon">
                           <img class="img10" src="/images/icon77.png" alt="weather icon">
                           <img class="img11" src="/images/icon99.png" alt="weather icon">
-                          
-                          <div class="innerSmall"></div>
+                        
                           
                           <div class="condiPara">
-                        <p class="p1">1</p>
-                        <p class="p2">2</p>
-                        <p class="p3">3</p>
-                        <p class="p4">4</p>
-                        <p class="p5">5</p>
-                        <p class="p6">6</p>
-                        <p class="p7">7</p>
-                        <p class="p8">8</p>
-                        <p class="p9">9</p>
-                        <p class="p10">10</p>
+                        <p class="p1" class="ball">1</p>
+                        <p class="p2" class="ball">2</p>
+                        <p class="p3" class="ball">3</p>
+                        <p class="p4" class="ball">4</p>
+                        <p class="p5" class="ball">5</p>
+                        <p class="p6" class="ball">6</p>
+                        <p class="p7" class="ball">7</p>
+                        <p class="p8" class="ball">8</p>
+                        <p class="p9" class="ball">9</p>
+                        <p class="p10" class="ball">10</p>
                         </div>
                           
+                        <!--   html declaration for circles -->
                         <div class="component">
                                <div class="inner"></div>
                         </div>

@@ -12,7 +12,8 @@ document.getElementById("currentdate").textContent = new Date().toLocaleDateStri
 /* *************************************
 *  Js to get the last modified date
 ************************************* */
-document.getElementById("lastmodify").innerHTML = document.lastModified;
+const lastModi = document.lastModified;
+document.getElementById("lastmodify").innerHTML = lastModi;
 
 /* *************************************
 * Toggle between adding and removing the "responsive"
