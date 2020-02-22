@@ -53,14 +53,20 @@ nav ul li a:hover {
     color: white;
 }
 
+/* ########################################
+Parent to weather condition boxes 
+######################################### */
 #sectionfix {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    display: block;
     padding: 0;
     border: 3px dashed gray;
 }
+
+ /* Background pictures for summary */
+ .clear{
+    background-image: url("/Weather-images/clear_small.jpg");
+ }
 
 #feelslike, #others {
     margin: auto;
@@ -74,6 +80,7 @@ nav ul li a:hover {
     width: 100%;
 }
  #temperature, #precipitation, #conditions, #feelslike{
+     background-color: whitesmoke;
     color: black;
     border: 1px solid black;
     height: 290px;

@@ -101,8 +101,15 @@
 Parent to weather condition boxes 
 ######################################### */
     #sectionfix {
+        background-size: cover;
         border: 3px dashed gray;
     }
+
+    /* Background pictures for summary */
+    .clear {
+        background-image: url("/Weather-images/clear_large.jpg");
+    }
+
     #feelslike, #others {
         margin: auto;
         width: 90%;
@@ -135,7 +142,8 @@ Parent to weather condition boxes
     }
 
     #conditions, #temperature, #precipitation, #feelslike{
-        box-shadow: 5px 5px 5px rgb(144, 130, 130);
+        background-color: whitesmoke;
+        box-shadow: 5px 5px 5px rgb(150, 136, 136);
         margin-top: 20px;
     }
 

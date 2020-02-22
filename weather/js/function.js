@@ -63,6 +63,17 @@ function timeBall(hour){
   for (let item of hr){
   item.classList.add("ball");
 }}
+
+/* ##################################################################
+Function for changing the background image surrounding the weather 
+condition boxes
+##################################################################### */
+function changeSummaryImage(){
+  let sectionClear = document.querySelector(".clear");
+    console.log();
+    
+
+}
  
 /* *****************************************************************
 * WEATHER SITE JAVASCRIPT INSTRUCTIONS THAT CALLS VARIOUS FUNCTIONS *
@@ -79,4 +90,6 @@ buildWC(speed, temp);
 //The Time Indicator function
 let hour="6";
 timeBall(hour);
+//Background image change
+changeSummaryImage();
   })
