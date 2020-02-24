@@ -68,6 +68,7 @@ Parent to weather condition boxes
 }
  #temperature, #precipitation, #conditions, #feelslike{
     color: white;
+    background-color: rgba(252, 245, 245, 0.5);
     border: 1px solid white;
     height: 290px;
     width: 250px;
