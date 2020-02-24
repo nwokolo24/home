@@ -62,16 +62,9 @@ Parent to weather condition boxes
     background-image: url("/Weather-images/fog_small.jpg");
  }
 
-#feelslike, #others {
-    margin: auto;
-    width: 90%;
-
-}
-
 #others{
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
  #temperature, #precipitation, #conditions, #feelslike{
     color: white;
@@ -81,8 +74,7 @@ Parent to weather condition boxes
     border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 5px rgb(144, 130, 130);
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .imagine{
