@@ -115,3 +115,8 @@ header img {
     width: 30px;
 }
 
+#sectionfix {
+    background-size: cover;
+    padding-top: 1rem;
+}
+

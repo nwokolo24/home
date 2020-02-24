@@ -100,14 +100,9 @@
 /* ########################################
 Parent to weather condition boxes 
 ######################################### */
-    #sectionfix {
-        background-size: cover;
-        border: 3px dashed gray;
-    }
-
     /* Background pictures for summary */
     .clear {
-        background-image: url("/Weather-images/clear_large.jpg");
+        background-image: url("/Weather-images/rain_large.jpg");
     }
 
     #feelslike, #others {
@@ -115,7 +110,7 @@ Parent to weather condition boxes
         width: 90%;
     }
 
-    /* #######################################
+/* #######################################
     individual Boxes and their properties 
 ########################################### */
     #temperature{
@@ -142,9 +137,10 @@ Parent to weather condition boxes
     }
 
     #conditions, #temperature, #precipitation, #feelslike{
-        background-color: whitesmoke;
+        background-color: transparent;
         box-shadow: 5px 5px 5px rgb(150, 136, 136);
-        margin-top: 20px;
+        margin-top: 1rem;
+        color: white;
     }
 
     .imagine{

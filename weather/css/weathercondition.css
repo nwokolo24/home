@@ -35,6 +35,7 @@
     z-index: 5;
     font-size: 50px;
     font-weight: 900;
+    color: black;
   }
   
     /* css proper for weather precipitation data */
@@ -54,6 +55,7 @@
         z-index: 5;
         font-size: 50px;
         font-weight: 900;
+        color: black;
       }
       .percent{
         position: relative;
@@ -62,6 +64,7 @@
         z-index: 5;
         font-size: 20px;
         font-weight: 900;
+        color: black;
       }
 
   /* ##################################################
