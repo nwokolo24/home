@@ -73,7 +73,6 @@ function changeSummaryImage(){
     console.log(sectionImage);
     }
 
-}
  
 /* *****************************************************************
 * WEATHER SITE JAVASCRIPT INSTRUCTIONS THAT CALLS VARIOUS FUNCTIONS *
