@@ -87,7 +87,7 @@ let temp = 31;
 let speed = 4.8;
 buildWC(speed, temp);
 //The Time Indicator function
-let hour="8";
+let hour="7";
 timeBall(hour);
 //Background image change
 changeSummaryImage();
