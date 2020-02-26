@@ -69,9 +69,9 @@ Function for changing the background image surrounding the weather
 condition boxes
 ##################################################################### */
 function changeSummaryImage(){
-  let sectionImage = document.querySelector(".clear");
-    console.log(sectionImage);
-    }
+let selectImage = document.querySelector(".clear");
+}
+
 
  
 /* *****************************************************************
@@ -91,5 +91,4 @@ let hour="7";
 timeBall(hour);
 //Background image change
 changeSummaryImage();
-
   })

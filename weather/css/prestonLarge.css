@@ -80,18 +80,21 @@
     }
     #feelreal{
         display: block;
+        color: black;
         position: absolute;
         top: 50%;
         left: 45%;
         font-size: 2vw;
     }
     #feelwind{
+        color: black;
         position: absolute;
         left: 15%;
         bottom: 10%;
         font-size: 3vw;
     }
     #feelgusts{
+        color: black;
         display: block;
         position: absolute;
         bottom: 10%;
@@ -104,7 +107,7 @@ Parent to weather condition boxes
 ######################################### */
     /* Background pictures for summary */
     .clear {
-        background-image: url("/Weather-images/rain_large.jpg");
+        background-image: url("/Weather-images/clouds_large.jpg");
     }
 
     #feelslike, #others {

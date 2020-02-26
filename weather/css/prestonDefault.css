@@ -116,6 +116,7 @@ header img {
 }
 
 #sectionfix {
+    background-position: center center;
     background-size: cover;
     padding-top: 0.5rem;
 }
