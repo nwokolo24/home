@@ -93,7 +93,7 @@ Parent to weather condition boxes
     display: flex;
     flex-direction: column;
 }
- #temperature, #precipitation, #conditions, #feelslike{
+ #feelslike{
     color: white;
     background-color: rgba(252, 245, 245, 0.5);
     border: 1px solid white;

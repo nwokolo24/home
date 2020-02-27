@@ -47,20 +47,20 @@
         color: blue;
     }
 
-
-    #others{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
+    #feelslike, #others {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 90%;
+    }
 
     /* ##################################################
     css properties for feels like weather conditions
     ################################################### */
-}
 #feelslike{
-    position: relative;
-
+    background-color: rgba(252, 245, 245, 0.5);
+    box-shadow: 5px 5px 5px rgb(150, 136, 136);
+    margin-top: 1rem;
 }
     
     #feelhigh{
@@ -127,15 +127,10 @@ Parent to weather condition boxes
         background-image: url("/Weather-images/fog_large.jpg");
     }
 
-    #feelslike, #others {
-        margin: auto;
-        width: 90%;
-    }
-
 /* #######################################
     individual Boxes and their properties 
 ########################################### */
-    #temperature{
+    /* #temperature{
         justify-self: left;
         margin-left: 0;
         border-radius: 0px;
@@ -156,18 +151,13 @@ Parent to weather condition boxes
         border-radius: 0px;
         height: 280px;
         width: 250px;
-    }
+    } */
 
-    #conditions, #temperature, #precipitation, #feelslike{
-        background-color: rgba(252, 245, 245, 0.5);
-        box-shadow: 5px 5px 5px rgb(150, 136, 136);
-        margin-top: 1rem;
-        color: white;
-    }
+     
 
-    .imagine{
+    /* .imagine{
         width: 150px; 
         height: 147px;
-    }
+    } */
     
 }

@@ -1,7 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"); */
 
-
-
 /* 1.0 General CSS Rules */
 html {
     box-sizing: border-box;
@@ -112,3 +110,63 @@ footer a:visited {
     padding-top: 0.5rem;
 }
 
+/* css properties for weather condition information */
+/* .weatherCondi{
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+    border: 0px solid black;
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    text-align: center;
+  } */
+  h1{
+    margin-top: 0;
+  }
+  p{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+   /* css properties for weather tempearture elements */
+   section#temperature, section#precipitation, section#conditions{
+    position: relative;
+    border: 1px solid white;
+    background-color: rgba(252, 245, 245, 0.5);
+    box-shadow: 5px 5px 5px rgb(150, 136, 136);
+    font-size: inherit;
+    width: 33%;
+    margin: 10px 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
+  .faren{
+    position: relative;
+    top: 20px;
+    right: -0px;
+    z-index: 5;
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+  }
+  
+      .umbrela{
+        position: relative;
+        top: 20px;
+        right: -10px;
+        z-index: 5;
+        font-size: 50px;
+        font-weight: 900;
+        color: black;
+      }
+      .percent{
+        position: relative;
+        top: 20px;
+        right: 10px;
+        z-index: 5;
+        font-size: 20px;
+        font-weight: 900;
+        color: black;
+      }
