@@ -68,15 +68,10 @@ function timeBall(hour){
 Function for changing the background image surrounding the weather 
 condition boxes
 ##################################################################### */
-
-
 function changeSummaryImage(curCond){
 let selectImage = document.querySelector(".clear");
 selectImage.classList.add(curCond);
-
 }
-
-
  
 /* *****************************************************************
 * WEATHER SITE JAVASCRIPT INSTRUCTIONS THAT CALLS VARIOUS FUNCTIONS *
@@ -94,7 +89,7 @@ buildWC(speed, temp);
 let hour="6";
 timeBall(hour);
 //Background image change
-let curCond = "clouds";
+let curCond = "rain";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);
