@@ -105,13 +105,7 @@
 /* ########################################
 Parent to weather condition boxes 
 ######################################### */
-    /* Background pictures for summary */
-    .snow{
-        background-image: url("/Weather-images/snow_large.jpg");
-    }
-    .fog{
-        background-image: url("/Weather-images/fog_large.jpg");
-    }
+    /* Background pictures for summary */ 
     .clear{
         background-image: url("/Weather-images/clear_large.jpg");
     }
@@ -120,6 +114,12 @@ Parent to weather condition boxes
     }
     .rain{
         background-image: url("/Weather-images/rain_large.jpg");
+    }
+    .snow{
+        background-image: url("/Weather-images/snow_large.jpg");
+    }
+    .fog{
+        background-image: url("/Weather-images/fog_large.jpg");
     }
 
     #feelslike, #others {

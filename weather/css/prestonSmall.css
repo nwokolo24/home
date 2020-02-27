@@ -61,9 +61,6 @@ Parent to weather condition boxes
  .rain{
     background-image: url("/Weather-images/rain_small.jpg");
 }
-.snow{
-    background-image: url("/Weather-images/snow_small.jpg");
-}
 .fog{
     background-image: url("/Weather-images/fog_small.jpg");
 }
@@ -72,6 +69,9 @@ Parent to weather condition boxes
 }
 .clouds{
     background-image: url("/Weather-images/clouds_small.jpg");
+}
+.snow{
+    background-image: url("/Weather-images/snow_small.jpg");
 }
 
 #others{
