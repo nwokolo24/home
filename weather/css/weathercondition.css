@@ -1,71 +1,5 @@
 /* css properties for small/mobile screen */
-/* css properties for weather condition information */
-.weatherCondi{
-    background-color: transparent;
-    position: relative;
-    left: 20px;
-    border: 0px solid black;
-    width: 200px;
-    height: 250px;
-    padding: 5px;
-    text-align: center;
-  }
-  h1{
-    margin-top: 0;
-  }
-  p{
-    font-size: 18px;
-    font-weight: bold;
-  }
 
-   /* css properties for weather tempearture elements */
-   .weatherTemp{
-    position: relative;
-    left: 20px;
-    border: 0px solid black;
-    width: 200px;
-    height: 250px;
-    padding: 5px;
-    text-align: center;
-  }
-  .faren{
-    position: relative;
-    top: 20px;
-    right: -0px;
-    z-index: 5;
-    font-size: 50px;
-    font-weight: 900;
-    color: black;
-  }
-  
-    /* css proper for weather precipitation data */
-    .weatherPreci{
-        position: relative;
-        left: 20px;
-        border: 0px solid black;
-        width: 200px;
-        height: 250px;
-        padding: 5px;
-        text-align: center;
-      }
-      .umbrela{
-        position: relative;
-        top: 20px;
-        right: -10px;
-        z-index: 5;
-        font-size: 50px;
-        font-weight: 900;
-        color: black;
-      }
-      .percent{
-        position: relative;
-        top: 20px;
-        right: 10px;
-        z-index: 5;
-        font-size: 20px;
-        font-weight: 900;
-        color: black;
-      }
 
   /* ##################################################
      css property for individual weather numbers 
@@ -210,30 +144,7 @@
   /* ###########################################################################
   css  property for the circle holding the weather condition numbers/values
   ############################################################################## */
-  .component{
-      width: 150px;
-      height: 150px;
-      background-color: gray;
-      position: relative;
-      top: 20px;
-      left: 20px;
-      border-radius: 90%;
-      display: flex;
-      justify-content: center;
-  }
-  .inner{
-      width: 100px;
-      height: 100px;
-      background-color: #fff;
-      border-radius: 90%;
-      align-self: center;
-  }
-  .ball{
-      width: 20px;
-      height: 20px;
-      background-color: lightgreen;
-      border-radius: 100%;
-  }
+  
   
   /* ########################################
   css properties for numberse in circle
@@ -432,29 +343,4 @@
     top: 75px;
     width: 40px;
   }
-  
-  /* css  property for the circle holding the weather condition numbers/values */
-  .component{
-      width: 150px;
-      height: 150px;
-      background-color: gray;
-      position: relative;
-      top: 21px;
-      left: 20px;
-      border-radius: 90%;
-      display: flex;
-      justify-content: center;
-  }
-  .inner{
-      width: 100px;
-      height: 100px;
-      background-color: #fff;
-      border-radius: 90%;
-      align-self: center;
-  }
-  
 }
-  
-
-  
- 

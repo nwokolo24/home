@@ -108,7 +108,7 @@ buildWC(speed, temp);
 let hour="6";
 timeBall(hour);
 //Background image change
-let curCond = "snow";
+let curCond = "clouds";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);
