@@ -1,47 +1,62 @@
 /* 2.0 Small screen css rules */
-nav ul.hide {
-    display: none;
-}
-
 nav {
-    background-color: #aa0000;
-    font-family: Verdana, sans-serif;
     border: none;
     z-index: 8;
     position: fixed;
-    width: 100%;
+    list-style-type: none;
     bottom: 0;
+    width: 100%;
+    text-align: center;
     background: #fc3f32;
     background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%); background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
     background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 }
 
-nav button {
-    margin: .2rem;
-    background-color: transparent;
-    font-size: 1.3rem;
-    color: white;
-    border: none;
-    position: relative;
-    left: 0;
-   
-}
-
 nav ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 nav ul li a {
+    font-size: initial;
     display: block;
     padding: .4rem 2%;
     text-decoration: none;
     color: white;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
-    text-align: left;
+    text-align: center;
 }
+/* CSS rule controlling the toggling of small screen menu */
+#navbar {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.hidden ul li:not(:last-child) {
+    display: none;
+}
+
+.shown ul li {
+    display: block;
+    width: 100%;
+}
+
+
+
+nav.hid {
+    display: none;
+}
+
+nav#primaryNav{
+    display: block;
+}
+
+
 
 nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.5);

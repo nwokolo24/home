@@ -21,10 +21,29 @@ function buildModDate(){
     document.querySelector('#lastmodify').innerText = formattedDate;
    }
 
+   //variables for responsive menu
+var mobileMenuClicks = 0;
+
 //Handles Small Screen Menu
-function burgerMenu(event){
-  const primaryNav = document.querySelector('#primaryNav');
-  primaryNav.classList.toggle("hide");
+function burgerMenu(){
+  //how many times responive menu used
+  if (mobileMenuClicks == 0)
+    console.groupCollapsed("Times Mobile Menu Toggled");
+    mobileMenuClicks += 1;
+    console.log(mobileMenuClicks);
+  //declare variables
+  const x = document.getElementById("navbar");
+  const y = document.getElementById("footer");
+  //if the buttun is tapped and the components are hidden, show them
+  if (x.className === "hidden") {
+    x.className = "shown";
+    y.className = "large-footer";
+  }
+  //if the items are already shown, hide them 
+  else {
+    x.className = "hidden";
+    y.className = "small-footer";
+  }
 }
 /* ##################################################
 //This function calculates the WindChill
@@ -79,8 +98,8 @@ selectImage.classList.add(curCond);
 // Listen for the DOM to finish building
 document.addEventListener("DOMContentLoaded", function(){
     buildModDate();
-    const menuButton = document.querySelector("#hidden");
-  menuButton.addEventListener('click', burgerMenu);
+    const menuButton = document.querySelector("#menu-button");
+    menuButton.addEventListener('click', burgerMenu);
 //Variables for wind chill function
 let temp = 31;
 let speed = 4.8;
@@ -89,7 +108,7 @@ buildWC(speed, temp);
 let hour="6";
 timeBall(hour);
 //Background image change
-let curCond = "rain";
+let curCond = "snow";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);

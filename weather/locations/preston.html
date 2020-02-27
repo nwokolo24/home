@@ -24,8 +24,8 @@
                 <picture>
                     <img class="image1" src="/images/weather_logo.png" alt="My Weather Logo">
                 </picture>
-                <section class="heading">
-                     <h3 class="guru">WeatherGuru</h3>
+                <section>
+                     <h1 class="guru">WeatherGuru</h1>
                      <div id="uptodate">Up-To-Date</div>
                     </section>
         </header>
@@ -33,19 +33,20 @@
         <!-- ********************************************************
             Burger Menu gets displayed using this menu options
         ************************************************************ -->
-        <nav id="hidden" class="clearfix">
-            <button>&#9776; Menu</button>
-            <ul id="primaryNav" class="hide">
+        <nav id="navbar" class="shown">
+            <ul>
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="">Preston</a></li>
                 <li><a href="">Soda Springs</a></li>
                 <li><a href="">Favorites</a></li>
+                <li><a id="menu-button" class="nav-link" href="#">&#9776; Menu</a></li>
             </ul>
         </nav>
+        
         <main>
-            <div id="titlelow">
+            <div>
                 <h1 class="town">Preston Town</h1>
-                <h3 class="gps">Gps: 42.543, 111,5231</h3>
+                <h2 class="gps">Gps: 42.543, 111,5231</h2>
             </div>
 
             <!-- ************************************************************
@@ -208,7 +209,7 @@
         <!-- <script src="/weather/js/preston.js"></script> -->
         <script src="/weather/js/function.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>WebFont.load({google: {families: ['Roboto', 'Acme']}});</script>
+    <script>WebFont.load({google: {families: ['Ubuntu', 'Acme']}});</script>
     </div>
 </body>
 </html>
