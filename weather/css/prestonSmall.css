@@ -58,9 +58,21 @@ Parent to weather condition boxes
 ######################################### */
 
  /* Background pictures for summary */
- .clear{
+ .rain{
+    background-image: url("/Weather-images/rain_small.jpg");
+}
+.snow{
+    background-image: url("/Weather-images/snow_small.jpg");
+}
+.fog{
     background-image: url("/Weather-images/fog_small.jpg");
- }
+}
+.clear{
+    background-image: url("/Weather-images/clear_small.jpg");
+}
+.clouds{
+    background-image: url("/Weather-images/clouds_small.jpg");
+}
 
 #others{
     display: flex;

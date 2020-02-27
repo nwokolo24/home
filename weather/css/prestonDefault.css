@@ -83,7 +83,7 @@ footer a:visited {
     clear: both;
 }
 
-#uptodate {
+h3#uptodate {
     background-color: transparent;
     font-style: italic;
     letter-spacing: 1pt;

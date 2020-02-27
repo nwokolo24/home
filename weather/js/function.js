@@ -68,8 +68,12 @@ function timeBall(hour){
 Function for changing the background image surrounding the weather 
 condition boxes
 ##################################################################### */
-function changeSummaryImage(){
+
+
+function changeSummaryImage(curCond){
 let selectImage = document.querySelector(".clear");
+selectImage.classList.add(curCond);
+
 }
 
 
@@ -87,8 +91,11 @@ let temp = 31;
 let speed = 4.8;
 buildWC(speed, temp);
 //The Time Indicator function
-let hour="7";
+let hour="6";
 timeBall(hour);
 //Background image change
-changeSummaryImage();
+let curCond = "FOG";
+curCond = curCond.toLowerCase();
+changeSummaryImage(curCond);
+console.log(curCond);
   })
