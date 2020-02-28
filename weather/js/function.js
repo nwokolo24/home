@@ -109,7 +109,7 @@ let hour="10";
 timeBall(hour);
 console.log(hour);
 //Background image change
-let curCond = "snow";
+let curCond = "fog";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);
