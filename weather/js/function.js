@@ -101,14 +101,15 @@ document.addEventListener("DOMContentLoaded", function(){
     const menuButton = document.querySelector("#menu-button");
     menuButton.addEventListener('click', burgerMenu);
 //Variables for wind chill function
-let temp = 31;
+let temp = 60;
 let speed = 4.8;
 buildWC(speed, temp);
 //The Time Indicator function
-let hour="6";
+let hour="10";
 timeBall(hour);
+console.log(hour);
 //Background image change
-let curCond = "clouds";
+let curCond = "snow";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);

@@ -343,4 +343,29 @@
     top: 75px;
     width: 40px;
   }
+  
+  /* css  property for the circle holding the weather condition numbers/values */
+  .component{
+      width: 150px;
+      height: 150px;
+      background-color: gray;
+      position: relative;
+      top: 21px;
+      left: 20px;
+      border-radius: 90%;
+      display: flex;
+      justify-content: center;
+  }
+  .inner{
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 90%;
+      align-self: center;
+  }
+  
 }
+  
+
+  
+ 

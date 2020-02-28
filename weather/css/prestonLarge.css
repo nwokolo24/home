@@ -107,6 +107,13 @@
         font-size: 3vw;
     }
 
+    .headerchange{
+        position: absolute;
+        top: -4%;
+        left: 25%;
+        font-size: 2.5vw;
+    }
+
 /* ########################################
 Parent to weather condition boxes 
 ######################################### */

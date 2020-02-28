@@ -148,7 +148,7 @@ Parent to weather condition boxes
     #feelwind{
         position: absolute;
         left: 25%;
-        bottom: 10%;
+        bottom: 10%;z
         font-size: 2rem;
     }
     #feelgusts{
