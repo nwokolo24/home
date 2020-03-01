@@ -61,117 +61,107 @@
     background-color: rgba(252, 245, 245, 0.5);
     box-shadow: 5px 5px 5px rgb(150, 136, 136);
     margin-top: 1rem;
-    width: 80vw;
-    height: 35vh;
+    width: 90%;
+    height: 200px;
 }
 
 section#temperature, section#precipitation, section#conditions{
-    position: relative;
     border: 1px solid white;
     border-radius: 2%;
     background-color: rgba(252, 245, 245, 0.5);
     box-shadow: 5px 5px 5px rgb(150, 136, 136);
-    width: 40vw;
-    height: 45vh;
-    margin: 15px 10px;
-    padding: 5px;
-    text-align: center;
-    color: white;
+  width: 250px;
+  height: 300px;
+    margin: 15px auto;
+    /* padding: 5px; */
   }
 
   .faren{
     position: absolute;
-    top: 50px;
-    right: -0px;
+    top: 33%;
+    right: 35%;
     z-index: 6;
-    font-size: 25em;
+    font-size: 60px;
     font-weight: 900;
-    color: black;
+    color: white;
   }
   
       .umbrela{
         position: absolute;
-        top: 20px;
-        right: -10px;
+        top: 33%;
+        right: 40%;
         z-index: 6;
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 900;
-        color: black;
+        color: white;
       }
       .percent{
         position: absolute;
-        top: 20px;
-        right: 10px;
+        top: 48%;
+        right: 35%;
         z-index: 6;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 900;
-        color: black;
+        color: white;
       }
 
-      .inner{
-        position: relative;
-    }
-
-      .component{
-        position: relative;
-       
-    }
 
    section .component{
-        width: 15em;
-        height: 15em;
         background-color: rgba(109, 97, 97, 0.5);;
         position: absolute;
-        top: ;
-        left: 10%;
+       top: 30%;
+       left: 13%;
         border-radius: 90%;
+        width: 190px;
+        height: 190px;
         display: flex;
         justify-content: center;
+        z-index: 6;
     }
     
 
     section .inner{
-        width: 13vw;
-        height: 13vw;
         background-color: rgba(252, 245, 245, 0.3);
         border-radius: 90%;
         align-self: center;
+        width: 150px;
+        height: 150px;
     }
     
     #feelhigh{
         position: absolute;
         left: 10%;
         top: 10%;
-        font-size: 5vw;
+        font-size: 3em;
         color: red;
     }
     #feelmode{
         position: absolute;
         left: 45%;
         top: 5px;
-        font-size: 8vw;
+        font-size: 6em;
     }
     #feelow{
         position: absolute;
         right: 10%;
         top: 10%;
-        font-size: 5vw;
+        font-size: 3em;
         color: blue;
     }
     #feelreal{
         display: block;
         color: black;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 45%;
-        font-size: 2vw;
+        font-size: 2em;
     }
     #feelwind{
         color: black;
         position: absolute;
         left: 15%;
         bottom: 10%;
-        font-size: 3vw;
+        font-size: 1.5em;
     }
     #feelgusts{
         color: black;
@@ -179,14 +169,15 @@ section#temperature, section#precipitation, section#conditions{
         position: absolute;
         bottom: 10%;
         right: 15%;
-        font-size: 3vw;
+        font-size: 1.5em;
     }
 
     .headerchange{
         position: absolute;
-        top: -4%;
-        left: 25%;
-        font-size: 2.5vw;
+        top: -27px;
+        left: 20%;
+        font-size: 2em;
+        color: rgb(49, 39, 39);
     }
 
 /* ########################################

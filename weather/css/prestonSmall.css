@@ -115,18 +115,12 @@ Parent to weather condition boxes
     border-radius: 2%;
     background-color: rgba(252, 245, 245, 0.5);
     box-shadow: 5px 5px 5px rgb(150, 136, 136);
-    width: 70vw;
-    height: 60vh;
+    width: 250px;
+    height: 300px;
     margin: 15px auto;
     padding: 5px;
-    text-align: center;
-    color: white;
   }
 
-.imagine{
-    width: 150px; 
-    height: 120px;
-}
 
     /* ##################################################
     css properties for feels like weather conditions

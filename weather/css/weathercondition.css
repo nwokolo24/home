@@ -75,68 +75,74 @@
   ##################################################### */
   .img1{
     position: absolute;
-    right: 85px;
-    top: 50px;
+    right: 105px;
+    top: 60px;
     width: 30px;
   }
   .img2{
     position: absolute;
     right: 35px;
-    top: 60px;
+    top: 80px;
     width: 30px;
   }
   .img3{
     position: absolute;
-    right: -2px;
-    top: 95px;
+    right: 1px;
+    top: 120px;
     width: 30px;
   }
   .img4{
     position: absolute;
-    right: -15px;
-    top: 140px;
+    right: -5px;
+    top: 170px;
     width: 30px;
   }
   .img5{
     position: absolute;
-    right: -3px;
-    bottom: 35px;
+    right: 5px;
+    bottom: 45px;
     width: 30px;
   }
   .img6{
     position: absolute;
-    right: 30px;
-    bottom: -5px;
+    right: 45px;
+    bottom: 2px;
     width: 30px;
   }
   .img7{
     position: absolute;
-    right: 85px;
-    bottom: -15px;
+    right: 105px;
+    bottom: -5px;
     width: 30px;
   }
   .img8{
     position: absolute;
-    left: 30px;
-    bottom: -5px;
+    left: 55px;
+    bottom: 2px;
     width: 30px;
   }
   .img9{
     position: absolute;
-    left: -3px;
-    bottom: 35px;
+    left: 20px;
+    bottom: 40px;
     width: 30px;
   }
   .img10{
     position: absolute;
-    left: -15px;
-    top: 140px;
+    left: 2px;
+    top: 170px;
     width: 30px;
   }
   .img11{
     position: absolute;
-    left: -2px;
-    top: 95px;
+    left: 5px;
+    top: 120px;
+    width: 30px;
+  }
+  .img12{
+    position: absolute;
+    left: 40px;
+    top: 80px;
     width: 30px;
   }
   
@@ -151,69 +157,81 @@
   ########################################### */
   .p1{
     position: absolute;
-    right: 65px;
-    top: 75px;
-    z-index: 3;
+    right: 70px;
+    top: 85px;
+    z-index: 7;
   }
   .p2{
     position: absolute;
     right: 40px;
-    top: 95px;
-    z-index: 3;
+    top: 120px;
+    z-index: 7;
   }
   .p3{
     position: absolute;
     right: 30px;
-    top: 127px;
-    z-index: 3;
+    top: 160px;
+    z-index: 7;
   }
   .p4{
     position: absolute;
-    right: 37px;
-    top: 160px;
-    z-index: 3;
+    right: 40px;
+    top: 200px;
+    z-index: 7;
   }
   .p5{
     position: absolute;
-    right: 55px;
-    bottom: 10px;
-    z-index: 3;
+    right: 70px;
+    bottom: 15px;
+    z-index: 7;
   }
   .p6{
     position: absolute;
-    right: 88px;
+    right: 113px;;
     bottom: 0px;
-    z-index: 3;
+    z-index: 7;
   }
   .p7{
     position: absolute;
-    left: 58px;
-    bottom: 10px;
-    z-index: 3;
+    left: 80px;
+    bottom: 13px;
+    z-index: 7;
   }
   .p8{
     position: absolute;
-    left: 35px;
-    bottom: 30px;
-    z-index: 3;
+    left: 50px;
+    bottom: 40px;
+    z-index: 7;
   }
   .p9{
     position: absolute;
-    left: 29px;
-    bottom: 65px;
-    z-index: 3;
+    left: 40px;
+    top: 160px;
+    z-index: 7;
   }
   .p10{
     position: absolute;
-    left: 38px;
-    top: 95px;
-    z-index: 3;
+    left: 40px;
+    top: 120px;
+    z-index: 7;
+  }
+  .p11{
+    position: absolute;
+    left: 70px;
+    top: 85px;
+    z-index: 7;;
+  }
+  .p12{
+    position: absolute;
+    left: 120px;
+    top: 70px;
+    z-index: 7;
   }
 
 
-@media only screen and (min-width: 60rem){
+
 /* css properties for weather condition information */
-.weatherCondi{
+/* .weatherCondi{
     position: relative;
     left: 20px;
     border: 0px solid black;
@@ -221,17 +239,16 @@
     height: 250px;
     padding: 5px;
     text-align: center;
-  }
-  h1{
+  } */
+  /* h1{
     margin-top: 0;
   }
   p{
     font-size: 18px;
-    font-weight: bold;
-  }
+  } */
 
    /* css properties for weather tempearture elements */
-   .weatherTemp{
+   /* .weatherTemp{
     position: relative;
     left: 20px;
     border: 0px solid black;
@@ -239,18 +256,18 @@
     height: 250px;
     padding: 5px;
     text-align: center;
-  }
-  .faren{
+  } */
+  /* .faren{
     position: relative;
     top: 20px;
     right: -0px;
     z-index: 5;
     font-size: 50px;
     font-weight: 900;
-  }
+  } */
   
     /* css proper for weather precipitation data */
-    .weatherPreci{
+    /* .weatherPreci{
         position: relative;
         left: 20px;
         border: 0px solid black;
@@ -258,8 +275,8 @@
         height: 250px;
         padding: 5px;
         text-align: center;
-      }
-      .umbrela{
+      } */
+      /* .umbrela{
         position: relative;
         top: 20px;
         right: -10px;
@@ -274,84 +291,89 @@
         z-index: 5;
         font-size: 20px;
         font-weight: 900;
-      }
+      } */
 
   /* css property for individual weather icons and numbers */
   .icon1{
     position: absolute;
-    right: 85px;
-    top: 35px;
+    right: 92px;
+    top: 40px;
     width: 40px;
   }
   .icon2{
     position: absolute;
     right: 25px;
-    top: 45px;
+    top: 60px;
     width: 40px;
   }
   .icon3{
     position: absolute;
-    right: -10px;
-    top: 80px;
+    right:-10px;
+    top: 105px;
     width: 40px;
   }
   .icon4{
     position: absolute;
-    right: -18px;
-    top: 122px;
+    right: -16px;
+    top: 155px;
     width: 40px;
   }
   .icon5{
     position: absolute;
-    right: -15px;
-    bottom: 20px;
+    right: -5px;
+    bottom: 25px;
     width: 40px;
   }
   .icon6{
     position: absolute;
-    right: 25px;
-    bottom: -15px;
+    right: 30px;
+    bottom: -10px;
     width: 40px;
   }
   .icon7{
     position: absolute;
-    right: 80px;
-    bottom: -30px;
+    right: 90px;
+    bottom: -25px;
     width: 40px;
   }
   .icon8{
     position: absolute;
-    left: 25px;
-    bottom: -18px;
+    left: 55px;
+    bottom: -13px;
     width: 40px;
   }
   .icon9{
     position: absolute;
-    left: -10px;
+    left: 15px;
     bottom: 25px;
     width: 40px;
   }
   .icon10{
     position: absolute;
-    left: -15px;
-    top: 122px;
+    left: 3px;
+    top: 155px;
     width: 40px;
   }
   .icon11{
     position: absolute;
-    left: -5px;
-    top: 75px;
+    left: 10px;
+    top: 110px;
     width: 40px;
   }
-  
+  .icon12{
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    width: 40px;
+  }
   /* css  property for the circle holding the weather condition numbers/values */
-  .component{
-      width: 150px;
-      height: 150px;
+  /* .component{
+      width: 20vw;
+      height: auto;
       background-color: gray;
       position: relative;
-      top: 21px;
-      left: 20px;
+      top: 50%;
+      left: 10%;
       border-radius: 90%;
       display: flex;
       justify-content: center;
@@ -362,9 +384,8 @@
       background-color: #fff;
       border-radius: 90%;
       align-self: center;
-  }
+  } */
   
-}
   
 
   
