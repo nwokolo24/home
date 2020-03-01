@@ -51,7 +51,7 @@ nav ul li a {
 
 
 
-nav.hid {
+nav.hide {
     display: none;
 }
 
@@ -100,13 +100,28 @@ Parent to weather condition boxes
     color: white;
     background-color: rgba(252, 245, 245, 0.5);
     border: 1px solid white;
-    height: 290px;
-    width: 250px;
+    width: 70vw;
+    height: 60vh;
     border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 5px rgb(144, 130, 130);
     margin: 20px auto;
 }
+
+ /* css properties for weather tempearture elements */
+ section#temperature, section#precipitation, section#conditions{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 2%;
+    background-color: rgba(252, 245, 245, 0.5);
+    box-shadow: 5px 5px 5px rgb(150, 136, 136);
+    width: 70vw;
+    height: 60vh;
+    margin: 15px auto;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
 
 .imagine{
     width: 150px; 
@@ -125,21 +140,21 @@ Parent to weather condition boxes
         position: absolute;
         top: 50%;
         left: 15%;
-        font-size: 2.5rem;
+        font-size: 2.5em;
         color: red;
     }
     #feelmode{
         position: absolute;
         left: 20%;
         top: 10%;
-        font-size: 5rem;
+        font-size: 5em;
         color: green;
     }
     #feelow{
         position: absolute;
         top: 50%;
         right: 15%;
-        font-size: 2.5rem;
+        font-size: 2.5em;
         color: blue;
     }
     #feelreal{
