@@ -300,10 +300,6 @@ section .inner {
     css properties for feels like weather conditions
     ################################################### */
 
-#feelslike {
-    
-}
-
 #feelhigh {
     position: absolute;
     top: 50%;
