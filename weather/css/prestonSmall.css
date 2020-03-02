@@ -1,7 +1,59 @@
 /* 2.0 Small screen css rules */
-html{
-    max-width: 100%;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Acme', sans-serif;
+}
+
+/* Property value for header and footer only */
+header {
+    display: flex;
+    padding: 5px 0;
+    color: white;
+    align-items: center;
+    background: #307af2; 
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%); 
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+}
+footer {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 1px;
+    margin-bottom: 30px; 
+    background: #307af2;  
+    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);  
+    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);  
+    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+footer a {
+    color: rgb(239, 243, 10);
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: greenyellow;
+}
+
+/* property value for navigation bar */
 nav {
     border: none;
     z-index: 8;
@@ -11,7 +63,8 @@ nav {
     width: 100%;
     text-align: center;
     background: #fc3f32;
-    background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%); background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+    background: -moz-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
+    background: -webkit-linear-gradient(top, #fc3f32 0%, #aa0000 100%);
     background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 }
@@ -30,6 +83,59 @@ nav ul li a {
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     text-align: center;
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Property value for items in the header, main and footer section */
+#uptodate {
+    background-color: transparent;
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: yellow;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.image1 {
+    width: 80px;
+    height: auto;
+    padding-right: 10px;
+}
+.town {
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+.gps {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+}
+#windicon {
+    width: 30px;
+}
+
+/* property value for where picture goes */
+#sectionfix {
+    background-position: center center;
+    background-size: cover;
+    padding-top: 0.5rem;
+}
+
+/* property value for heading and paragraph */
+h1 {
+    margin-top: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
 /* CSS rule controlling the toggling of small screen menu */
 #navbar {
     text-align: center;
@@ -55,7 +161,7 @@ nav.hide {
     display: none;
 }
 
-nav#primaryNav{
+nav#primaryNav {
     display: block;
 }
 
@@ -75,75 +181,84 @@ nav ul li a:hover {
 Parent to weather condition boxes 
 ######################################### */
 
- /* Background pictures for summary */
- .rain{
+/* Background pictures for summary */
+.rain {
     background-image: url("/Weather-images/rain_small.jpg");
 }
-.fog{
+
+.fog {
     background-image: url("/Weather-images/fog_small.jpg");
 }
-.clear{
+
+.clear {
     background-image: url("/Weather-images/clear_small.jpg");
 }
-.clouds{
+
+.clouds {
     background-image: url("/Weather-images/clouds_small.jpg");
 }
-.snow{
+
+.snow {
     background-image: url("/Weather-images/snow_small.jpg");
 }
 
-#others{
+#others {
     display: flex;
     flex-direction: column;
 }
- #feelslike{
+
+#feelslike {
     color: white;
+    position: relative;
     background-color: rgba(252, 245, 245, 0.5);
     border: 1px solid white;
-    width: 70vw;
-    height: 60vh;
+    width: 300px;
+    height: 350px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 5px rgb(144, 130, 130);
     margin: 20px auto;
 }
 
- /* css properties for weather tempearture elements */
- section#temperature, section#precipitation, section#conditions{
+/* css properties for weather tempearture elements */
+section#temperature,
+section#precipitation,
+section#conditions {
     position: relative;
     border: 1px solid white;
     border-radius: 2%;
     background-color: rgba(252, 245, 245, 0.5);
     box-shadow: 5px 5px 5px rgb(150, 136, 136);
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     margin: 15px auto;
     padding: 5px;
-  }
+}
 
-  section .component{
-    background-color: rgba(109, 97, 97, 0.5);;
+section .component {
+    background-color: rgba(109, 97, 97, 0.5);
+    ;
     position: absolute;
-   top: 25%;
-   left: 20%;
+    top: 90px;
+    left: 35px;
     border-radius: 90%;
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     display: flex;
     justify-content: center;
     z-index: 6;
 }
 
 
-section .inner{
+section .inner {
     background-color: rgba(252, 245, 245, 0.3);
     border-radius: 90%;
     align-self: center;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
 }
 
-.faren{
+.faren {
     position: absolute;
     top: 33%;
     right: 35%;
@@ -151,110 +266,84 @@ section .inner{
     font-size: 60px;
     font-weight: 900;
     color: white;
-  }
-  
-      .umbrela{
-        position: absolute;
-        top: 33%;
-        right: 40%;
-        z-index: 6;
-        font-size: 60px;
-        font-weight: 900;
-        color: white;
-      }
-      .percent{
-        position: absolute;
-        top: 48%;
-        right: 35%;
-        z-index: 6;
-        font-size: 25px;
-        font-weight: 900;
-        color: white;
-      }
+}
 
-      .condiTime{
-          font-size: 5em;
-      }
+.umbrela {
+    position: absolute;
+    top: 33%;
+    right: 40%;
+    z-index: 6;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+}
 
-      .headerchange{
-        position: absolute;
-        top: -27px;
-        left: 35%;
-        font-size: 2em;
-        color: rgb(49, 39, 39);
-    }
+.percent {
+    position: absolute;
+    top: 48%;
+    right: 35%;
+    z-index: 6;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
 
-    /* ##################################################
+.condiTime {
+    font-size: 5em;
+}
+
+.headerchange {
+    position: absolute;
+    top: -27px;
+    left: 70px;
+    font-size: 2em;
+    color: rgb(49, 39, 39);
+}
+
+/* ##################################################
     css properties for feels like weather conditions
     ################################################### */
 
-    #feelslike{
-         position: relative;
-    }
+#feelslike {
     
-    #feelhigh{
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        font-size: 2.5em;
-        color: red;
-    }
-    #feelmode{
-        position: absolute;
-        left: 20%;
-        top: 10%;
-        font-size: 5em;
-        color: green;
-    }
-    #feelow{
-        position: absolute;
-        top: 50%;
-        right: 15%;
-        font-size: 2.5em;
-        color: blue;
-    }
-    #feelreal{
-        display: none;
-    }
-    #feelwind{
-        position: absolute;
-        left: 25%;
-        bottom: 10%;
-        font-size: 2rem;
-    }
-    #feelgusts{
-        display: none;
-    }
+}
 
+#feelhigh {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 2.5em;
+    color: red;
+}
 
+#feelmode {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    font-size: 5em;
+    color: green;
+}
 
-    #uptodate {
-        background-color: transparent;
-        font-style: italic;
-        letter-spacing: 1pt;
-        color: yellow;
-        margin-top: -20px;
-        margin-bottom: 20px;
-        
-    }
-    
-    .image1{
-        width: 80px;
-        height: auto;
-        padding-right: 10px;
-    }
-    
-    .town {
-        margin-bottom: 0;
-        padding-left: 1rem;
-    }
-    
-    .gps {
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding-left: 1rem;
-    }
-    #windicon{
-        width: 30px;
-    }
-    
+#feelow {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    font-size: 2.5em;
+    color: blue;
+}
+
+#feelreal {
+    display: none;
+}
+
+#feelwind {
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+    font-size: 2rem;
+    color: black;
+}
+
+#feelgusts {
+    display: none;
+}

@@ -1,142 +1,77 @@
 /* css properties for small/mobile screen */
- .icon1{
-    position: absolute;
-    right: 85px;
-    top: 35px;
-    width: 30px;
-  }
-  .icon2{
-    position: absolute;
-    right: 25px;
-    top: 45px;
-    width: 30px;
-  }
-  .icon3{
-    position: absolute;
-    right: -5px;
-    top: 80px;
-    width: 30px;
-  }
-  .icon4{
-    position: absolute;
-    right: -10px;
-    top: 125px;
-    width: 30px;
-  }
-  .icon5{
-    position: absolute;
-    right: -5px;
-    bottom: 20px;
-    width: 30px;
-  }
-  .icon6{
-    position: absolute;
-    right: 30px;
-    bottom: -20px;
-    width: 30px;
-  }
-  .icon7{
-    position: absolute;
-    right: 85px;
-    bottom: -35px;
-    width: 30px;
-  }
-  .icon8{
-    position: absolute;
-    left: 25px;
-    bottom: -20px;
-    width: 30px;
-  }
-  .icon9{
-    position: absolute;
-    left: -5px;
-    bottom: 15px;
-    width: 30px;
-  }
-  .icon10{
-    position: absolute;
-    left: -10px;
-    top: 125px;
-    width: 30px;
-  }
-  .icon11{
-    position: absolute;
-    left: -5px;
-    top: 75px;
-    width: 30px;
-  }
+
   /* #################################################
   css property for individual weather imaage icons
   ##################################################### */
   .img1{
     position: absolute;
-    right: 105px;
-    top: 60px;
+    right: 130px;
+    top: 55px;
     width: 30px;
   }
   .img2{
     position: absolute;
-    right: 35px;
+    right: 50px;
     top: 80px;
     width: 30px;
   }
   .img3{
     position: absolute;
-    right: 1px;
-    top: 120px;
+    right: 3px;
+    top: 135px;
     width: 30px;
   }
   .img4{
     position: absolute;
     right: -5px;
-    top: 170px;
+    top: 190px;
     width: 30px;
   }
   .img5{
     position: absolute;
-    right: 5px;
-    bottom: 45px;
+    right: 15px;
+    bottom: 60px;
     width: 30px;
   }
   .img6{
     position: absolute;
-    right: 45px;
-    bottom: 2px;
+    right: 60px;
+    bottom: 10px;
     width: 30px;
   }
   .img7{
     position: absolute;
-    right: 105px;
-    bottom: -5px;
+    right: 130px;
+    bottom: 1px;
     width: 30px;
   }
   .img8{
     position: absolute;
-    left: 55px;
-    bottom: 2px;
+    left: 70px;
+    bottom: 10px;
     width: 30px;
   }
   .img9{
     position: absolute;
-    left: 20px;
-    bottom: 40px;
+    left: 25px;
+    bottom: 50px;
     width: 30px;
   }
   .img10{
     position: absolute;
-    left: 2px;
-    top: 170px;
+    left: 1px;
+    top: 190px;
     width: 30px;
   }
   .img11{
     position: absolute;
-    left: 5px;
-    top: 120px;
+    left: 10px;
+    top: 135px;
     width: 30px;
   }
   .img12{
     position: absolute;
-    left: 40px;
+    left: 50px;
     top: 80px;
     width: 30px;
   }
@@ -146,153 +81,153 @@
   ########################################### */
   .p1{
     position: absolute;
-    right: 70px;
-    top: 85px;
+    right: 80px;
+    top: 95px;
     z-index: 7;
   }
   .p2{
     position: absolute;
-    right: 40px;
-    top: 120px;
+    right: 50px;
+    top: 135px;
     z-index: 7;
   }
   .p3{
     position: absolute;
-    right: 30px;
-    top: 160px;
+    right: 40px;
+    top: 180px;
     z-index: 7;
   }
   .p4{
     position: absolute;
-    right: 40px;
-    top: 200px;
+    right: 55px;
+    top: 230px;
     z-index: 7;
   }
   .p5{
     position: absolute;
-    right: 70px;
-    bottom: 15px;
+    right: 90px;
+    bottom: 27px;
     z-index: 7;
   }
   .p6{
     position: absolute;
-    right: 113px;;
-    bottom: 0px;
+    left: 140px;
+    bottom: 13px;
     z-index: 7;
   }
   .p7{
     position: absolute;
-    left: 80px;
-    bottom: 13px;
+    left: 95px;
+    bottom: 25px;
     z-index: 7;
   }
   .p8{
     position: absolute;
-    left: 50px;
-    bottom: 40px;
+    left: 60px;
+    bottom: 60px;
     z-index: 7;
   }
   .p9{
     position: absolute;
-    left: 40px;
-    top: 160px;
+    left: 42px;
+    top: 180px;
     z-index: 7;
   }
   .p10{
     position: absolute;
-    left: 40px;
-    top: 120px;
+    left: 50px;
+    top: 130px;
     z-index: 7;
   }
   .p11{
     position: absolute;
-    left: 70px;
-    top: 85px;
+    left: 85px;
+    top: 90px;
     z-index: 7;;
   }
   .p12{
     position: absolute;
-    left: 120px;
-    top: 70px;
+    left: 140px;
+    top: 73px;
     z-index: 7;
   }
 
   /* css property for individual weather icons and numbers */
   .icon1{
     position: absolute;
-    right: 92px;
+    right: 120px;
     top: 40px;
     width: 40px;
   }
   .icon2{
     position: absolute;
-    right: 25px;
-    top: 60px;
+    right: 35px;
+    top: 70px;
     width: 40px;
   }
   .icon3{
     position: absolute;
-    right:-10px;
-    top: 105px;
+    right:-5px;
+    top: 115px;
     width: 40px;
   }
   .icon4{
     position: absolute;
     right: -16px;
-    top: 155px;
+    top: 175px;
     width: 40px;
   }
   .icon5{
     position: absolute;
-    right: -5px;
-    bottom: 25px;
+    right: -3px;
+    bottom: 50px;
     width: 40px;
   }
   .icon6{
     position: absolute;
-    right: 30px;
-    bottom: -10px;
+    right: 40px;
+    bottom: 5px;
     width: 40px;
   }
   .icon7{
     position: absolute;
-    right: 90px;
-    bottom: -25px;
+    right: 120px;
+    bottom: -20px;
     width: 40px;
   }
   .icon8{
     position: absolute;
-    left: 55px;
-    bottom: -13px;
+    left: 70px;
+    bottom: -5px;
     width: 40px;
   }
   .icon9{
     position: absolute;
-    left: 15px;
-    bottom: 25px;
+    left: 25px;
+    bottom: 35px;
     width: 40px;
   }
   .icon10{
     position: absolute;
     left: 3px;
-    top: 155px;
+    top: 178px;
     width: 40px;
   }
   .icon11{
     position: absolute;
     left: 10px;
-    top: 110px;
+    top: 120px;
     width: 40px;
   }
   .icon12{
     position: absolute;
     left: 50px;
-    top: 60px;
+    top: 70px;
     width: 40px;
   }
 
 
-@media only screen and (min-width: 60em){
+@media screen and (min-width: 60em){
   /* ##################################################
      css property for individual weather numbers 
   #################################################### */
