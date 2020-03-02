@@ -182,24 +182,20 @@ Parent to weather condition boxes
 ######################################### */
 
 /* Background pictures for summary */
-.rain {
-    background-image: url("/Weather-images/rain_small.jpg");
-}
-
-.fog {
-    background-image: url("/Weather-images/fog_small.jpg");
-}
-
-.clear {
+.clear{
     background-image: url("/Weather-images/clear_small.jpg");
 }
-
-.clouds {
+.clouds{
     background-image: url("/Weather-images/clouds_small.jpg");
 }
-
-.snow {
+.rain{
+    background-image: url("/Weather-images/rain_small.jpg");
+}
+.snow{
     background-image: url("/Weather-images/snow_small.jpg");
+}
+.fog{
+    background-image: url("/Weather-images/fog_small.jpg");
 }
 
 #others {
