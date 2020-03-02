@@ -111,7 +111,7 @@
   }
   .p6{
     position: absolute;
-    left: 140px;
+    left: 125px;
     bottom: 13px;
     z-index: 7;
   }
@@ -228,75 +228,6 @@
 
 
 @media screen and (min-width: 60em){
-  /* ##################################################
-     css property for individual weather numbers 
-  #################################################### */
-  .icon1{
-    position: absolute;
-    right: 85px;
-    top: 35px;
-    width: 30px;
-  }
-  .icon2{
-    position: absolute;
-    right: 25px;
-    top: 45px;
-    width: 30px;
-  }
-  .icon3{
-    position: absolute;
-    right: -5px;
-    top: 80px;
-    width: 30px;
-  }
-  .icon4{
-    position: absolute;
-    right: -10px;
-    top: 125px;
-    width: 30px;
-  }
-  .icon5{
-    position: absolute;
-    right: -5px;
-    bottom: 20px;
-    width: 30px;
-  }
-  .icon6{
-    position: absolute;
-    right: 30px;
-    bottom: -20px;
-    width: 30px;
-  }
-  .icon7{
-    position: absolute;
-    right: 85px;
-    bottom: -35px;
-    width: 30px;
-  }
-  .icon8{
-    position: absolute;
-    left: 25px;
-    bottom: -20px;
-    width: 30px;
-  }
-  .icon9{
-    position: absolute;
-    left: -5px;
-    bottom: 15px;
-    width: 30px;
-  }
-  .icon10{
-    position: absolute;
-    left: -10px;
-    top: 125px;
-    width: 30px;
-  }
-  .icon11{
-    position: absolute;
-    left: -5px;
-    top: 75px;
-    width: 30px;
-  }
   /* #################################################
   css property for individual weather imaage icons
   ##################################################### */
@@ -449,7 +380,10 @@
     z-index: 7;
   }
 
-  /* css property for individual weather icons and numbers */
+    /* ##################################################
+     css property for individual weather numbers 
+  #################################################### */
+  
   .icon1{
     position: absolute;
     right: 92px;

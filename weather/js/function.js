@@ -105,7 +105,7 @@ let temp = 60;
 let speed = 4.8;
 buildWC(speed, temp);
 //The Time Indicator function
-let hour="6";
+let hour="8";
 timeBall(hour);
 console.log(hour);
 //Background image change
