@@ -3,8 +3,8 @@
 /* Property value for ball indicator */
     .ball{
         position: inherit;
-        width: 17px;
-        height: 17px;
+        width: 20px;
+        height: 20px;
         background-color: rgb(14, 13, 13);
         border-radius: 100%;
         z-index: 7;

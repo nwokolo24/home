@@ -232,8 +232,8 @@ section#temperature, section#precipitation, section#conditions{
         background-color: rgba(252, 245, 245, 0.3);
         border-radius: 90%;
         align-self: center;
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
     
     #feelhigh{

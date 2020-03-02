@@ -111,7 +111,7 @@
   }
   .p6{
     position: absolute;
-    left: 125px;
+    left: 145px;
     bottom: 13px;
     z-index: 7;
   }
@@ -339,7 +339,7 @@
   }
   .p6{
     position: absolute;
-    right: 113px;;
+    left: 125px;;
     bottom: 0px;
     z-index: 7;
   }
