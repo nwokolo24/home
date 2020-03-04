@@ -28,6 +28,7 @@ footer {
     color: white;
     position: absolute;
     bottom: 0px;
+    width: 100%;
     padding: 1px;
     margin-bottom: 30px; 
     background: #307af2;  
