@@ -30,8 +30,11 @@
         display: block;
         text-align: center;
         color: white;
+        position: absolute;
+        bottom: 0px;
         padding: 1px;
-        margin-bottom: 30px;
+        width: 90%;
+        margin: auto;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#307af2+1,00059b+100 */
         background: #307af2;
         /* Old browsers */
@@ -215,7 +218,7 @@ section#temperature, section#precipitation, section#conditions{
 
 
    section .component{
-        background-color: rgba(109, 97, 97, 0.5);;
+        background-color: rgba(109, 97, 97, 0.5);
         position: absolute;
        top: 30%;
        left: 13%;

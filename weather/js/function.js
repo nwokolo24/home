@@ -1,14 +1,114 @@
 
 'use strict';
+// Global Variables t be used
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
+
+var pageNav = $('#navbar');
+var statusContainer = $('#status');
+var contentContainer = $('#main-content');
+
+// local and session storage selectors
+var locStore = window.localStorage;
+var sessStore = window.sessionStorage;
+
+/* *****************************************************************
+* WEATHER SITE JAVASCRIPT INSTRUCTIONS THAT CALLS VARIOUS FUNCTIONS *
+****************************************************************** */
+// Listen for the DOM to finish building
+document.addEventListener("DOMContentLoaded", function(){
+  buildModDate();
+  const menuButton = document.querySelector("#menu-button");
+  menuButton.addEventListener('click', burgerMenu);
+
+//Variables for wind chill function
+let temp = 31;
+let speed = 4.8;
+buildWC(speed, temp);
+
+//The Time Indicator function
+let hour="6";
+timeBall(hour);
+console.log(hour);
+
+//Background image change
+let curCond = "clear";
+curCond = curCond.toLowerCase();
+changeSummaryImage(curCond);
+console.log(curCond);
+
+//Get weather json data
+let weatherURL = "/weather/js/idahoweather.json";
+fetchWeatherData(weatherURL);
+
+
+// // number Divisible by a divisor
+// const whyClick = document.querySelector("#cal");
+// console.log(whyClick);
+// whyClick.addEventListener("click", divisible);
+})
+
+
 
 /* *************************************
 * WEATHER SITE JAVASCRIPT FUNCTIONS *
 ************************************* */
-
  //Js to get the Current Date
 const options = {weekday: "long", day: "numeric", month:"short", year: "numeric"};
 document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
 
+/* ##################################################
+               Fetch Weather Data
+###################################################### */
+function fetchWeatherData(weatherURL){
+  let cityName = "preston"; //The data we want from the weather.json file
+  fetch(weatherURL)
+  .then(function(response) {
+    if(response.ok){
+      return response.json();
+    }
+    throw new ERROR("Network resonse was not OK.");
+  })
+  .then(function(data){
+    //check the data object that was retrieved
+    console.log(data);
+    //data is the full javaScript object, but we only want the preston part
+    //shorten the variable and focus only on the data we want to reduce typing
+    let p = data[cityName];
+
+
+    //************ Get the location information *********
+    let locName = p.City;
+    let locState = p.State;
+
+    //put them together
+    let fullName = locName+', '+locState;
+
+    //see if it worked, using ticks around the content in th log
+    console.log(`fullName is: ${fullName}`);
+
+    //Get the longitude and latitude and combine them to
+    //a comma seperated single string
+    const latLong = p.properties.relativeLocation.geometry.coordinates[1] + ","+ p.properties.relativeLocation.geometry.coordinates[0];
+    console.log(latLong);
+
+     // Create a JSON object containing the full name, latitude and longitude
+    // and store it into local storage.
+    const prestonData = JSON.stringify({fullName,latLong});
+    locStore.setItem("Preston,ID", prestonData);
+
+
+    //************ Get the current condition information *********
+    //As the data is extracted from the JSON, store it into session storage
+    //Get the temperature data
+  })
+  .catch(function(error){
+    console.log("There was a fetch problem: ", error.message);
+    statusContainer.innerHTML = "Sorry, the data could not be processed.";
+
+  })
+
+}
 
 //Js to get the last modified date
 function buildModDate(){
@@ -73,7 +173,6 @@ function timeBall(hour){
   //find all "ball" classes and remove them
   let x = document.querySelectorAll(".ball");
   for (let item of x) {
-          console.log(item);
           item.classList.remove("ball");
   }
 
@@ -91,26 +190,23 @@ function changeSummaryImage(curCond){
 let selectImage = document.querySelector(".clear");
 selectImage.classList.add(curCond);
 }
+
+// // Integers evenly divisible by divisor
+// function divisible(){
+//   //Input: 
+//   let start = parseInt(document.querySelector("#start").value);
+//   let end = parseInt(document.querySelector("#end").value);
+//   let divisor = parseInt(document.querySelector("#divisor").value);
+
+//    //Processing:
+//    let answer = " ";
+//    for (let i = start; i <= end; i++){
+//        if(i % divisor == 0){
+//            answer += i + " ";
+//        }
+//    }
+//    //Output:
+//    document.getElementById("output").innerHTML = answer;
+//    console.log(answer)
+// }
  
-/* *****************************************************************
-* WEATHER SITE JAVASCRIPT INSTRUCTIONS THAT CALLS VARIOUS FUNCTIONS *
-****************************************************************** */
-// Listen for the DOM to finish building
-document.addEventListener("DOMContentLoaded", function(){
-    buildModDate();
-    const menuButton = document.querySelector("#menu-button");
-    menuButton.addEventListener('click', burgerMenu);
-//Variables for wind chill function
-let temp = 60;
-let speed = 4.8;
-buildWC(speed, temp);
-//The Time Indicator function
-let hour="8";
-timeBall(hour);
-console.log(hour);
-//Background image change
-let curCond = "clear";
-curCond = curCond.toLowerCase();
-changeSummaryImage(curCond);
-console.log(curCond);
-  })

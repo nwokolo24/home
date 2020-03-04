@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+/* Property value for ball indicator */
+    .ball{
+        position: inherit;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(14, 13, 13);
+        border-radius: 100%;
+        z-index: 7;
+        text-align: center;
+        color: white;
+
+    }
+    .condiTime{
+        color: white;
+    }
+
+    /* property values for function created for teaching purposes */
+    #function{
+        background-color: rgba(109, 97, 97, 0.5);
+        padding-left: 10px;
+    }
+    #start, #end, #divisor{
+        margin-top: 10px;
+    }
+    button{
+        background-color: green;
+        color: white;
+    }
+
+
+    /* New hide class for fectch structure */
+    .hide{
+        display: none;
+    }
