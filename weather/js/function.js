@@ -32,7 +32,7 @@ timeBall(hour);
 console.log(hour);
 
 //Background image change
-let curCond = "clear";
+let curCond = "fog";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);
@@ -42,10 +42,10 @@ let weatherURL = "/weather/js/idahoweather.json";
 fetchWeatherData(weatherURL);
 
 
-// // number Divisible by a divisor
+// // // number Divisible by a divisor
 // const whyClick = document.querySelector("#cal");
 // console.log(whyClick);
-// whyClick.addEventListener("click", divisible);
+// whyClick.addEventListener("click", getAnswer);
 })
 
 
@@ -61,13 +61,13 @@ document.getElementById("currentdate").textContent = new Date().toLocaleDateStri
                Fetch Weather Data
 ###################################################### */
 function fetchWeatherData(weatherURL){
-  let cityName = "preston"; //The data we want from the weather.json file
+  let cityName = "Preston"; //The data we want from the weather.json file
   fetch(weatherURL)
   .then(function(response) {
     if(response.ok){
       return response.json();
     }
-    throw new ERROR("Network resonse was not OK.");
+    throw new Error("Network resonse was not OK.");
   })
   .then(function(data){
     //check the data object that was retrieved
@@ -75,17 +75,18 @@ function fetchWeatherData(weatherURL){
     //data is the full javaScript object, but we only want the preston part
     //shorten the variable and focus only on the data we want to reduce typing
     let p = data[cityName];
+    console.log(p);
 
 
     //************ Get the location information *********
-    let locName = p.City;
-    let locState = p.State;
+    let locName = p.properties.relativeLocation.properties.city;
+    let locState = p.properties.relativeLocation.properties.state;
 
     //put them together
     let fullName = locName+', '+locState;
 
     //see if it worked, using ticks around the content in th log
-    console.log(`fullName is: ${fullName}`);
+    console.log(`Full name is: ${fullName}`); //This combines and outputs a string and a predefined variable
 
     //Get the longitude and latitude and combine them to
     //a comma seperated single string
@@ -95,7 +96,8 @@ function fetchWeatherData(weatherURL){
      // Create a JSON object containing the full name, latitude and longitude
     // and store it into local storage.
     const prestonData = JSON.stringify({fullName,latLong});
-    locStore.setItem("Preston,ID", prestonData);
+    console.log(prestonData);
+    sessStore.setItem("PrestonID", prestonData);
 
 
     //************ Get the current condition information *********
@@ -191,22 +193,30 @@ let selectImage = document.querySelector(".clear");
 selectImage.classList.add(curCond);
 }
 
-// // Integers evenly divisible by divisor
-// function divisible(){
+
+// // // Integers evenly divisible by divisor
+// function divisible(a, b, c){
+//   let answer = " ";
+//    for (let i = a; i <= b; i++){
+//        if(i % c == 0){
+//            answer += i + " ";
+//            console.log(answer);
+//        }
+//       }
+//       return answer;
+//         }
+
+//       //A different function that calls the divisible function
+//        function getAnswer(){
 //   //Input: 
 //   let start = parseInt(document.querySelector("#start").value);
 //   let end = parseInt(document.querySelector("#end").value);
 //   let divisor = parseInt(document.querySelector("#divisor").value);
-
-//    //Processing:
-//    let answer = " ";
-//    for (let i = start; i <= end; i++){
-//        if(i % divisor == 0){
-//            answer += i + " ";
-//        }
-//    }
+        
+//   //Processing
+//   //Calling the divisible function
+//   let calculate = divisible(start, end, divisor);
+//    console.log(calculate);
 //    //Output:
-//    document.getElementById("output").innerHTML = answer;
-//    console.log(answer)
-// }
- 
+//    document.getElementById("output").innerHTML = calculate;
+//        }
