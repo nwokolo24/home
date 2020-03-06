@@ -33,7 +33,7 @@ timeBall(hour);
 console.log(hour);
 
 //Background image change
-// let curCond = "fog";
+let curCond = "fog";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);
@@ -42,13 +42,13 @@ console.log(curCond);
 let weatherURL = "/weather/js/idahoweather.json";
 fetchWeatherData(weatherURL);
 
-buildPage();
+
 
 
 // // // number Divisible by a divisor
-// const whyClick = document.querySelector("#cal");
-// console.log(whyClick);
-// whyClick.addEventListener("click", getAnswer);
+const whyClick = document.querySelector("#cal");
+console.log(whyClick);
+whyClick.addEventListener("click", getAnswer);
 })
 
 
@@ -173,7 +173,7 @@ function getHourly(URL){
     sessStore.setItem(`shortForecast`, data.properties.periods[0].shortForecast);
     
     //Call the buildPage function
-    
+    buildPage();
   })
   .catch(error => console.log("There was a getHourly error: ", error))
 }
@@ -193,17 +193,10 @@ function buildPage(){
   //Get the h1 to display the city location
   let contentHeading = $(".town");
   contentHeading.innerHTML = sessStore.getItem("FullName");
-  console.log(contentHeading);
 //Get the coordinates container for the location
-// let latlon = $(".gps");
-// latlon.innerHTML = sessStore.getItem("latlong");
-// console.log(latlon);
-
-// Get the condition keyword and set Background picture
-changeSummaryImage(sessStore.getItem('shortForecast'));
-/* Keep in mind that the value may be different than 
-what you need for your CSS to replace the image. You 
-may need to make some adaptations for it to work.*/
+let latlon = $(".gps");
+latlon.innerHTML = sessStore.getItem("latLong");
+console.log(latlon);
 }
 
 //Js to get the last modified date
@@ -283,35 +276,35 @@ Function for changing the background image surrounding the weather
 condition boxes
 ##################################################################### */
 function changeSummaryImage(curCond){
-let selectImage = $(".clear");
+let selectImage = document.querySelector(".clear");
 selectImage.classList.add(curCond);
 }
 
 
 
 // // // Integers evenly divisible by divisor
-// function divisible(a, b, c){
-//   let answer = " ";
-//    for (let i = a; i <= b; i++){
-//        if(i % c == 0){
-//            answer += i + " ";
-//            console.log(answer);
-//        }
-//       }
-//       return answer;
-//         }
+function divisible(a, b, c){
+  let answer = " ";
+   for (let i = s; i <= b; i++){
+       if(i % c == 0){
+           answer += i + " ";
+           console.log(answer);
+       }
+      }
+      return answer;
+        }
 
-//       //A different function that calls the divisible function
-//        function getAnswer(){
-//   //Input: 
-//   let start = parseInt(document.querySelector("#start").value);
-//   let end = parseInt(document.querySelector("#end").value);
-//   let divisor = parseInt(document.querySelector("#divisor").value);
+      //A different function that calls the divisible function
+       function getAnswer(){
+  //Input: 
+  let start = parseInt(document.querySelector("#start").value);
+  let end = parseInt(document.querySelector("#end").value);
+  let divisor = parseInt(document.querySelector("#divisor").value);
         
-//   //Processing
-//   //Calling the divisible function
-//   let calculate = divisible(start, end, divisor);
-//    console.log(calculate);
-//    //Output:
-//    document.getElementById("output").innerHTML = calculate;
-//        }
+  //Processing
+  //Calling the divisible function
+  let calculate = divisible(start, end, divisor);
+   console.log(calculate);
+   //Output:
+   document.getElementById("output").innerHTML = calculate;
+       }

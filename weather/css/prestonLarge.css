@@ -79,17 +79,6 @@
         height: auto;
         padding-right: 10px;
     }
-    
-    .town {
-        margin-bottom: 0;
-        padding-left: 1rem;
-    }
-    
-    .gps {
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding-left: 1rem;
-    }
     #windicon{
         width: 30px;
     }
