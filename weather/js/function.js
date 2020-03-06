@@ -285,7 +285,7 @@ selectImage.classList.add(curCond);
 // // // Integers evenly divisible by divisor
 function divisible(a, b, c){
   let answer = " ";
-   for (let i = s; i <= b; i++){
+   for (let i = a; i <= b; i++){
        if(i % c == 0){
            answer += i + " ";
            console.log(answer);
