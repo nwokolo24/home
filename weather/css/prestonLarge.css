@@ -117,8 +117,6 @@
     }
     /* CSS properties for navigation menu */
     nav#navbar {
-        display: flex;
-        flex-direction: row;
         position: static;
         text-align: center;
         margin: auto;
@@ -137,7 +135,8 @@
         list-style-type: none;
     }  
     
-    nav ul li {
+    .hidden ul li:not(:last-child) {
+        display: block;
         border-right: 1px solid white;
         width: 100%;
         line-height: 1em;
