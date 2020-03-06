@@ -28,15 +28,15 @@ let speed = 4.8;
 buildWC(speed, temp);
 
 //The Time Indicator function
-let hour="6";
+// let hour="6";
 timeBall(hour);
 console.log(hour);
 
 //Background image change
-let curCond = "fog";
-curCond = curCond.toLowerCase();
-changeSummaryImage(curCond);
-console.log(curCond);
+// let curCond = "fog";
+// curCond = curCond.toLowerCase();
+changeSummaryImage();
+// console.log(curCond);
 
 //Get weather json data
 let weatherURL = "/weather/js/idahoweather.json";
@@ -46,9 +46,9 @@ fetchWeatherData(weatherURL);
 
 
 // // // number Divisible by a divisor
-const whyClick = document.querySelector("#cal");
-console.log(whyClick);
-whyClick.addEventListener("click", getAnswer);
+// const whyClick = document.querySelector("#cal");
+// console.log(whyClick);
+// whyClick.addEventListener("click", getAnswer);
 })
 
 
@@ -99,7 +99,7 @@ function fetchWeatherData(weatherURL){
 
     //Get the longitude and latitude and combine them to
     //a comma seperated single string
-    const latLong = p.properties.relativeLocation.geometry.coordinates[1] + ","+ p.properties.relativeLocation.geometry.coordinates[0];
+    const latLong = p.properties.relativeLocation.geometry.coordinates[1] + ", "+ p.properties.relativeLocation.geometry.coordinates[0];
     console.log(latLong);
 
      // Create a JSON object containing the full name, latitude and longitude
@@ -197,7 +197,43 @@ function buildPage(){
 let latlon = $(".gps");
 latlon.innerHTML = sessStore.getItem("latLong");
 console.log(latlon);
+//Get the condition keyword and set Background picture
+changeSummaryImage(sessStore.getItem("shortForecast"));
+/* Keep in mind that the value may be different than 
+what you need for your CSS to replace the image. You 
+may need to make some adaptations for it to work.*/
+
+// **********  Set the current conditions information  **********
+// Set the temperature information
+let hiTemp = $("#feelhigh");
+let loTemp = $("#feelow");
+let currentTemp = $("#feelmode");
+hiTemp.innerHTML = sessStore.getItem("highTemp") + "°F";
+loTemp.innerHTML = sessStore.getItem("lowTemp") + "°F";
+currentTemp.innerHTML = sessStore.getItem("temperature") + "°F";
+//Set the wind information
+let speed = $("#windspeed");
+let gust = $('#gusting');
+speed.innerHTML = sessStore.getItem('windSpeed');
+gust.innerHTML = sessStore.getItem('windGust');
+// Calculate feel like temp
+feelTemp.innerHTML = buildWC(sessStore.getItem('windSpeed'), sessStore.getItem('temperature')) + "°F";
 }
+
+/* TIME INDICATORS */
+// **********  Set the Time Indicators  **********
+let thisDate = new Date();
+var currentHour = thisDate.getHours();
+let indicatorHour;
+// If hour is greater than 12, subtract 12
+if (currentHour > 12) {
+ indicatorHour = currentHour - 12;
+} else {
+ indicatorHour = currentHour;
+};
+console.log(`Current hour in time indicator is: ${currentHour}`);
+// Set the time indicator
+timeIndicator(indicatorHour);
 
 //Js to get the last modified date
 function buildModDate(){
@@ -249,10 +285,7 @@ function buildWC(speed, temp) {
 
   //IF chill is greater than temp, return the temp
   wc = (wc > temp)?temp:wc;
-
-  //Display the windchill result
-  console.log(wc);
-  feelTemp.innerHTML = wc;
+  return wc;
 }
 
 /* ###########################################################################
@@ -275,36 +308,36 @@ function timeBall(hour){
 Function for changing the background image surrounding the weather 
 condition boxes
 ##################################################################### */
-function changeSummaryImage(curCond){
-let selectImage = document.querySelector(".clear");
-selectImage.classList.add(curCond);
+function changeSummaryImage(){
+// let selectImage = document.querySelector(".clear");
+// selectImage.classList.add();
 }
 
 
 
 // // // Integers evenly divisible by divisor
-function divisible(a, b, c){
-  let answer = " ";
-   for (let i = a; i <= b; i++){
-       if(i % c == 0){
-           answer += i + " ";
-           console.log(answer);
-       }
-      }
-      return answer;
-        }
+// function divisible(a, b, c){
+//   let answer = " ";
+//    for (let i = a; i <= b; i++){
+//        if(i % c == 0){
+//            answer += i + " ";
+//            console.log(answer);
+//        }
+//       }
+//       return answer;
+//         }
 
-      //A different function that calls the divisible function
-       function getAnswer(){
-  //Input: 
-  let start = parseInt(document.querySelector("#start").value);
-  let end = parseInt(document.querySelector("#end").value);
-  let divisor = parseInt(document.querySelector("#divisor").value);
+//       //A different function that calls the divisible function
+//        function getAnswer(){
+//   //Input: 
+//   let start = parseInt(document.querySelector("#start").value);
+//   let end = parseInt(document.querySelector("#end").value);
+//   let divisor = parseInt(document.querySelector("#divisor").value);
         
-  //Processing
-  //Calling the divisible function
-  let calculate = divisible(start, end, divisor);
-   console.log(calculate);
-   //Output:
-   document.getElementById("output").innerHTML = calculate;
-       }
+//   //Processing
+//   //Calling the divisible function
+//   let calculate = divisible(start, end, divisor);
+//    console.log(calculate);
+//    //Output:
+//    document.getElementById("output").innerHTML = calculate;
+//        }
