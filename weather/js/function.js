@@ -33,7 +33,7 @@ timeBall(hour);
 console.log(hour);
 
 //Background image change
-let curCond = "fog";
+// let curCond = "fog";
 curCond = curCond.toLowerCase();
 changeSummaryImage(curCond);
 console.log(curCond);
@@ -41,6 +41,8 @@ console.log(curCond);
 //Get weather json data
 let weatherURL = "/weather/js/idahoweather.json";
 fetchWeatherData(weatherURL);
+
+buildPage();
 
 
 // // // number Divisible by a divisor
@@ -171,9 +173,37 @@ function getHourly(URL){
     sessStore.setItem(`shortForecast`, data.properties.periods[0].shortForecast);
     
     //Call the buildPage function
-    buildPage();
+    
   })
   .catch(error => console.log("There was a getHourly error: ", error))
+}
+
+/* ************************************
+*  Build the Weather page
+************************************* */
+function buildPage(){
+  //set the title with the location name at the first
+  //Gets the title element so it can be worked with
+  let pageTitle = $("#page-title");
+  //Create a text node containing the full name
+  let fullNameNode = document.createTextNode(sessStore.getItem("FullName"));
+  console.log("FullName");
+  //Inserts the fullName value before any other content that might exist
+  pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
+  //Get the h1 to display the city location
+  let contentHeading = $(".town");
+  contentHeading.innerHTML = sessStore.getItem("FullName");
+  console.log(contentHeading);
+//Get the coordinates container for the location
+// let latlon = $(".gps");
+// latlon.innerHTML = sessStore.getItem("latlong");
+// console.log(latlon);
+
+// Get the condition keyword and set Background picture
+changeSummaryImage(sessStore.getItem('shortForecast'));
+/* Keep in mind that the value may be different than 
+what you need for your CSS to replace the image. You 
+may need to make some adaptations for it to work.*/
 }
 
 //Js to get the last modified date
@@ -253,7 +283,7 @@ Function for changing the background image surrounding the weather
 condition boxes
 ##################################################################### */
 function changeSummaryImage(curCond){
-let selectImage = document.querySelector(".clear");
+let selectImage = $(".clear");
 selectImage.classList.add(curCond);
 }
 

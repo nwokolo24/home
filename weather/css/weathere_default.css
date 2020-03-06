@@ -10,10 +10,20 @@
         z-index: 7;
         text-align: center;
         color: white;
-
     }
     .condiTime{
         color: white;
+    }
+
+    .town {
+        margin-bottom: 0;
+        padding-left: 1rem;
+    }
+    
+    .gps {
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-left: 1rem;
     }
 
     /* property values for function created for teaching purposes */
@@ -31,6 +41,6 @@
 
 
     /* New hide class for fectch structure */
-       .hideMain{
+       /* .hideMain{
         display: none;
-    }   
+    }    */
