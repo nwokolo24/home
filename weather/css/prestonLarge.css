@@ -232,7 +232,7 @@ section#temperature, section#precipitation, section#conditions{
     }
     #feelmode{
         position: absolute;
-        left: 45%;
+        left: 40%;
         top: 5px;
         font-size: 6em;
     }
@@ -248,7 +248,7 @@ section#temperature, section#precipitation, section#conditions{
         color: black;
         position: absolute;
         top: 55%;
-        left: 45%;
+        left: 40%;
         font-size: 2em;
     }
     #feelwind{

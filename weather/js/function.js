@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function(){
 buildWC(speed, temp);
 
 //The Time Indicator function
-// let hour="6";
 timeBall(indicatorHour);
 console.log(indicatorHour);
 
@@ -226,7 +225,6 @@ if (currentHour > 12) {
 console.log(`Current hour in time indicator is: ${currentHour}`);
 
 // Set the time indicator
-timeIndicator(indicatorHour);
 
 //Js to get the last modified date
 function buildModDate(){
