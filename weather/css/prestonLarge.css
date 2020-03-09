@@ -279,7 +279,7 @@ section#temperature, section#precipitation, section#conditions{
 Parent to weather condition boxes 
 ######################################### */
     /* Background pictures for summary */ 
-    .clearer{
+    .clear{
         background-image: url("/Weather-images/clear_large.jpg");
     }
     .shortforecast{

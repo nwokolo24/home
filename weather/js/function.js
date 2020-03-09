@@ -6,7 +6,8 @@ var $$ = document.querySelectorAll.bind(document);
 
 var pageNav = $('#navbar');
 var statusContainer = $('#status');
-var contentContainer = $('#main-content');
+var contentContainer = $('#mainContent');
+var hideMain = $(".hideMain");
 
 // local and session storage selectors
 var locStore = window.localStorage;
@@ -65,6 +66,7 @@ function fetchWeatherData(weatherURL){
   .then(function(data){
     //check the data object that was retrieved
     console.log(data);
+
     //data is the full javaScript object, but we only want the preston part
     //shorten the variable and focus only on the data we want to reduce typing
     let p = data[cityName];
@@ -118,7 +120,8 @@ function fetchWeatherData(weatherURL){
   })
   .catch(function(error){
     console.log("There was a fetch problem: ", error.message);
-    statusContainer.innerHTML = "Sorry, the data could not be processed.";
+    hideMain.innerHTML = "Sorry, the destination for your requested data could not be established!";
+
 
   })
 
@@ -226,8 +229,9 @@ if (currentHour > 12) {
  indicatorHour = currentHour;
 };
 console.log(`Current hour in time indicator is: ${currentHour}`);
-
+/* ############################################################
 // ********** Hourly Temperature Component  **********
+############################################################## */
 // Get the hourly data from storage as an array
 let currentData = [];
 let tempHour = currentHour;
