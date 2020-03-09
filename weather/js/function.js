@@ -23,35 +23,25 @@ document.addEventListener("DOMContentLoaded", function(){
   //call current date
   buildCurDate(); 
 //Variables for wind chill function
-let temp = 31;
-let speed = 4.8;
+ let temp;
+ let speed;
 buildWC(speed, temp);
 
 //The Time Indicator function
 // let hour="6";
-timeBall(hour);
-console.log(hour);
+timeBall(indicatorHour);
+console.log(indicatorHour);
 
 //Background image change
 // let curCond = "fog";
 // curCond = curCond.toLowerCase();
-changeSummaryImage();
+changeSummaryImage(sessStore.getItem("shortForecast"));
 // console.log(curCond);
 
 //Get weather json data
 let weatherURL = "/weather/js/idahoweather.json";
 fetchWeatherData(weatherURL);
-
-
-
-
-// // // number Divisible by a divisor
-// const whyClick = document.querySelector("#cal");
-// console.log(whyClick);
-// whyClick.addEventListener("click", getAnswer);
 })
-
-
 
 /* *************************************
 * WEATHER SITE JAVASCRIPT FUNCTIONS *
@@ -198,6 +188,7 @@ let latlon = $(".gps");
 latlon.innerHTML = sessStore.getItem("latLong");
 console.log(latlon);
 //Get the condition keyword and set Background picture
+
 changeSummaryImage(sessStore.getItem("shortForecast"));
 /* Keep in mind that the value may be different than 
 what you need for your CSS to replace the image. You 
@@ -217,6 +208,7 @@ let gust = $('#gusting');
 speed.innerHTML = sessStore.getItem('windSpeed');
 gust.innerHTML = sessStore.getItem('windGust');
 // Calculate feel like temp
+let feelTemp = $("#feelTemp");
 feelTemp.innerHTML = buildWC(sessStore.getItem('windSpeed'), sessStore.getItem('temperature')) + "°F";
 }
 
@@ -232,6 +224,7 @@ if (currentHour > 12) {
  indicatorHour = currentHour;
 };
 console.log(`Current hour in time indicator is: ${currentHour}`);
+
 // Set the time indicator
 timeIndicator(indicatorHour);
 
@@ -274,8 +267,6 @@ function burgerMenu(){
 //This function calculates the WindChill
 ###################################################### */
 function buildWC(speed, temp) {
-  let feelTemp = document.getElementById("feelTemp");
-
 //This formular Computes the windchill value
   let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
  console.log(wc);
@@ -312,32 +303,3 @@ function changeSummaryImage(){
 // let selectImage = document.querySelector(".clear");
 // selectImage.classList.add();
 }
-
-
-
-// // // Integers evenly divisible by divisor
-// function divisible(a, b, c){
-//   let answer = " ";
-//    for (let i = a; i <= b; i++){
-//        if(i % c == 0){
-//            answer += i + " ";
-//            console.log(answer);
-//        }
-//       }
-//       return answer;
-//         }
-
-//       //A different function that calls the divisible function
-//        function getAnswer(){
-//   //Input: 
-//   let start = parseInt(document.querySelector("#start").value);
-//   let end = parseInt(document.querySelector("#end").value);
-//   let divisor = parseInt(document.querySelector("#divisor").value);
-        
-//   //Processing
-//   //Calling the divisible function
-//   let calculate = divisible(start, end, divisor);
-//    console.log(calculate);
-//    //Output:
-//    document.getElementById("output").innerHTML = calculate;
-//        }
