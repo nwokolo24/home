@@ -279,10 +279,10 @@ section#temperature, section#precipitation, section#conditions{
 Parent to weather condition boxes 
 ######################################### */
     /* Background pictures for summary */ 
-    .clear{
+    .clearer{
         background-image: url("/Weather-images/clear_large.jpg");
     }
-    .clouds{
+    .shortforecast{
         background-image: url("/Weather-images/clouds_large.jpg");
     }
     .rain{

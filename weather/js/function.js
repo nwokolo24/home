@@ -32,10 +32,10 @@ timeBall(indicatorHour);
 console.log(indicatorHour);
 
 //Background image change
-// let curCond = "fog";
-// curCond = curCond.toLowerCase();
-changeSummaryImage(sessStore.getItem("shortForecast"));
-// console.log(curCond);
+let curCond = "shortForecast";
+curCond = curCond.toLowerCase();
+changeSummaryImage(curCond);
+console.log(curCond);
 
 //Get weather json data
 let weatherURL = "/weather/js/idahoweather.json";
@@ -188,7 +188,10 @@ latlon.innerHTML = sessStore.getItem("latLong");
 console.log(latlon);
 //Get the condition keyword and set Background picture
 
-changeSummaryImage(sessStore.getItem("shortForecast"));
+
+// changeSummaryImage(sessStore.getItem("shortForecast"));
+
+
 /* Keep in mind that the value may be different than 
 what you need for your CSS to replace the image. You 
 may need to make some adaptations for it to work.*/
@@ -224,7 +227,35 @@ if (currentHour > 12) {
 };
 console.log(`Current hour in time indicator is: ${currentHour}`);
 
-// Set the time indicator
+// ********** Hourly Temperature Component  **********
+// Get the hourly data from storage as an array
+let currentData = [];
+let tempHour = currentHour;
+//Adjuct counter based on current time
+for(let i = 0, x = 12; i < x; i++){
+  if(tempHour <= 23){
+    currentData[i] = sessStore.getItem("hour" + tempHour).split(",");
+    tempHour++;
+  } else {
+    tempHour = tempHour - 12;
+    currentData[i] = sessStore.getItem("hour" + tempHour).split(",");
+    console.log(`CurrentData[i][0] is: ${currentData[i][0]}`);
+    tempHour = 1;
+  }
+}
+console.log(currentData);
+
+//Loop through array inserting data
+//Start with the outer container that matchs the current time
+tempHour = currentHour;
+for (let i = 0, x = 12; i < x; i++){
+  if (tempHour >= 13){
+    tempHour  = tempHour -12;
+  }
+  console.log(`Start container is: #temps ${tempHour}`);
+  $("#temps o." + tempHour).innerHTML = currentData[i][0];
+  tempHour++;
+}
 
 //Js to get the last modified date
 function buildModDate(){
@@ -297,7 +328,7 @@ function timeBall(hour){
 Function for changing the background image surrounding the weather 
 condition boxes
 ##################################################################### */
-function changeSummaryImage(){
-// let selectImage = document.querySelector(".clear");
-// selectImage.classList.add();
+function changeSummaryImage(curCond){
+let selectImage = $(".clear");
+selectImage.classList.add();
 }
