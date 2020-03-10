@@ -120,8 +120,6 @@ function fetchWeatherData(weatherURL){
   .catch(function(error){
     console.log("There was a fetch problem: ", error.message);
     hideMain.innerHTML = "Sorry, the destination for your requested data could not be established!";
-
-
   })
 
 }
@@ -289,6 +287,28 @@ for (let i = 0, x = 12; i < x; i++) {
  $('.iconW' + windHour).innerHTML = windArray[i][0];
  windHour++;
 }
+
+/* ############################################################
+// **********  Condition Component Icons  **********
+############################################################## */
+let conditionHour = currentHour;
+// Adjust counter based on current time
+for (let i = 0, x = 12; i < x; i++) {
+ if (conditionHour >= 13) {
+  conditionHour = conditionHour - 12;
+ }
+ $('.img' + conditionHour).innerHTML = '<img src="' + currentData[i][2] + '" alt="hourly weather condition image">';
+ conditionHour++;
+}
+console.log(currentData);
+
+
+/* ######################################################################
+// Change the status of the containers
+###################################################################### */
+// contentContainer.setAttribute('class', ''); // removes the hide class from main
+// statusContainer.setAttribute('class', 'hideMain'); // hides the status container
+
 
 
 //Js to get the last modified date

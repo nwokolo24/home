@@ -158,6 +158,8 @@
     right: 120px;
     top: 40px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon2{
     position: absolute;
@@ -172,60 +174,80 @@
     right:-5px;
     top: 115px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon4{
     position: absolute;
     right: -16px;
     top: 175px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon5{
     position: absolute;
     right: -3px;
     bottom: 50px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon6{
     position: absolute;
     right: 40px;
     bottom: 5px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon7{
     position: absolute;
     right: 120px;
     bottom: -20px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon8{
     position: absolute;
     left: 70px;
     bottom: -5px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon9{
     position: absolute;
     left: 25px;
     bottom: 35px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon10{
     position: absolute;
     left: 3px;
     top: 178px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon11{
     position: absolute;
     left: 10px;
     top: 120px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon12{
     position: absolute;
     left: 50px;
     top: 70px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
 
   /* Wind css property ###################################### */
@@ -234,18 +256,24 @@
     right: 120px;
     top: 40px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW2{
     position: absolute;
     right: 35px;
     top: 70px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW3{
     position: absolute;
     right:-5px;
     top: 115px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW4{
     position: absolute;
@@ -260,30 +288,40 @@
     right: -3px;
     bottom: 50px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW6{
     position: absolute;
     right: 40px;
     bottom: 5px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW7{
     position: absolute;
     right: 120px;
     bottom: -20px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW8{
     position: absolute;
     left: 70px;
     bottom: -5px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW9{
     position: absolute;
     left: 25px;
     bottom: 35px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW10{
     position: absolute;
@@ -298,12 +336,16 @@
     left: 10px;
     top: 120px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .iconW12{
     position: absolute;
     left: 50px;
     top: 70px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
 
 /* #*#*#*#**#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -484,30 +526,40 @@
     right:-10px;
     top: 105px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon4{
     position: absolute;
     right: -16px;
     top: 155px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon5{
     position: absolute;
     right: -5px;
     bottom: 25px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon6{
     position: absolute;
     right: 30px;
     bottom: -10px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon7{
     position: absolute;
     right: 90px;
     bottom: -25px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon8{
     position: absolute;
@@ -522,24 +574,32 @@
     left: 15px;
     bottom: 25px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon10{
     position: absolute;
     left: 3px;
     top: 155px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon11{
     position: absolute;
     left: 10px;
     top: 110px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
   .icon12{
     position: absolute;
     left: 50px;
     top: 60px;
     width: 40px;
+    color: red;
+    font-size: 23px;
   }
 
 /* Wind icons css property for large screen ##################################### */
@@ -556,66 +616,88 @@
   right: 20px;
   top: 65px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW3{
   position: absolute;
   right:-15px;
   top: 105px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW4{
   position: absolute;
   right: -20px;
   top: 160px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW5{
   position: absolute;
   right: -5px;
   bottom: 25px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW6{
   position: absolute;
   right: 30px;
   bottom: -10px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW7{
   position: absolute;
   right: 86px;
   bottom: -23px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW8{
   position: absolute;
   left: 65px;
   bottom: -13px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW9{
   position: absolute;
   left: 28px;
   bottom: 25px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW10{
   position: absolute;
   left: 15px;
   top: 160px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW11{
   position: absolute;
   left: 20px;
   top: 110px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 .iconW12{
   position: absolute;
   left: 55px;
   top: 65px;
   width: 40px;
+  color: red;
+  font-size: 23px;
 }
 
 }
