@@ -53,3 +53,8 @@
     #status{
         display: none;
     }
+
+    #sectionfix img{
+        max-width: 25px;
+        border-radius: 5px;
+    }
