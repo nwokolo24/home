@@ -280,14 +280,6 @@ section .inner {
     font-size: 5em;
 }
 
-.headerchange {
-    position: absolute;
-    top: -27px;
-    left: 70px;
-    font-size: 2em;
-    color: rgb(49, 39, 39);
-}
-
 /* ##################################################
     css properties for feels like weather conditions
     ################################################### */

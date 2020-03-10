@@ -255,10 +255,41 @@ for (let i = 0, x = 12; i < x; i++){
   if (tempHour >= 13){
     tempHour  = tempHour -12;
   }
-  // console.log(`Start container is: ${tempHour}`);
+  console.log(`Start container is: ${tempHour[i]}`);
   $(".icon" + tempHour).innerHTML = currentData[i][0];
   tempHour++;
 }
+/* ############################################################
+// ********** Hourly Wind Component  **********
+############################################################## */
+// Get the hourly data from storage
+let windArray = [];
+let windHour = currentHour;
+// Adjust counter based on current time
+for (let i = 0, x = 12; i < x; i++) {
+ if (windHour <= 23) {
+  windArray[i] = currentData[i][1].split(" ");
+  console.log(`windArray[i] is: ${windArray[i]}`);
+  windHour++;
+ } else {
+  windHour = windHour - 12;
+  windArray[i] = currentData[i][1].split(" ");
+  windHour = 1;
+ }
+}
+console.log(windArray);
+
+// Insert Wind data
+// Start with the outer container that matchs the time indicator
+windHour = currentHour;
+for (let i = 0, x = 12; i < x; i++) {
+ if (windHour >= 13) {
+  windHour = windHour - 12;
+ }
+ $('.iconW' + windHour).innerHTML = windArray[i][0];
+ windHour++;
+}
+
 
 //Js to get the last modified date
 function buildModDate(){

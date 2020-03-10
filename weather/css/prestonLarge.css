@@ -267,14 +267,6 @@ section#temperature, section#precipitation, section#conditions{
         font-size: 1.5em;
     }
 
-    .headerchange{
-        position: absolute;
-        top: -27px;
-        left: 20%;
-        font-size: 2em;
-        color: rgb(49, 39, 39);
-    }
-
 /* ########################################
 Parent to weather condition boxes 
 ######################################### */

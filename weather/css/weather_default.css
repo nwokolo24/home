@@ -15,6 +15,21 @@
         color: white;
     }
 
+    .headerchange {
+        position: absolute;
+        top: -27px;
+        left: 25%;
+        font-size: 2em;
+        color: rgb(49, 39, 39);
+    }
+    #centerwind{
+        position: absolute;
+        top: -27px;
+        left: 40%;
+        font-size: 2em;
+        color: rgb(49, 39, 39);
+    }
+
     .town {
         margin-bottom: 0;
         padding-left: 1rem;
