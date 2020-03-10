@@ -66,7 +66,6 @@ function fetchWeatherData(weatherURL){
   .then(function(data){
     //check the data object that was retrieved
     console.log(data);
-
     //data is the full javaScript object, but we only want the preston part
     //shorten the variable and focus only on the data we want to reduce typing
     let p = data[cityName];
@@ -235,7 +234,7 @@ console.log(`Current hour in time indicator is: ${currentHour}`);
 // Get the hourly data from storage as an array
 let currentData = [];
 let tempHour = currentHour;
-//Adjuct counter based on current time
+//Adjust counter based on current time
 for(let i = 0, x = 12; i < x; i++){
   if(tempHour <= 23){
     currentData[i] = sessStore.getItem("hour" + tempHour).split(",");
@@ -256,8 +255,8 @@ for (let i = 0, x = 12; i < x; i++){
   if (tempHour >= 13){
     tempHour  = tempHour -12;
   }
-  console.log(`Start container is: #temps ${tempHour}`);
-  $("#temps o." + tempHour).innerHTML = currentData[i][0];
+  // console.log(`Start container is: ${tempHour}`);
+  $(".icon" + tempHour).innerHTML = currentData[i][0];
   tempHour++;
 }
 
