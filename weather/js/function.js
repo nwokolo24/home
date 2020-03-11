@@ -244,7 +244,7 @@ for(let i = 0, x = 12; i < x; i++){
     tempHour = 1;
   }
 }
-console.log(currentData[1][0]);
+// console.log(currentData[1][0]);
 
 //Loop through array inserting data
 //Start with the outer container that matchs the current time
