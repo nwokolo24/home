@@ -22,18 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
   const menuButton = document.querySelector("#menu-button");
   menuButton.addEventListener('click', burgerMenu);
   //call current date
-  buildCurDate(); 
-//Variables for wind chill function
- let temp;
- let speed;
-buildWC(speed, temp);
-
-//The Time Indicator function
-timeBall(indicatorHour);
-console.log(indicatorHour);
-
-//Background image change
-
+  buildCurDate();
 //Get weather json data
 let weatherURL = "/weather/js/idahoweather.json";
 fetchWeatherData(weatherURL);
@@ -66,7 +55,6 @@ function fetchWeatherData(weatherURL){
     //shorten the variable and focus only on the data we want to reduce typing
     let p = data[cityName];
     console.log(p);
-
 
     //************ Get the location information *********
     let locName = p.properties.relativeLocation.properties.city;
@@ -183,8 +171,10 @@ let latlon = $(".gps");
 latlon.innerHTML = sessStore.getItem("latLong");
 console.log(latlon);
 
+
+
 //Get the condition keyword and set Background picture
-// changeSummaryImage();
+changeSummaryImage(sessStore.getItem('shortForecast'));
 
 /* Keep in mind that the value may be different than 
 what you need for your CSS to replace the image. You 
@@ -207,12 +197,13 @@ gust.innerHTML = sessStore.getItem('windGust');
 let feelTemp = $("#feelTemp");
 feelTemp.innerHTML = buildWC(sessStore.getItem('windSpeed'), sessStore.getItem('temperature')) + "°F";
 
+
 /* ######################################################################
 // Change the status of the containers
 ###################################################################### */
 contentContainer.setAttribute('class', ''); // removes the hide class from main
 statusContainer.setAttribute('class', 'hideMain'); // hides the status container
-}
+
 
 /* TIME INDICATORS */
 // **********  Set the Time Indicators  **********
@@ -226,6 +217,10 @@ if (currentHour > 12) {
  indicatorHour = currentHour;
 };
 console.log(`Current hour in time indicator is: ${currentHour}`);
+
+timeBall(indicatorHour);
+console.log(indicatorHour);
+
 /* ############################################################
 // ********** Hourly Temperature Component  **********
 ############################################################## */
@@ -301,6 +296,7 @@ for (let i = 0, x = 12; i < x; i++) {
  conditionHour++;
 }
 console.log(currentData);
+}
 
 //Js to get the last modified date
 function buildModDate(){
@@ -315,7 +311,6 @@ function buildModDate(){
 
    //variables for responsive menu
 var mobileMenuClicks = 0;
-
 //Handles Small Screen Menu
 function burgerMenu(){
   //how many times responive menu used
@@ -373,7 +368,23 @@ function timeBall(hour){
 Function for changing the background image surrounding the weather 
 condition boxes
 ##################################################################### */
-function changeSummaryImage(){
-let selectImage = $(".clear");
-selectImage.classList.add();
+function changeSummaryImage(condition){
+let selectImage = $("#sectionfix");
+//Check if weather conditions include these words
+if(condition.includes("rain") || condition.includes("wet")){
+  selectImage.classList.add("rain");
 }
+else if(condition.includes("cloud")){
+  selectImage.classList.add("clouds");
+}
+else if(condition.includes("fog")){
+  selectImage.classList.add("fog");
+}
+else if(condition.includes("snow")){
+  selectImage.classList.add("snow");
+}
+else{
+  selectImage.classList.add("clear");
+}
+}
+
