@@ -165,8 +165,8 @@ section#temperature, section#precipitation, section#conditions{
     border-radius: 2%;
     background-color: rgba(252, 245, 245, 0.5);
     box-shadow: 5px 5px 5px rgb(150, 136, 136);
-  width: 250px;
-  height: 300px;
+  width: 260px;
+  height: 330px;
     margin: 15px auto;
     /* padding: 5px; */
   }

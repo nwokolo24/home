@@ -356,73 +356,73 @@
   ##################################################### */
   .img1{
     position: absolute;
-    right: 105px;
-    top: 60px;
+    right: 110px;
+    top: 65px;
     width: 30px;
   }
   .img2{
     position: absolute;
-    right: 35px;
-    top: 80px;
+    right: 45px;
+    top: 85px;
     max-width: 30px;
   }
   .img3{
     position: absolute;
-    right: 1px;
+    right: 7px;
     top: 120px;
     max-width: 30px;
   }
   .img4{
     position: absolute;
-    right: -5px;
-    top: 170px;
+    right: -2px;
+    top: 177px;
     max-width: 30px;
   }
   .img5{
     position: absolute;
     right: 5px;
-    bottom: 45px;
+    bottom: 65px;
     max-width: 30px;
   }
   .img6{
     position: absolute;
     right: 45px;
-    bottom: 2px;
+    bottom: 20px;
     max-width: 30px;
   }
   .img7{
     position: absolute;
-    right: 105px;
-    bottom: -5px;
+    right: 110px;
+    bottom: 2px;
     max-width: 30px;
   }
   .img8{
     position: absolute;
     left: 55px;
-    bottom: 2px;
+    bottom: 20px;
     max-width: 30px;
   }
   .img9{
     position: absolute;
-    left: 20px;
-    bottom: 40px;
+    left: 15px;
+    bottom: 60px;
     max-width: 30px;
   }
   .img10{
     position: absolute;
-    left: 2px;
-    top: 170px;
+    left: 4px;
+    top: 177px;
     max-width: 30px;
   }
   .img11{
     position: absolute;
-    left: 5px;
+    left: 15px;
     top: 120px;
     max-width: 30px;
   }
   .img12{
     position: absolute;
-    left: 40px;
+    left: 55px;
     top: 80px;
     max-width: 30px;
   }
@@ -432,74 +432,74 @@
   ########################################### */
   .p1{
     position: absolute;
-    right: 70px;
-    top: 85px;
+    right: 80px;
+    top: 95px;
     z-index: 7;
   }
   .p2{
     position: absolute;
-    right: 40px;
+    right: 52px;
     top: 120px;
     z-index: 7;
   }
   .p3{
     position: absolute;
-    right: 30px;
+    right: 42px;
     top: 160px;
     z-index: 7;
   }
   .p4{
     position: absolute;
-    right: 40px;
+    right: 47px;
     top: 200px;
     z-index: 7;
   }
   .p5{
     position: absolute;
-    right: 70px;
-    bottom: 15px;
+    right: 75px;
+    bottom: 40px;
     z-index: 7;
   }
   .p6{
     position: absolute;
     left: 125px;;
-    bottom: 0px;
+    bottom: 23px;
     z-index: 7;
   }
   .p7{
     position: absolute;
     left: 80px;
-    bottom: 13px;
+    bottom: 35px;
     z-index: 7;
   }
   .p8{
     position: absolute;
-    left: 50px;
-    bottom: 40px;
+    left: 52px;
+    bottom: 65px;
     z-index: 7;
   }
   .p9{
     position: absolute;
-    left: 40px;
+    left: 37px;
     top: 160px;
     z-index: 7;
   }
   .p10{
     position: absolute;
-    left: 40px;
+    left: 50px;
     top: 120px;
     z-index: 7;
   }
   .p11{
     position: absolute;
-    left: 70px;
-    top: 85px;
+    left: 77px;
+    top: 95px;
     z-index: 7;;
   }
   .p12{
     position: absolute;
     left: 120px;
-    top: 70px;
+    top: 83px;
     z-index: 7;
   }
 
@@ -509,21 +509,21 @@
   
   .icon1{
     position: absolute;
-    right: 92px;
-    top: 40px;
+    right: 95px;
+    top: 45px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .icon2{
     position: absolute;
-    right: 25px;
+    right: 35px;
     top: 60px;
     width: 40px;
   }
   .icon3{
     position: absolute;
-    right:-10px;
+    right:-5px;
     top: 105px;
     width: 40px;
     color: red;
@@ -531,32 +531,32 @@
   }
   .icon4{
     position: absolute;
-    right: -16px;
-    top: 155px;
+    right: -12px;
+    top: 150px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .icon5{
     position: absolute;
-    right: -5px;
-    bottom: 25px;
+    right: -2px;
+    bottom: 50px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .icon6{
     position: absolute;
-    right: 30px;
-    bottom: -10px;
+    right: 35px;
+    bottom: 5px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .icon7{
     position: absolute;
-    right: 90px;
-    bottom: -25px;
+    right: 100px;
+    bottom: -15px;
     width: 40px;
     color: red;
     font-size: 23px;
@@ -564,22 +564,22 @@
   .icon8{
     position: absolute;
     left: 55px;
-    bottom: -13px;
+    bottom: 2px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .icon9{
     position: absolute;
-    left: 15px;
-    bottom: 25px;
+    left: 17px;
+    bottom: 45px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .icon10{
     position: absolute;
-    left: 3px;
+    left: 5px;
     top: 155px;
     width: 40px;
     color: red;
@@ -587,15 +587,15 @@
   }
   .icon11{
     position: absolute;
-    left: 10px;
-    top: 110px;
+    left: 15px;
+    top: 100px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .icon12{
     position: absolute;
-    left: 50px;
+    left: 55px;
     top: 60px;
     width: 40px;
     color: red;
@@ -605,32 +605,32 @@
 /* Wind icons css property for large screen ##################################### */
 .iconW1{
   position: absolute;
-  right: 80px;
-  top: 45px;
+  right: 95px;
+  top: 42px;
   width: 40px;
   color: red;
   font-size: 25px;
 }
 .iconW2{
   position: absolute;
-  right: 20px;
-  top: 65px;
+  right: 35px;
+  top: 60px;
   width: 40px;
   color: red;
   font-size: 23px;
 }
 .iconW3{
   position: absolute;
-  right:-15px;
-  top: 105px;
+  right: -5px;
+  top: 97px;
   width: 40px;
   color: red;
   font-size: 23px;
 }
 .iconW4{
   position: absolute;
-  right: -20px;
-  top: 160px;
+  right: -15px;
+  top: 152px;
   width: 40px;
   color: red;
   font-size: 23px;
@@ -638,23 +638,23 @@
 .iconW5{
   position: absolute;
   right: -5px;
-  bottom: 25px;
+  bottom: 50px;
   width: 40px;
   color: red;
   font-size: 23px;
 }
 .iconW6{
   position: absolute;
-  right: 30px;
-  bottom: -10px;
+  right: 35px;
+  bottom: 7px;
   width: 40px;
   color: red;
   font-size: 23px;
 }
 .iconW7{
   position: absolute;
-  right: 86px;
-  bottom: -23px;
+  right: 95px;
+  bottom: -15px;
   width: 40px;
   color: red;
   font-size: 23px;
@@ -662,7 +662,7 @@
 .iconW8{
   position: absolute;
   left: 65px;
-  bottom: -13px;
+  bottom: 3px;
   width: 40px;
   color: red;
   font-size: 23px;
@@ -670,30 +670,30 @@
 .iconW9{
   position: absolute;
   left: 28px;
-  bottom: 25px;
+  bottom: 40px;
   width: 40px;
   color: red;
   font-size: 23px;
 }
 .iconW10{
   position: absolute;
-  left: 15px;
-  top: 160px;
+  left: 13px;
+  top: 155px;
   width: 40px;
   color: red;
   font-size: 23px;
 }
 .iconW11{
   position: absolute;
-  left: 20px;
-  top: 110px;
+  left: 25px;
+  top: 100px;
   width: 40px;
   color: red;
   font-size: 23px;
 }
 .iconW12{
   position: absolute;
-  left: 55px;
+  left: 60px;
   top: 65px;
   width: 40px;
   color: red;
