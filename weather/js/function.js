@@ -40,7 +40,7 @@ document.getElementById("currentdate").textContent = new Date().toLocaleDateStri
                Fetch Weather Data
 ###################################################### */
 function fetchWeatherData(weatherURL){
-  let cityName = "Preston"; //The data we want from the weather.json file
+  let cityName = $("body").getAttribute("data-city"); //The data we want from the weather.json file
   fetch(weatherURL)
   .then(function(response) {
     if(response.ok){
