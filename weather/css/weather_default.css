@@ -1,60 +1,77 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
 /* Property value for ball indicator */
-    .ball{
-        position: inherit;
-        width: 20px;
-        height: 20px;
-        background-color: rgb(14, 13, 13);
-        border-radius: 100%;
-        z-index: 7;
-        text-align: center;
-        color: white;
-    }
-    .condiTime{
-        color: white;
-    }
+.ball {
+    position: inherit;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(14, 13, 13);
+    border-radius: 100%;
+    z-index: 7;
+    text-align: center;
+    color: white;
+}
 
-    .headerchange {
-        position: absolute;
-        top: -27px;
-        left: 25%;
-        font-size: 2em;
-        color: rgb(49, 39, 39);
-    }
-    #centerwind{
-        position: absolute;
-        top: -27px;
-        left: 40%;
-        font-size: 2em;
-        color: rgb(49, 39, 39);
-    }
+.condiTime {
+    color: white;
+}
 
-    .town {
-        margin-bottom: 0;
-        padding-left: 1rem;
-    }
-    
-    .gps {
-        margin-top: 0;
-        margin-bottom: 10px;
-        padding-left: 1rem;
-    } 
+.headerchange {
+    position: absolute;
+    top: -27px;
+    left: 25%;
+    font-size: 2em;
+    color: rgb(49, 39, 39);
+}
 
-    /* New hide class for fectch structure */
-         .hideMain{
-        display: none;
-    }   
-    
-     #mainContent{
+#centerwind {
+    position: absolute;
+    top: -27px;
+    left: 40%;
+    font-size: 2em;
+    color: rgb(49, 39, 39);
+}
+
+.town {
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+
+.gps {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+}
+
+/* New hide class for fectch structure */
+.hideMain {
+    display: none;
+}
+
+/* #mainContent{
         display: block;
     } 
 
     #status{
         display: none;
-    }
+    } */
 
-    #sectionfix img{
-        max-width: 25px;
-        border-radius: 5px;
-    }
+#sectionfix img {
+    max-width: 25px;
+    border-radius: 5px;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6,
+.icon7,
+.icon8,
+.icon9,
+.icon10,
+.icon11,
+.icon12 {
+    font-size: 20px;
+}

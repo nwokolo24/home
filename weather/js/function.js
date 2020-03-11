@@ -8,7 +8,7 @@ var pageNav = $('#navbar');
 var statusContainer = $('#status');
 var contentContainer = $('#mainContent');
 var hideMain = $(".hideMain");
-
+var nwokolo = $(".backGround");
 // local and session storage selectors
 var locStore = window.localStorage;
 var sessStore = window.sessionStorage;
@@ -33,10 +33,6 @@ timeBall(indicatorHour);
 console.log(indicatorHour);
 
 //Background image change
-let curCond = "shortForecast";
-curCond = curCond.toLowerCase();
-changeSummaryImage(curCond);
-console.log(curCond);
 
 //Get weather json data
 let weatherURL = "/weather/js/idahoweather.json";
@@ -186,11 +182,9 @@ function buildPage(){
 let latlon = $(".gps");
 latlon.innerHTML = sessStore.getItem("latLong");
 console.log(latlon);
+
 //Get the condition keyword and set Background picture
-
-
-// changeSummaryImage(sessStore.getItem("shortForecast"));
-
+// changeSummaryImage();
 
 /* Keep in mind that the value may be different than 
 what you need for your CSS to replace the image. You 
@@ -212,6 +206,12 @@ gust.innerHTML = sessStore.getItem('windGust');
 // Calculate feel like temp
 let feelTemp = $("#feelTemp");
 feelTemp.innerHTML = buildWC(sessStore.getItem('windSpeed'), sessStore.getItem('temperature')) + "°F";
+
+/* ######################################################################
+// Change the status of the containers
+###################################################################### */
+contentContainer.setAttribute('class', ''); // removes the hide class from main
+statusContainer.setAttribute('class', 'hideMain'); // hides the status container
 }
 
 /* TIME INDICATORS */
@@ -244,7 +244,7 @@ for(let i = 0, x = 12; i < x; i++){
     tempHour = 1;
   }
 }
-console.log(currentData);
+console.log(currentData[1][0]);
 
 //Loop through array inserting data
 //Start with the outer container that matchs the current time
@@ -301,15 +301,6 @@ for (let i = 0, x = 12; i < x; i++) {
  conditionHour++;
 }
 console.log(currentData);
-
-
-/* ######################################################################
-// Change the status of the containers
-###################################################################### */
-// contentContainer.setAttribute('class', ''); // removes the hide class from main
-// statusContainer.setAttribute('class', 'hideMain'); // hides the status container
-
-
 
 //Js to get the last modified date
 function buildModDate(){
@@ -382,7 +373,7 @@ function timeBall(hour){
 Function for changing the background image surrounding the weather 
 condition boxes
 ##################################################################### */
-function changeSummaryImage(curCond){
-let selectImage = $(".clear");
+function changeSummaryImage(){
+let selectImage = $(".rain");
 selectImage.classList.add();
 }
