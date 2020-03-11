@@ -374,6 +374,6 @@ Function for changing the background image surrounding the weather
 condition boxes
 ##################################################################### */
 function changeSummaryImage(){
-let selectImage = $(".rain");
+let selectImage = $(".clear");
 selectImage.classList.add();
 }
