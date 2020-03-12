@@ -24,7 +24,7 @@
   .img4{
     position: absolute;
     right: -5px;
-    top: 190px;
+    top: 195px;
     width: 30px;
   }
   .img5{
@@ -42,7 +42,7 @@
   .img7{
     position: absolute;
     right: 130px;
-    bottom: 1px;
+    bottom: -5px;
     width: 30px;
   }
   .img8{
@@ -53,14 +53,14 @@
   }
   .img9{
     position: absolute;
-    left: 25px;
-    bottom: 50px;
+    left: 20px;
+    bottom: 55px;
     width: 30px;
   }
   .img10{
     position: absolute;
     left: 1px;
-    top: 190px;
+    top: 195px;
     width: 30px;
   }
   .img11{
@@ -253,7 +253,7 @@
   /* Wind css property ###################################### */
   .iconW1{
     position: absolute;
-    right: 120px;
+    right: 113px;
     top: 40px;
     width: 40px;
     color: red;
@@ -261,8 +261,8 @@
   }
   .iconW2{
     position: absolute;
-    right: 35px;
-    top: 70px;
+    right: 37px;
+    top: 60px;
     width: 40px;
     color: red;
     font-size: 23px;
@@ -270,7 +270,7 @@
   .iconW3{
     position: absolute;
     right:-5px;
-    top: 115px;
+    top: 110px;
     width: 40px;
     color: red;
     font-size: 23px;
@@ -278,7 +278,7 @@
   .iconW4{
     position: absolute;
     right: -16px;
-    top: 175px;
+    top: 170px;
     width: 40px;
     color: red;
     font-size: 23px;
@@ -286,63 +286,63 @@
   .iconW5{
     position: absolute;
     right: -3px;
-    bottom: 50px;
+    bottom: 40px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .iconW6{
     position: absolute;
-    right: 40px;
-    bottom: 5px;
+    right: 45px;
+    bottom: -5px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .iconW7{
     position: absolute;
-    right: 120px;
-    bottom: -20px;
+    right: 115px;
+    bottom: -25px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .iconW8{
     position: absolute;
-    left: 70px;
-    bottom: -5px;
+    left: 80px;
+    bottom: -10px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .iconW9{
     position: absolute;
-    left: 25px;
-    bottom: 35px;
+    left: 30px;
+    bottom: 30px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .iconW10{
     position: absolute;
-    left: 3px;
-    top: 178px;
+    left: 10px;
+    top: 172px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .iconW11{
     position: absolute;
-    left: 10px;
-    top: 120px;
+    left: 20px;
+    top: 100px;
     width: 40px;
     color: red;
     font-size: 23px;
   }
   .iconW12{
     position: absolute;
-    left: 45px;
-    top: 70px;
+    left: 70px;
+    top: 55px;
     width: 40px;
     color: red;
     font-size: 23px;
