@@ -371,7 +371,7 @@ condition boxes
 function changeSummaryImage(condition){
 let selectImage = $("#sectionfix");
 //Check if weather conditions include these words
-if(condition.includes("rain") || condition.includes("wet") || condition.includes("Rain")){
+if(condition.includes("rain") || condition.includes("Wet") || condition.includes("wet") || condition.includes("Rain")){
   selectImage.classList.add("rain");
 }
 else if(condition.includes("Cloud") || condition.includes("cloud")){
