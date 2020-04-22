@@ -50,13 +50,7 @@ h2{
     background: linear-gradient(to bottom, #fc3f32 0%, #aa0000 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc3f32', endColorstr='#aa0000', GradientType=0);
 }
-.image1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-}
+
 footer a {
     color: rgb(239, 243, 10);
 }
@@ -94,7 +88,19 @@ footer a:hover {
 
 /* Tablet or Medium View */
 @media only screen and (min-width: 37.5em) {
-    
+    #root{
+        width: 90%;
+        margin: auto;
+    }
+    .image1 {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 150px;
+        height: 150px;
+    }
+
 }
 /* Desktop or Large View */
 @media only screen and (min-width: 40em) {
@@ -110,8 +116,13 @@ footer a:hover {
     footer{
         text-align: center;
     }
-  .image1{
-      display: block;
-  }
+    .image1 {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 150px;
+        height: 150px;
+    }
   
 }
