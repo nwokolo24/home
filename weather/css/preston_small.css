@@ -101,6 +101,11 @@ nav ul li a {
     margin-top: -20px;
     margin-bottom: 20px;
 }
+
+/* Covid-19 stay home advise */
+#covid{
+    border: 1px solid #307af2;
+}
 .image1 {
     width: 80px;
     height: auto;

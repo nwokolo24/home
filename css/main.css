@@ -66,16 +66,7 @@ footer a:hover {
     color: rgb(240, 42, 28);
 }
 
-#covid{
-    font-size: 16px;
-    background-color: white;
-    padding: 3px;
-    border-bottom: 0.2px solid  #fc3f32;
-    border-right: 0.2px solid  #fc3f32;
-    color:green;
-    position: absolute;
-    right: 5%;
-}
+
 
 /* Mobile Phone or Baseline View */
 @media only screen and (min-width: 21em) {
@@ -94,6 +85,17 @@ footer a:hover {
   .image1{
       display: none;
   }
+  #covid{
+    font-size: 13px;
+    background-color: white;
+    padding: 3px;
+    border: 1px solid green;
+    color:green;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+}
 }
 
 /* Tablet or Medium View */
@@ -109,6 +111,18 @@ footer a:hover {
         left: 5%;
         width: 150px;
         height: 150px;
+    }
+    #covid{
+        font-size: 16px;
+        background-color: white;
+        padding: 3px;
+        border-bottom: 0.2px solid  #fc3f32;
+        border-right: 0.2px solid  #fc3f32;
+        color:green;
+        position: absolute;
+        right: 0%;
+        width: 89.4%;
+        margin: auto;
     }
 
 }
@@ -133,6 +147,18 @@ footer a:hover {
         left: 5%;
         width: 150px;
         height: 150px;
+    }
+    #covid{
+        font-size: 16px;
+        background-color: white;
+        padding: 3px;
+        border-bottom: 0.2px solid  #fc3f32;
+        border-right: 0.2px solid  #fc3f32;
+        color:green;
+        position: absolute;
+        right: 0%;
+        width: 89.4%;
+        margin: auto;
     }
   
 }
