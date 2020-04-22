@@ -73,3 +73,13 @@
 .icon12 {
     font-size: 20px;
 }
+
+#covid{
+    background-color: white;
+    padding: 3px;
+    border: 2px, solid, white;
+    border-radius: 5px;
+    color:green;
+    position: absolute;
+    right: 5%;
+}
