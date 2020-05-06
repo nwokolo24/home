@@ -20,9 +20,9 @@ header, footer{
     padding: px;
     color: white;
     background: #307af2;
-    background: -moz-linear-gradient(top, #307af2 1%, #00059b 100%);
-    background: -webkit-linear-gradient(top, #307af2 1%, #00059b 100%);
-    background: linear-gradient(to bottom, #307af2 1%, #00059b 100%);
+    background: -moz-linear-gradient(top, #bbceec 1%, #232a24 100%);
+    background: -webkit-linear-gradient(top, #a5badd 1%, #1e221d 100%);
+    background: linear-gradient(to bottom, #9eb5da 1%, #191d19 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
 }
 footer p{
@@ -108,7 +108,7 @@ footer a:hover {
         display: block;
         position: absolute;
         top: 0;
-        left: 5%;
+        right: 5%;
         width: 150px;
         height: 150px;
     }
@@ -133,7 +133,7 @@ footer a:hover {
         margin: auto;
     }
     h1{
-        text-align: center;
+        text-align: left;
         margin-bottom: 10px;
         margin-top: 5px;
     }
@@ -144,7 +144,7 @@ footer a:hover {
         display: block;
         position: absolute;
         top: 0;
-        left: 5%;
+        right: 5%;
         width: 150px;
         height: 150px;
     }
