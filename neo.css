@@ -27,12 +27,45 @@ html, body{
 .carousel-caption h1 {
   font-size: 500%;
   text-transform: uppercase;
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 15px #000;
 }
-
-
-
-
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
+}
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #d35353;
+}
+.fa-youtube {
+  color: #bb0000;
+}
 
 
 /*---Media Queries --*/
