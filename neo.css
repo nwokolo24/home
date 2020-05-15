@@ -40,7 +40,7 @@ html, body{
   border: 1px solid #6648b1;
 }
 .btn-primary:hover {
-  background-color: #563d7c;
+  background-color: rgb(106, 103, 103);
   border: 1px solid #563d7c;
 }
 .jumbotron {
