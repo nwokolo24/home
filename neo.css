@@ -79,6 +79,7 @@ footer {
 
 
 /*---Media Queries --*/
+/* Lare Screen size */
 @media (max-width: 992px) {
     .social a {
       font-size: 4em;
@@ -86,6 +87,8 @@ footer {
     }
    
   }
+
+  /* Midium Screen Size */
 @media (max-width: 768px) {
   .carousel-caption {
   top: 45%;
@@ -113,10 +116,11 @@ footer {
   padding: 1.2rem;
 }
 }
+/* Small Screen Size */
 @media (max-width: 576px) {
   .carousel-caption {
-    top: 15%;
-    font-size: 85%;
+    top: 20%;
+    font-size: 90%;
    }
   .carousel-caption h1 {
     font-size: 250%;
@@ -142,9 +146,13 @@ footer {
   .social a {
     font-size: 2em;
     padding: .7rem;
+    margin: 0 5px;
   }
   h2 {
     font-size: 150%;
+  }
+  p {
+    font-size: 16px !important;
   }
   
 }
@@ -154,7 +162,7 @@ footer {
   display: none;
   position: fixed;
   bottom: 5px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   border: none;
   outline: none;
