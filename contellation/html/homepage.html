@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/contellation/box.css">
+<link rel="stylesheet" href="/css/normalize.css">
+
+<body>
+  <!-- Top navigation link -->
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">Home</a>
+    <a href="#" >Projects</a>
+    <a href="#" >Jobs</a>
+    <a href="#" >Members</a>
+    <!-- <div class="dropdown">
+      <button class="dropdownbtn" onclick="dropBox()">DropBox<i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">StaredPostings</a>
+        <a href="#">StaredProjects</a>
+        <a href="#">Stared</a>
+        <a href="#">Stared</a>
+      </div>
+    </div> -->
+    <a href="#" onclick="navClick()" class="icon"><i class="fa fa-bars"></i></a>
+  </div>
+  <!-- Welcome note  -->
+  <!-- 1 -->
+  <div class="bigBoard">
+    <section class="section1">
+      <div class="welcomenote">
+        <h3>Constellation Platform: Share your passion.</h3>
+        <p>Show your qualities, competence and projects all in one location
+           and make them accessible to potential employers.
+        </p>
+        <button class="btn btn-lg btn-success">SignUp</button>
+      </div>
+     
+  </section>
+  <!-- 2 -->
+  <!-- Note for Employers -->
+  <section class="section2">
+      <div class="welcomenote">
+        <h4>Are you looking to fill a job 
+          opening with the right people? make those openings available here.</h4>
+          <button class="btn btn-lg btn-primary">Post&nbsp;Jobs</button>
+      </div>
+  </section>
+  </div>
+
+<!-- 3 -->
+ <!-- Go to Users, Project and Postings Page  -->
+<section class="section3">
+  <a href="http://www.google.com">
+  <div class="view user btn-primary bg-primary">
+      <img class="avatarcircle" src="/cons_Img/avataricon.png" alt="AvatarIcon">
+        <h6 class="icon6"><strong>View&nbsp;Users</strong></h6>
+      </a>
+    </div>
+
+    <div class="view job btn-success bg-success">
+      <img class="avatarcircle" src="/cons_Img/jobsicon.png" alt="AvatarIcon">
+      <h6 class="icon6"><strong>View&nbsp;Jobs</strong></h6>
+      
+  </div>
+
+  <div class="view project btn-info bg-info">
+    <img class="avatarcircle" src="/cons_Img/projectsicon.png" alt="AvatarIcon">
+    <h6 class="icon6"><strong>View&nbsp;Projects</strong></h6>
+    
+</div>
+</section>
+
+<!-- 4 -->
+<!-- Inspiration quote and pictures -->
+<section class="section4">
+    <div class="imageholder">
+      <img src="/cons_Img/web3.png" alt="Inspiration and Life">
+    </div>
+</section>
+
+<!-- 5 -->
+<!-- Connect with us -->
+<section class="section5">
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <a href="#"><i class="fab fa-github"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.youtube.com/channel/UCqjlMoAhtY9RH-R_pOITY1g?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+</section>
+
+<script>
+  // Nav Icon for small screen
+  function navClick() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropBox() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropdownbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html> 

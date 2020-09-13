@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="curP" placeholder="enter current price">
+    <input type="text" id="preP" placeholder="enter previous price">
+    <button type="button" onclick="rateOfChange()">Calculate</button>
+    <div id="output"></div>
+
+    <script>
+        function rateOfChange () {
+            let currentP = parseInt(document.getElementById("curP").value);
+            let previousP = parseInt(document.getElementById("preP").value);
+
+            let result = (currentP - previousP) / previousP;
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

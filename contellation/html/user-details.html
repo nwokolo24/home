@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/contellation/user-deatails.css">
+<link rel="stylesheet" href="/css/normalize.css">
+
+<body>
+    <div class="user-details-container">
+        
+
+        <div class="user-details-content shadow">
+            <div class="user-details-head"><h2>Nwokolo Daniel's Profile</h2></div>
+            <div class="user-details-image"><img src="/cons_Img/panther5.jpg" alt="My picture"></div>
+            <div class="user-details-info">
+                <p>User Name:</p>
+                <p>First Name:</p>
+                <p>Last Name:</p>
+                <h4>Biography</h4>
+                <div class="user-bio">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Libero fugit numquam itaque, nihil perspiciatis expedita magni impedit vitae 
+                        velit cum laborum veritatis fugiat explicabo necessitatibus porro suscipit.
+                         Vitae, impedit eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                         Libero fugit numquam itaque, nihil perspiciatis expedita magni impedit vitae 
+                         velit cum laborum veritatis fugiat explicabo necessitatibus porro suscipit.
+                          Vitae, impedit eveniet?
+                    </p>
+                </div>
+                <p>Area of Discipline:</p>
+                <p>Seeking:</p>
+                <a href="#" class="btn btn-sm btn-primary">Resume</a>
+                <div class="contact-Links">
+                    <h4>Contact Links</h4>
+                    <a href="#">Github</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="user-project-container">
+        
+        <button class="tablink1" onclick="openPage('projects',this,'lightblue')">My&nbsp;Projects</button>
+        <button class="tablink2" onclick="openPage('skills',this,'lightgreen')">My Skills</button>
+        <button class="tablink3" onclick="openPage('chat',this,'lightgray')">Chat</button>
+      
+        
+       
+       
+        <div id="projects" class="tabcontent1"> 
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+            <img src="/cons_Img/panther2.jpg" alt="demo">
+        </div>
+        <div id="skills" class="tabcontent2"><p>domy content</p></div>
+        <div id="chat" class="tabcontent3"><p>domy content</p></div>
+   
+</div>
+
+        <!-- <div class="user-project-container">
+            <div class="user-project-head"><h2>Nwokolo Daniel's Projects</h2></div>
+            <div class="user-project-content">
+                <img src="/cons_Img/panther2.jpg" alt="demo">
+                <img src="/cons_Img/panther2.jpg" alt="demo">
+                <img src="/cons_Img/panther2.jpg" alt="demo">
+                <img src="/cons_Img/panther2.jpg" alt="demo">
+                <img src="/cons_Img/panther2.jpg" alt="demo">
+                <img src="/cons_Img/panther2.jpg" alt="demo">
+            </div>
+        </div> -->
+    </div>
+
+    <script>
+        function openPage(pageName,elmnt,color){
+            var i, tabcontent1, tabcontent2, tabcontent3, tablinks1, tablinks2, tablinks3;
+            tabcontent1 = document.getElementsByClassName('tabcontent1');
+            for (i = 0; i < tabcontent1.length; i++) {
+                tabcontent1[i].style.display = 'none';
+            }
+            tabcontent2 = document.getElementsByClassName('tabcontent2');
+            for (i = 0; i < tabcontent2.length; i++) {
+                tabcontent2[i].style.display = 'none';
+            }
+            tabcontent3 = document.getElementsByClassName('tabcontent3');
+            for (i = 0; i < tabcontent3.length; i++) {
+                tabcontent3[i].style.display = 'none';
+            }
+
+            tablinks1 = document.getElementsByClassName('tablink1');
+            for (i = 0; i < tablinks1.length; i++) {
+                tablinks1[i].style.backgroundColor = '';
+            }
+            tablinks2 = document.getElementsByClassName('tablink2');
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].style.backgroundColor = '';
+            }
+            tablinks3 = document.getElementsByClassName('tablink3');
+            for (i = 0; i < tablinks3.length; i++) {
+                tablinks3[i].style.backgroundColor = '';
+            }
+
+            document.getElementById(pageName).style.display = 'block';
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id='defaultOpen' and click on it
+        document.getElementById('defaultOpen').click();
+    </script>
+</body>
+</html>

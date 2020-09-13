@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Homepage Template</title>
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+	</script>
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="/contellation/styles.css">
+	<script>
+		$(document).ready(function() {
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+					// Store hash
+					var hash = this.hash;
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function() {
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+	<div id="navigationContainer">
+		<div id="brandDiv">
+			<span class="brand">Student Platform</span>
+		</div>
+		<div class="searchSetup">
+		<input id="topSearch" class="search" type="text" placeholder="Search" aria-label="Search">
+		
+		<button type="button" class="headBtn searchBtn btn">
+			<i class="fa fas fa-search" style="color:white;"></i>
+		</button>
+		</div>
+			
+	</div>
+	
+	<main>
+		<div class="container-fluid" id="mainContent">
+			<div id="heading">
+			<h3 id="hThreeRp">Recent Projects</h3>
+				<div id="rp" class="searchSetup">
+					
+					<div class="projSearch">
+						<input class="search" type="text" placeholder="Search By Technology" aria-label="Search">
+					<button type="button" class="projBtn searchBtn btn">
+						<i class="fa fas fa-search" style="color:white;"></i>
+					</button>
+					</div>
+					
+					<div class="projSearch">
+						<input class="search" type="text" placeholder="Search By Title" aria-label="Search">
+					<button type="button" class="projBtn searchBtn btn">
+						<i class="fa fas fa-search" style="color:white;"></i>
+					</button>
+					</div>
+					
+					<div class="projSearch">
+						<input class="search" type="text" placeholder="Filter By Date" aria-label="Search">
+					<button type="button" class="projBtn searchBtn btn">
+						<i class="fa fas fa-search" style="color:white;"></i>
+					</button>
+					</div>
+					
+				</div>
+					
+			</div>
+			
+			<div class="container">
+				<div class="jumbotron">
+					<p><b>Project Name: placeholder</b></p>
+					<p><b>Project Description:</b> installing an older version of mediawiki in order to test out security exploits available in old versions.</p>
+					<p><b>Collaboraters:</b></p>
+					<div class="collab">
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+					</div><br><br>
+					<p><b>Site Link:</b></p>
+					<a style="max-width:3em;" href="#">www.example.com</a><br>
+					<p><b>Simulation Video:</b></p>
+					<a style="max-width:3em;" href="#">GitHub</a><br>
+					<p><b>Technologies:</b></p>
+					<p>Mango, React, Vue</p>
+				</div>
+				<div class="jumbotron">
+					<p><b>Project Name: placeholder</b></p>
+					<p><b>Project Description:</b> installing an older version of mediawiki in order to test out security exploits available in old versions.</p>
+					<p><b>Collaboraters:</b></p>
+					<div class="collab">
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+					</div><br><br>
+					<p><b>Site Link:</b></p>
+					<a style="max-width:3em;" href="#">www.example.com</a><br>
+					<p><b>Simulation Video:</b></p>
+					<a style="max-width:3em;" href="#">GitHub</a><br>
+					<p><b>Technologies:</b></p>
+					<p>Mango, React, Vue</p>
+				</div>
+				<div class="jumbotron">
+					<p><b>Project Name: placeholder</b></p>
+					<p><b>Project Description:</b> installing an older version of mediawiki in order to test out security exploits available in old versions.</p>
+					<p><b>Collaboraters:</b></p>
+					<div class="collab">
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+						<a target="_blank" href="#">
+  <img src="placholderThumb.png" alt="profile image" style="width:10vw; border-radius: 50%; padding:.5em;">
+</a>
+					</div><br><br>
+					<p><b>Site Link:</b></p>
+					<a style="max-width:3em;" href="#">www.example.com</a><br>
+					<p><b>Simulation Video:</b></p>
+					<a style="max-width:3em;" href="#">GitHub</a><br>
+					<p><b>Technologies:</b></p>
+					<p>Mango, React, Vue</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("topnav");
+			if (x.className === "list") {
+				x.className += " responsive";
+			} else {
+				x.className = "list";
+			}
+		}
+	</script>
+	<script>
+		if ($('#back-to-top').length) {
+			var scrollTrigger = 100, // px
+				backToTop = function() {
+					var scrollTop = $(window).scrollTop();
+					if (scrollTop > scrollTrigger) {
+						$('#back-to-top').addClass('show');
+					} else {
+						$('#back-to-top').removeClass('show');
+					}
+				};
+			backToTop();
+			$(window).on('scroll', function() {
+				backToTop();
+			});
+			$('#back-to-top').on('click', function(e) {
+				e.preventDefault();
+				$('html,body').animate({
+					scrollTop: 0
+				}, 700);
+			});
+		}
+	</script>
+</body>
+
+</html>

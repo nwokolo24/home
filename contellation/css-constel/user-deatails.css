@@ -1,0 +1,166 @@
+.user-details-head, .user-project-head {
+    background-color: #1b6ec2;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: 400;
+    padding: 5px;
+}
+.user-details-head h2, .user-project-head h2 {
+    margin: 0;
+}
+.user-details-image {
+    width: 90%;
+    margin: auto;
+}
+.user-details-image img {
+    margin-top: .2em;
+    height: 25em;
+    width: 100%;
+}
+.user-details-info {
+    padding: 1em;
+}
+.user-details-info h4, .contact-links h4 {
+    background-color: #1b6ec2;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: 400;
+    padding: 5px;
+}
+.contact-links a {
+    color: #007bff !important;
+    text-decoration: none !important;
+}
+.user-bio {
+    overflow: scroll;
+    height: 10em;
+    width: 100%;
+}
+
+/******************************************
+    css for tablinks and their contents 
+ ******************************************/
+.tablink1, .tablink2, .tablink3 {
+    background-color: #2d5b9b;
+    color: #fff;
+    float: left;
+    border: none;
+    border-left: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    font-size: 15px;
+    margin: 0;
+    width: 33.3%;
+}
+
+
+/* styling the tab content */
+ .tabcontent2, .tabcontent3, .tabcontent1 {
+    color: #fff;
+    display: none; 
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.tabcontent1 img {
+    height: 20rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin: auto; */
+    /* margin-bottom: 1em; */
+    /* margin-top: .5em; */
+}
+#projects { background-color: #fff;}
+#skills { background-color: lightgreen;}
+#chat { background-color: lightgray;}
+
+
+
+
+.user-project-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: scroll;
+    height: 30em;
+    /* width: 100%; */
+}
+
+
+@media screen and (min-width: 320px) {
+    .user-details-head h2, .user-project-head h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .user-details-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .user-details-content {
+        /* border: 1px solid black; */
+        width: 35%;
+        margin: .5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .user-details-image img {
+        height: 20em;
+        width: 100%;
+    }
+
+    /***********************
+        css for tab links 
+    *********************/
+    .tablink:hover {
+        background-color: #e63946;
+    }
+    .tabcontent1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .user-project-container {
+        width: 65%;
+        height: 55em;
+        margin: .5em;
+    }
+    .user-project-content {
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 60em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* width: 100%; */
+    }
+    .user-project-content img {
+        /* height: 25em; */
+    }
+}
+@media screen and (min-width: 991px) {
+    .tabcontent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .user-project-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .user-project-content img {
+        height: 30em;
+    }
+}
