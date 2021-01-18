@@ -1,9 +1,5 @@
 /* imports fonts from google and aplies it to my page */
 
-
-html {
-    box-sizing: border-box;
-}
 *::before,
 *::after {
     box-sizing: border-box;
@@ -24,6 +20,11 @@ header, footer{
     background: -webkit-linear-gradient(top, #a5badd 1%, #1e221d 100%);
     background: linear-gradient(to bottom, #9eb5da 1%, #191d19 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#307af2', endColorstr='#00059b', GradientType=0);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 footer p{
     margin: 0;

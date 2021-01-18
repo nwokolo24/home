@@ -16,20 +16,20 @@
     <link rel="stylesheet" href="/weather/css/preston_small.css">
     <link rel="stylesheet" href="/weather/css/preston_large.css">
     <link rel="stylesheet" href="/weather/css/weathercondition.css">
-    <link rel="shortcut icon" href="/weather/locations/favicon2.ico"/>
+    <link rel="shortcut icon" href="/weather/locations/favicon2.ico" />
 </head>
 
 <body data-city="Preston">
     <div id="wrapper">
         <header>
-                <picture>
-                    <img class="image1" src="/images/weather_logo.png" alt="My Weather Logo">
-                </picture>
-                <section>
-                     <h1 class="guru">WeatherGuru</h1>
-                     <div id="covid">Please adhere to health guidelines as you #StayHome</div>
-                     <div id="uptodate">Up-To-Date.</div>
-                    </section>
+            <picture>
+                <img class="image1" src="/images/weather_logo.png" alt="My Weather Logo">
+            </picture>
+            <section>
+                <h1 class="guru">WeatherGuru</h1>
+                <div id="covid">Please adhere to health guidelines as you #StayHome</div>
+                <div id="uptodate">Up-To-Date.</div>
+            </section>
         </header>
 
         <!-- ********************************************************
@@ -44,7 +44,7 @@
                 <li><a id="menu-button" class="nav-link" href="#">&#9776; Menu</a></li>
             </ul>
         </nav>
-        
+
         <section id="status">Please be patient while I get your information</section>
 
         <main id="mainContent" class="hideMain">
@@ -52,78 +52,37 @@
                 <h1 class="town"></h1>
                 <h2 class="gps"></h2>
 
-            <!-- ************************************************************
+                <!-- ************************************************************
                 html declaration for the weather feels like information
             ******************************************************************* -->
-            <div id="sectionfix" class="clear">
-                <section id="feelslike">
-                <div id="feelhigh"></div>
-                <div id="feelmode"></div>
-                <div id="feelow"></div>
-                <div id="feelreal">Feels Like: <strong><span id="feelTemp"></span></strong></div>
-                <div id="feelwind"><img id="windicon" src="/images/wind.png" alt="wind icon"><span id="windspeed"> 4.8</span>mph</div>
-                <div id="feelgusts">Gusts: <span id="gusting"></span>mph</div>
-                
-        </section>
+                <div id="sectionfix" class="clear">
+                    <section id="feelslike">
+                        <div id="feelhigh"></div>
+                        <div id="feelmode"></div>
+                        <div id="feelow"></div>
+                        <div id="feelreal">Feels Like: <strong><span id="feelTemp"></span></strong></div>
+                        <div id="feelwind"><img id="windicon" src="/images/wind.png" alt="wind icon"><span
+                                id="windspeed"> 4.8</span>mph</div>
+                        <div id="feelgusts">Gusts: <span id="gusting"></span>mph</div>
 
-                <!-- ****************************************************
+                    </section>
+
+                    <!-- ****************************************************
                         html declaration for the weather temperature information
                     *************************************************************** -->
-                <div id="others">
-                    <section id="temperature" class="tile">
-                    <!-- <div class="weatherTemp"> -->
-                        <h3 class="headerchange">Temperature</h3>
-                        <!--   html declaration for circles -->
-                        <div class="component">
-                                
-                            <div class="inner">
-                               <span class="faren">&#8457;</span>
-                          </div>
-                     </div>
-            <div class="condiTime">
-                     <p class="p1 ball">1</p>
-                     <p class="p2 ball">2</p>
-                     <p class="p3 ball">3</p>
-                     <p class="p4 ball">4</p>
-                     <p class="p5 ball">5</p>
-                     <p class="p6 ball">6</p>
-                     <p class="p7 ball">7</p>
-                     <p class="p8 ball">8</p>
-                     <p class="p9 ball">9</p>
-                     <p class="p10 ball">10</p>
-                     <p class="p11 ball">11</p>
-                     <p class="p12 ball">12</p>
-            </div>     
+                    <div id="others">
+                        <section id="temperature" class="tile">
+                            <!-- <div class="weatherTemp"> -->
+                            <h3 class="headerchange">Temperature</h3>
+                            <!--   html declaration for circles -->
+                            <div class="component">
 
-                        <div class="tempPara2">
-                          <p class="icon1"></p>
-                        <p class="icon2"></p>
-                        <p class="icon3"></p>
-                        <p class="icon4"></p>
-                        <p class="icon5"></p>
-                        <p class="icon6"></p>
-                        <p class="icon7"></p>
-                        <p class="icon8"></p>
-                        <p class="icon9"></p>
-                        <p class="icon10"></p>
-                          <p class="icon11"></p>
-                          <p class="icon12"></p>
-                        </div>
-                          
-                        
-                       
-                        <!-- </div> -->
-                 </section>
-
-                    <!-- ************************************************************
-                        html declaration for the weather precipitation information
-                    ********************************************************************* -->
-                 <section id="precipitation" class="tile">
-                    <!-- <div class="weatherPreci"> -->
-                        <h3 id="centerwind">Wind</h3>
-                        
-                        <div class="condiTime">
-                                 <p class="p1 ball">1</p>
+                                <div class="inner">
+                                    <span class="faren">&#8457;</span>
+                                </div>
+                            </div>
+                            <div class="condiTime">
+                                <p class="p1 ball">1</p>
                                 <p class="p2 ball">2</p>
                                 <p class="p3 ball">3</p>
                                 <p class="p4 ball">4</p>
@@ -135,92 +94,141 @@
                                 <p class="p10 ball">10</p>
                                 <p class="p11 ball">11</p>
                                 <p class="p12 ball">12</p>
-                        </div>
+                            </div>
 
-                        <div class="preciPara1">
-                          <p class="iconW1"></p>
-                        <p class="iconW2"></p>
-                        <p class="iconW3"></p>
-                        <p class="iconW4"></p>
-                        <p class="iconW5"></p>
-                        <p class="iconW6"></p>
-                        <p class="iconW7"></p>
-                        <p class="iconW8"></p>
-                        <p class="iconW9"></p>
-                        <p class="iconW10"></p>
-                          <p class="iconW11"></p>
-                          <p class="iconW12"></p>
-                        </div>
-                          <!--   html declaration for circles -->
-                        
-                           <div class="component">                          
-                               <div class="inner">
-                                  <span class="umbrela">&#9730;</span>
-                        <span class="percent">&#37;</span>
-                             </div>
-                           </div>
-                 </section>
+                            <div class="tempPara2">
+                                <p class="icon1"></p>
+                                <p class="icon2"></p>
+                                <p class="icon3"></p>
+                                <p class="icon4"></p>
+                                <p class="icon5"></p>
+                                <p class="icon6"></p>
+                                <p class="icon7"></p>
+                                <p class="icon8"></p>
+                                <p class="icon9"></p>
+                                <p class="icon10"></p>
+                                <p class="icon11"></p>
+                                <p class="icon12"></p>
+                            </div>
 
-                    <!--  *****************************************************************
+
+
+                            <!-- </div> -->
+                        </section>
+
+                        <!-- ************************************************************
+                        html declaration for the weather precipitation information
+                    ********************************************************************* -->
+                        <section id="precipitation" class="tile">
+                            <!-- <div class="weatherPreci"> -->
+                            <h3 id="centerwind">Wind</h3>
+
+                            <div class="condiTime">
+                                <p class="p1 ball">1</p>
+                                <p class="p2 ball">2</p>
+                                <p class="p3 ball">3</p>
+                                <p class="p4 ball">4</p>
+                                <p class="p5 ball">5</p>
+                                <p class="p6 ball">6</p>
+                                <p class="p7 ball">7</p>
+                                <p class="p8 ball">8</p>
+                                <p class="p9 ball">9</p>
+                                <p class="p10 ball">10</p>
+                                <p class="p11 ball">11</p>
+                                <p class="p12 ball">12</p>
+                            </div>
+
+                            <div class="preciPara1">
+                                <p class="iconW1"></p>
+                                <p class="iconW2"></p>
+                                <p class="iconW3"></p>
+                                <p class="iconW4"></p>
+                                <p class="iconW5"></p>
+                                <p class="iconW6"></p>
+                                <p class="iconW7"></p>
+                                <p class="iconW8"></p>
+                                <p class="iconW9"></p>
+                                <p class="iconW10"></p>
+                                <p class="iconW11"></p>
+                                <p class="iconW12"></p>
+                            </div>
+                            <!--   html declaration for circles -->
+
+                            <div class="component">
+                                <div class="inner">
+                                    <span class="umbrela">&#9730;</span>
+                                    <span class="percent">&#37;</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--  *****************************************************************
                          html declaration for the weather condition information 
                         ******************************************************************** -->
-                 <section id="conditions" class="tile">
-                    <!-- <div class="weatherCondi"> -->
-                        <h3 class="headerchange">Conditions</h3>
+                        <section id="conditions" class="tile">
+                            <!-- <div class="weatherCondi"> -->
+                            <h3 class="headerchange">Conditions</h3>
 
-                     <div class="condiTime">
-                        <p class="p1 ball">1</p>
-                        <p class="p2 ball">2</p>
-                        <p class="p3 ball">3</p>
-                        <p class="p4 ball">4</p>
-                        <p class="p5 ball">5</p>
-                        <p class="p6 ball">6</p>
-                        <p class="p7 ball">7</p>
-                        <p class="p8 ball">8</p>
-                        <p class="p9 ball">9</p>
-                        <p class="p10 ball">10</p>
-                        <p class="p11 ball">11</p>
-                        <p class="p12 ball">12</p>
+                            <div class="condiTime">
+                                <p class="p1 ball">1</p>
+                                <p class="p2 ball">2</p>
+                                <p class="p3 ball">3</p>
+                                <p class="p4 ball">4</p>
+                                <p class="p5 ball">5</p>
+                                <p class="p6 ball">6</p>
+                                <p class="p7 ball">7</p>
+                                <p class="p8 ball">8</p>
+                                <p class="p9 ball">9</p>
+                                <p class="p10 ball">10</p>
+                                <p class="p11 ball">11</p>
+                                <p class="p12 ball">12</p>
+                            </div>
+
+                            <div class="img1"></div>
+                            <div class="img2"></div>
+                            <div class="img3"></div>
+                            <div class="img4"></div>
+                            <div class="img5"></div>
+                            <div class="img6"></div>
+                            <div class="img7"></div>
+                            <div class="img8"></div>
+                            <div class="img9"></div>
+                            <div class="img10"></div>
+                            <div class="img11"></div>
+                            <div class="img12"></div>
+
+
+
+
+
+                            <!--   html declaration for circles -->
+                            <div class="component">
+                                <div class="inner"></div>
+                            </div>
+                        </section>
+
+
                     </div>
-
-                          <div class="img1"></div>
-                          <div class="img2"></div>
-                          <div class="img3"></div>
-                          <div class="img4"></div>
-                          <div class="img5"></div>
-                          <div class="img6"></div>
-                          <div class="img7"></div>
-                          <div class="img8"></div>
-                          <div class="img9"></div>
-                          <div class="img10"></div>
-                          <div class="img11"></div>
-                          <div class="img12"></div>
-                        
-                          
-        
-                
-                          
-                        <!--   html declaration for circles -->
-                        <div class="component">                      
-                               <div class="inner"></div>
-                        </div>
-                    </section>
-
-                
-                </div>
                 </div>
             </div>
         </main>
         <footer id="footer" class="minorfooter">
             <p>&copy; 2020 | Nwokolo Onyeogalibueze | <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN
                     Documentation Site</a> | BYU-Idaho</p>
-                    <p>Current Date: <span id="currentdate"></span></p>
+            <p>Current Date: <span id="currentdate"></span></p>
             <p>Last Updated: <span id="lastmodify"></span></p>
         </footer>
         <!-- <script src="/weather/js/preston.js"></script> -->
         <script src="/weather/js/function.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>WebFont.load({google: {families: ['Ubuntu', 'Acme']}});</script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Ubuntu', 'Acme']
+                }
+            });
+        </script>
     </div>
 </body>
+
 </html>

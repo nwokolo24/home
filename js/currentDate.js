@@ -4,4 +4,3 @@ document.getElementById("currentdate").textContent = new Date().toLocaleDateStri
 
 //Js to get the last modified date
 document.getElementById("lastmodify").innerHTML = document.lastModified;
-console.log(options);
