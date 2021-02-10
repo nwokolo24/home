@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
   //call current date
   buildCurDate();
 //Get weather json data
-let weatherURL = "./idahoweather.json";
+let weatherURL = "/weather/js/idahoweather.json";
 fetchWeatherData(weatherURL);
 })
 
@@ -50,11 +50,11 @@ function fetchWeatherData(weatherURL){
   })
   .then(function(data){
     //check the data object that was retrieved
-    console.log(data);
+    // console.log(data);
     //data is the full javaScript object, but we only want the preston part
     //shorten the variable and focus only on the data we want to reduce typing
     let p = data[cityName];
-    console.log(p);
+    // console.log(p);
 
     //************ Get the location information *********
     let locName = p.properties.relativeLocation.properties.city;
@@ -69,17 +69,17 @@ function fetchWeatherData(weatherURL){
     let fullName = locName+', '+locState;
 
     //see if it worked, using ticks around the content in th log
-    console.log(`Full name is: ${fullName}`); //This combines and outputs a string and a predefined variable
+    // console.log(`Full name is: ${fullName}`); //This combines and outputs a string and a predefined variable
 
     //Get the longitude and latitude and combine them to
     //a comma seperated single string
     const latLong = p.properties.relativeLocation.geometry.coordinates[1] + ", "+ p.properties.relativeLocation.geometry.coordinates[0];
-    console.log(latLong);
+    // console.log(latLong);
 
      // Create a JSON object containing the full name, latitude and longitude
     // and store it into local storage.
     const prestonData = JSON.stringify({fullName,latLong});
-    console.log(prestonData);
+    // console.log(prestonData);
     locStore.setItem("PrestonID", prestonData);
 
 
@@ -120,14 +120,14 @@ function getHourly(URL){
     throw new Error("Response not OK.");
   })
   .then(function(data){
-    console.log("Data from getHourly function:");
-    console.log(data); //Let's see what we got back
+    // console.log("Data from getHourly function:");
+    // console.log(data); //Let's see what we got back
 
     //Store 12 hours of data to session storage
     var hourData = [];
     let todayDate = new Date();
     var nowHour = todayDate.getHours();
-    console.log(`nowHour is ${nowHour}`);
+    // console.log(`nowHour is ${nowHour}`);
     for (let i = 0, x = 11; i <= x; i++){
       if (nowHour < 24) {
         hourData[nowHour] = data.properties.periods[i].temperature + "," + data.properties.periods[i].windSpeed + "," + data.properties.periods[i].icon;
@@ -160,7 +160,7 @@ function buildPage(){
   let pageTitle = $("#page-title");
   //Create a text node containing the full name
   let fullNameNode = document.createTextNode(sessStore.getItem("FullName"));
-  console.log("FullName");
+  // console.log("FullName");
   //Inserts the fullName value before any other content that might exist
   pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
   //Get the h1 to display the city location
@@ -169,7 +169,7 @@ function buildPage(){
 //Get the coordinates container for the location
 let latlon = $(".gps");
 latlon.innerHTML = sessStore.getItem("latLong");
-console.log(latlon);
+// console.log(latlon);
 
 
 
@@ -216,11 +216,11 @@ if (currentHour > 12) {
 } else {
  indicatorHour = currentHour;
 };
-console.log(`Current hour in time indicator is: ${currentHour}`);
+// console.log(`Current hour in time indicator is: ${currentHour}`);
 
 timeBall(indicatorHour);
-console.log(indicatorHour);
-
+// console.log(indicatorHour);
+// 
 /* ############################################################
 // ********** Hourly Temperature Component  **********
 ############################################################## */
@@ -235,7 +235,7 @@ for(let i = 0, x = 12; i < x; i++){
   } else {
     tempHour = tempHour - 12;
     currentData[i] = sessStore.getItem("hour" + tempHour).split(",");
-    console.log(`CurrentData[i][0] is: ${currentData[i][0]}`);
+    // console.log(`CurrentData[i][0] is: ${currentData[i][0]}`);
     tempHour = 1;
   }
 }
@@ -248,7 +248,7 @@ for (let i = 0, x = 12; i < x; i++){
   if (tempHour >= 13){
     tempHour  = tempHour -12;
   }
-  console.log(`Start container is: ${tempHour[i]}`);
+  // console.log(`Start container is: ${tempHour[i]}`);
   $(".icon" + tempHour).innerHTML = currentData[i][0];
   tempHour++;
 }
@@ -262,7 +262,7 @@ let windHour = currentHour;
 for (let i = 0, x = 12; i < x; i++) {
  if (windHour <= 23) {
   windArray[i] = currentData[i][1].split(" ");
-  console.log(`windArray[i] is: ${windArray[i]}`);
+  // console.log(`windArray[i] is: ${windArray[i]}`);
   windHour++;
  } else {
   windHour = windHour - 12;
@@ -270,7 +270,7 @@ for (let i = 0, x = 12; i < x; i++) {
   windHour = 1;
  }
 }
-console.log(windArray);
+// console.log(windArray);
 
 // Insert Wind data
 // Start with the outer container that matchs the time indicator
@@ -295,7 +295,7 @@ for (let i = 0, x = 12; i < x; i++) {
  $('.img' + conditionHour).innerHTML = '<img src="' + currentData[i][2] + '" alt="hourly weather condition image">';
  conditionHour++;
 }
-console.log(currentData);
+// console.log(currentData);
 }
 
 //Js to get the last modified date
@@ -338,7 +338,7 @@ function burgerMenu(){
 function buildWC(speed, temp) {
 //This formular Computes the windchill value
   let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
- console.log(wc);
+//  console.log(wc);
 
  //Round the answer down to integer
   wc = Math.floor(wc);
