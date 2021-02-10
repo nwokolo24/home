@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
   //call current date
   buildCurDate();
 //Get weather json data
-let weatherURL = "/weather/js/idahoweather.json";
+let weatherURL = "./idahoweather.json";
 fetchWeatherData(weatherURL);
 })
 
